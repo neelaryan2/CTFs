@@ -1,0 +1,9 @@
+#separator \x09
+#set_separator	,
+#empty_field	(empty)
+#unset_field	-
+#path	files
+#open	2021-09-08-02-01-29
+#fields	ts	fuid	tx_hosts	rx_hosts	conn_uids	source	depth	analyzers	mime_type	filename	duration	local_orig	is_orig	seen_bytes	total_bytes	missing_bytes	overflow_bytes	timedout	parent_fuid	md5	sha1	sha256	extracted	extracted_cutoff	extracted_size
+#types	time	string	set[addr]	set[addr]	set[string]	string	count	set[string]	string	string	interval	bool	bool	count	count	count	count	bool	string	string	string	string	string	bool	count
+1631066488.780647	FD7y1m1bQAnmEWY0Ti	204.79.197.203	10.24.0.2	CWNKgx2PdljsciCjs8	SSL	0	OCSP_REPLY,MD5,SHA1	application/ocsp-response	-	0.000000	F	F	1742	-	0	0	F	-	90d39f0ccf40b0e8b6aeb0e4e50a6713	9445ff6cb4bbe429990c5351c3bdd1f7452ff467	-	-	-	-

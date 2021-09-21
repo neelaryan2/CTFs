@@ -1,0 +1,23 @@
+Foremost version 1.5.7 by Jesse Kornblum, Kris Kendall, and Nick Mikus
+Audit File
+
+Foremost started at Sun Oct 11 06:24:31 2020
+Invocation: foremost are_you_hackerman.jpg 
+Output directory: output
+Configuration file: 
+------------------------------------------------------------------
+File: are_you_hackerman.jpg
+Start: Sun Oct 11 06:24:31 2020
+Length: 476 KB (487773 bytes)
+ 
+Num	 Name (bs=512)	       Size	 File Offset	 Comment 
+
+0:	00000000.jpg 	      86 KB 	          0 	 
+Finish: Sun Oct 11 06:24:31 2020
+
+1 FILES EXTRACTED
+	
+jpg:= 1
+------------------------------------------------------------------
+
+Foremost finished at Sun Oct 11 06:24:31 2020

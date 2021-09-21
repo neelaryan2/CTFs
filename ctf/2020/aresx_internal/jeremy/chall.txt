@@ -1,0 +1,11 @@
+So another friend of mine forget his password! I really need to stop telling people that I'm a cybersecurity expert! He told me that he always makes his passwords based on some attribute about him - e.g. his height or shoe size. But in this case, he said that the password had something to do with these attributes. Hopefully you can help me keep up this charade of being a cybersecurity expert and crack his password for me. Name: Jeremy Wicket Nickname: Jerm DOB: 03/21/1995 Pet's name: Lucy <- very cute golden retriever btw! Company he works for: Orange Hobbies: hiking, cars, poker
+
+Miraculously he was able to provide me with his password hash that keeps hidden under his pillow. Pretty weird if you ask me. $2a$05$pI2AafHhoZKLen4PxMWWJedfOp20WtmmuWkVddlBv634ASraE6svq
+
+custom_wordlist.txt was generated using CUPP - Common User Passwords Profiler.
+https://github.com/Mebus/cupp
+
+Just use hashcat
+hashcat -m 3200 -a 0 -w 2 hash custom_wordlist.txt
+
+Flag : poker_9503

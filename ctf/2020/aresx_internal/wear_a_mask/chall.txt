@@ -1,0 +1,8 @@
+Hey guys, I need your help with something I forgot my password but I have the hash right there - All I remember is that it was 9 characters long, with 1 character (a-z) in there somewhere and 8 numbers (0-9) somewhere - Can you guys help me recover the password?
+
+73099dd3cbd96ebaff42c5bef1266b9f7d74801726821d6d5a38d599e56ce475
+
+Just use hashcat
+hashcat -m 1400 -a 3 -w 2 hash ?d?d?l?d?d?d?d?d?d
+
+Flag : 89g431849

@@ -1,0 +1,9 @@
+#separator \x09
+#set_separator	,
+#empty_field	(empty)
+#unset_field	-
+#path	dns
+#open	2021-09-08-02-01-29
+#fields	ts	uid	id.orig_h	id.orig_p	id.resp_h	id.resp_p	proto	trans_id	rtt	query	qclass	qclass_name	qtype	qtype_name	rcode	rcode_name	AA	TC	RD	RA	Z	answers	TTLs	rejected
+#types	time	string	addr	port	addr	port	enum	count	interval	string	count	string	count	string	count	string	bool	bool	bool	bool	count	vector[string]	vector[interval]	bool
+1631066488.604653	CrUtF9UM56UrnxpYa	10.24.0.2	54291	1.1.1.1	53	udp	26563	0.039988	api.msn.com	1	C_INTERNET	1	A	0	NOERROR	F	F	T	T	0	api-msn-com.a-0003.a-msedge.net,a-0003.a-msedge.net,204.79.197.203	21509.000000,149.000000,149.000000	F

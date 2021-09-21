@@ -1,0 +1,13 @@
+#separator \x09
+#set_separator	,
+#empty_field	(empty)
+#unset_field	-
+#path	software
+#open	2021-09-08-02-15-51
+#fields	ts	host	host_p	software_type	name	version.major	version.minor	version.minor2	version.minor3	version.addl	unparsed_version
+#types	time	addr	port	enum	string	count	count	count	count	string	string
+1631067351.528429	10.24.0.2	-	HTTP::BROWSER	MICROSOFT_DEVICE_METADATA_RETRIEVAL_CLIENT	-	-	-	-	-	MICROSOFT_DEVICE_METADATA_RETRIEVAL_CLIENT
+1631067367.990495	10.24.0.2	-	HTTP::BROWSER	Chrome	93	0	4577	63	-	Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36
+1631068556.557701	10.24.0.2	-	HTTP::BROWSER	Microsoft-CryptoAPI	10	0	-	-	-	Microsoft-CryptoAPI/10.0
+1631068564.128454	10.24.0.2	-	HTTP::BROWSER	Microsoft-WNS	10	0	-	-	-	Microsoft-WNS/10.0
+#close	2021-09-08-03-00-00

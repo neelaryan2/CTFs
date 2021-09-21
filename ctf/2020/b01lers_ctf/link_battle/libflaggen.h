@@ -1,0 +1,1 @@
+int getflag(int v);

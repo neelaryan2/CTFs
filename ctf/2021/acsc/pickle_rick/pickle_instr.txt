@@ -1,0 +1,1120 @@
+    0: c    GLOBAL     'builtins print' Push a global object (module.attr) on the stack.
+   16: T    BINSTRING  '\n                                                                                     `.inWWx*.                   \n                                                                                  `izW@MxnnnxMn;                 \n                                                                                `*WWxnnnnnnnnnnxx*`              \n                                                                               :MWnnnznnnnnnnnnnnxxi`            \n                                                                             `#@xnn#***+#+nnnnnnnnnxn,           \n                                                                            ,MWnnnn******+nnnnnnnnnnnx+          \n                                                                           :WMnnnn+*****znnnnnnnnnnnnnnn.        \n                                                                          ;@xnnnz+***+#znnnzznnnnnnnnnnnx,       \n                                                                         :@xnnnnz+*+znnnzzzzzzzznnnnnnnnnx:      \n                                                                        ,WMnnnnnnnMMxxMxnzzzzzzznnnnnnnnnnx,     \n                                                                       `MMnnnnnnnM*,,,,:*nMnzzzzznnnnnnnnnnx.    \n                                                                       zWnnnnnnnM:,,,,,,,,:+Mnzzzznnnnnnnnnnz    \n                                                                      i@nnnnnnnnxxxMMxxz+:,,,zxzzznnnnnnnnnnni   \n                                                                     .Wxnnnnnnnnzz#zz#zznMxi,,*Mzznnnnnnnnnnnx`  \n                                                                     zWnnnnnnnnzzzzzzzzzzzzxn:,iMzznnnnnnnnnnn+  \n                                                                    ;@nnnnnnnnzzzzzzzzzzzzzzzM;,ixznnnnnnnnnnnx` \n                                                                   `MMnnnnnxMMMnzzzzzzzzzzzzzzM:,#nnnnnnnnnnnnni \n                                                                   *@nnnnnM#,..ixxzzzzzzzzzzzzzx,,xznnnnnnnnnnn# \n                                                                  `WxnnnnM:``````iMzzzzzzzzzzzzx*,*xnnnnnnnnnnnx`\n                                                                  +WnnnnM:.`````.`,xzzzzzzzzzzzzx,,Mnnnnnnnnnnnx.\n                                                                 .@xnnnx*.````````.,Mzzzzzzzzzzzx*,xnnnnnnnnnnnx;\n                                                                 #WnnnnM.```..``````*nzzzzzzzzzzzM:xnnnnnnnnnnnn*\n                                                                ,@nnnnnn````zn`````.,Mzz#zzzzzzzzzxxnnnnnnnnnnnn+\n                                                                zMnnnnnz````.,``````.MzMxnnxMnzzzzznnnnnnnnnnnnnz\n                                                               ,@nnnnnnz````````````,W#.````.ixnzzznnnnnnnnnnnnnn\n                                                               nMnnnnnnx```````````.*+````````.#xzznnnnnnnnnnnnnz\n                                                              :@nnnnnnzM.``````````.x`````````.`nzznnnnnnnnnnnnnn\n                                                             `MxnnnnnzMn#`.````````#;```````````,Mnnnnnnnnnnnnnnn\n                                                             *Wnnnnnzzxnx+.``````.*W`.```````````xnnnnnnnnnnnnnnz\n                                                            .WxnnnnzzzzM#xn,````.#xn`.````##`````znnnnnnnnnnnnnnn\n                                                            zMnnnxMMMxznxzzMxz#zxnzz`.````z+`````#nnnnnnnnnnnnnnn\n                                                           :@nnnMMzzznMxnMnzzzMnzzzx`.```````````nnnnnnnnnnnnnnn#\n                                                          `MxnnMxzxWWMznMzxxzxxzzzzM,```````````.Mnnnnnnnnnnnnnn+\n                                                          +WnnxMzW@@@@WzzzzzzMzzzzzzn..```````..+xnnnnnnnnnnnnnx;\n                                                         .@xnnWnM@@@@@:xzzzzMzzzzx#zn#`.```````:MnnnnnnnnnnnnnnM.\n                                                         zMnnnWz@@@@@@W@MzzzMzzzMnzzzxz.``````:Mnnnnnnnnnnnnnnnx \n                                                        :@nnnnWz@@@@@@@#,MzzxznMzzzz#zzM#;..:zMnnnnnnnnnnnnnnnnz \n                                                       `MxnnnnMz@@@@@@@z:nMzMMxzzzzzxnz#zxMMMnnnnnnnnnnnnnnnnnxi \n                                                       iWnnnnnWz@@@@@@@@@x;MzzzzzzzzzxxzzzzznnnnnnnnnnnnnnnnnnM, \n                                                      .WxnnnnnMzW@@@@@@@@;`+MnzzzzzzzznWxnnxWnnnnnnnnnnnnnnnnnM  \n                                                      #Mnnnnnnxnx@@@@@@@@z+W.zM#xMMxzzzznxxnnnnnnnnnnnnnnnnnnn#  \n                                                     ,@nnnnnnnzMz@@@@@@@@@@M:Mn`n#`n@xnzzzzznnnnnnnnnnnnnnnnnM:  \n                                                     nMnnnnnnzzxnM#@@@@@@@@@@@@n@@n@@z@WzzxnnnnnnnnnnnnnnnnnnM`  \n                                                    :@nnnnnnnzzzMzzz@@@@@@@@@@@@@@@@@@@@@nzWnnnnnnnnnnnnnnnnnz   \n                                                   `MxnznnnnnzzznMxMzx@@@@@@@@@@@@@@@@@@@@nMxnnnnnnnnnnnnnnnM;   \n                                                   iWzxMMnnnnzzzznxM:zWM@@@@@@WnnxW@@@@@@@WnMnnnnnnnnnnnnnnnM`   \n                                                  `WnxMMxnnnnzzzzzxxxM,:@@@@@@@WnnnM@@@@@@@nWnnnnnnnnnnnnnnnz    \n                                                  +WzMMMnnnnnzzzzzzxnxz;@*M@@@@@@xnnM@@@@@@nWnnnnnnnnnnnnnnM;    \n                                                 .WnzxMxnnnnnzzzzzzzzzzW#`#@@@@@@@nnn@@@@@@nWnnnnnnnnnnnnnnM     \n                                                 #MnnnMnnnnnzzzzzzzzzzzzx#n+,@@@@@xnn@@@@@WnMnnnnnnnnnnnnnx+     \n                                                .@nnnnnnnnnnzzzzzzzzzzzzzzM*`@+.@@WnnW@@@@xMxnnnnnnnnnnnnnW,     \n                                                zMnnnnnnnnnnzzzzzzzzzzzzzzznMW,`x:MnnW@@@MnWnnnnnnnnnnnnnnx      \n                                               ,@nnnnnnnnnnnzzzzzzzzzzzzzzzzzzMxM*xMM@@WxnWnnnnnnnnnnnnnnM*      \n                                               nMnnnnnnnnnnzzzzzzzzzzzzzzzzzzzzzznnMxxnnMWnnnnnnnnnnnnnnnM`      \n                                              :@nnnnnnnnnnnzzzzzzzzzzzzzzzzzzzzzzzxMMMWWxnnnnnnnnnnnnnnnx#       \n                                             `xxnnnnnnnnnnnzzzzzzzzzzzzzzzzzzzzzzznxxxnnnnnnnnnnnnnnnnnnW.       \n                                             ;@nnnnnnnnnnnnzzzzzzzzzzzzzzzzzzzzzznnnnnnnnnnnnnnnnnnnnnnxz        \n                                             MxnnnnnnnnnnnzzzzzzzzzzzzzzzzzzzzzznnnnnnnnnnnnnnnnnnnnnnnM,        \n                                            iWnnnnnnnnnnnnzzzzzzzzzzzzzzzzzzzzzznnnnnnnnnnnnnnnnnnnnnnnn         \n                                           `WnnnnnnnnnnnnzzzzzzzzzzzzzzzzzzzzzznnnnnnnnnnnnnnnnnnnnnnnM;         \n                                           *MnnnnnnnnnnnnzzzzzzzzzzzzzzzzzzzzznnnnnnnnnnnnnnnnnnnnnnnnM          \n                                          .Wnnnnnnnnnnnnzzzzzzzzzzzzzzzzzzzzzznnnnnnnnnnnnnnnnnnnnnnnx*          \n                                          #MnnnnnnnnnnnnzzzzzzzzzzzzzzzzzzzzznnnnnnnnnnnnnnnnnnnnnnnnW.          \n                                         ,@nnnnnnnnnnnnzzzzzzzzzzzzzzzzzzzzznnnnnnnnnnnnnnnnnnnnnnnnx#           \n                                         nxnnnnnnnnnnnnzzzzzzzzzzzzzzzzzzzzznnnnnnnnnnnnnnnnnnnnnnnnM,           \n                                        ;Wnnnnnnnnnnnnnzzzzzzzzzzzzzzzzzzzznnnnnnnnnnnnnnnnnnnnnnnnnx            \n                                       `MnnnnnnnnnnnnnzzzzzzzzzzzzzzzzzzzznnnnnnnnnnnnnnnnnnnnnnnnnMi            \n                                       +MnnnnnnnnnnnnnzzzzzzzzzzzzzzzzzzzznnnnnnnnnnnnnnnnnnnnnnnnnM`            \n                                      ,Wnnnnnnnnnnnnnnzzzzzzzzzzzzzzzzzzznnnnnnnnnnnnnnnnnnnnnnnnnx*             \n                                     `xxnnnnnnnnnnnnnzzzzzzzzzzzzzzzzzznnnnnnnnnnnnnnnnnnnnnnnnnnnW`             \n                                     *Mnnnnnnnnnnnnnzzzzzzzzzzzzzzzzzznnnnnnnnnnnnnnnnnnnnnnnnnnnx+              \n                                    .WnnnnnnnnnnnnnzzzzzzzzzzzzzzzzzznnnnnnnnnnnnnnnnnnnnnnnnnnnnW.              \n                                    xxnnnnnnnnnnnnnzzzzzzzzzzzzzzzzznnnnnnnnnnnnnnnnnnnnnnnnnnnnx+               \n                                   *MnnnnnnnnnnnnnzzzzzzzzzzzzzzzznnnnnnnnnnnnnnnnnnnnnnnnnnnnnnM`               \n                                  ,Wnnnnnnnnnnnnnzzzzzzzzzzzzzzzznnnnnnnnnnnnnnnnnnnnnnnnnnnnnnx+                \n                                 `xxnnnnnnnnnnnnzzzzzzzzzzzzzzzznnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnW`                \n                                 +Mnnnnnnnnnnnnnzzzzzzzzzzzzzzznnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnx#                 \n                                :WnznnnnnnnnnnnzzzzzzzzzzzzzzznnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnM.                 \n                               `MnnxMxnnnnnnnnzzzzzzzzzzzzzzznnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnz                  \n                               #xnzMMxnnnnnnnnzzzzzzzzzzzzzznnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnM:                  \n                              ;WnnzxMnnnnnnnnzzzzzzzzzzzzzzznnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnx                   \n                             .Wnnnnnnnnnnnnnzzzzzzzzzzzzzzznnnnnnnnnnnnnnnnnnnnnnnxnnnnnnnnnxi                   \n                            `xxnnnnnnnnnnnnzzzzzzzzzzzzzzzznnnnnnnnnnnnnnnnnnnnnnxMnnnnnnnnnx`                   \n                            +MnnnnnnnnnnnnzzzzzzzzzzzzzzzznnnnnnnnnnnnnnnnnnnnnnxMMnnnnnnnnx*                    \n                           :WnnnnnnnnnnnnzzzzzzzzzzzzzzzznnnnnnnnnnnnnnnnnnnnnnnMMMnnnnnnnnM`                    \n                          .MnnnnnnnnnnnnnzzzzzzzzzzzzzzzznnnnnnnnnnnnnnnnnnnnnnxMMMznnnnnnx#                     \n                         `xnnnnnnnnnnnnnzzzzzzzzzzzzzzzznnnnnnnnnnnnnnnnnnnnnnnnnnznnnnnnnM.                     \n                         #xnnnnnnnnnnnnnzzzzzzzzzzzzzzzznnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnx#                      \n                        *MnnnnnnnnnnnnnzzzzzzzzzzzzzzzzznnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnW.                      \n                       ;MnnnnnnnnnnnnnnzzzzzzzzzzzzzzzznnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnM#                       \n                      ,MnnnnnnnnnnnnnnzzzzzzzzzzzzzzzzznnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnW`                       \n                     ,MnnnnnnnnnnnnnnnzzzzzzzzzzzzzzzzznnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnMi                        \n                    .xnnnnnnnnnnnnnnnzzzzzzzzzzzzzzzzzznnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnx                         \n                   .xnnnnnnnnnnnnnnnnzzzzzzzzzzzzzzzzznnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnW:                         \n                  .xnnnnnnnnnnnnnnnnzzzzzzzzzzzzzzzzzznnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnxz                          \n                 `nnnnnnnnnnnnnnnnnnzzzzzzzzzzzzzzzzznnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnW.                          \n                 nxnnnnnnnnnnnnnnnnzzzzzzzzzzzzzzzzznnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnM*                           \n                #xnnnnnnnnnnnnnnnnzzzzzzzzzzzzzzzzzznnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnM`                           \n               *MnnnnnnnnnnnnnnnnnzzzzzzzzzzzzzzzzznnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnW;                            \n              :Wnnnnnnnnnnnnnnnnnzzzzzzzzzzzzzzzzznnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnxn                             \n             .MnnnnnnnnnnnnzznnnzzzzzzzzzzzzzzzznnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnW,                             \n            `xxnnnnnnnnnnnzxxxzzzzzzzzzzzzzzzzznnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnx#                              \n            #MnnnnnnnnnnnzxMMMzzzzzzzzzzzzzzznnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnM`                              \n           ;WnnnnnnnnnnnnzMMMnzzzzzzzzzzzzzznnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnM;                               \n          .MnnzznnnnnnnnnzxMnzzzzzzzzzzzzzzznnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnxn                                \n          nxzxMMnnnnnnnnnnnnzzzzzzzzzzzzzzznnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnW.                                \n         *MzxMMMxnnnnnnnnnzzzzzzzzzzzzzzzzznnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnM+                                 \n        ,WnzMMMMnnnnnnnnnzzzzzzzzzzzzzzzzznnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnM`                                 \n       `xnnzxMMxnnnnnnnnnzzzzzzzzzzzzzzzznnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnW;                                  \n       +Mnnnzxxnnnnnnnnnzzzzzzzzzzzzzzzznnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnxn                                   \n      ,WnnnnnznnnnnnnnnzzzzzzzzzzzzzzzznnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnW.                                   \n     `xxnnnnnnnnnnnnnnzzzzzzzzzzzzzzzznnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnMi                                    \n     iMnnnnnnnnnnnnnnzzzzzzzzzzzzzzzzznnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnxx                                     \n    `MnnnnnnnnnnnnnnzzzzzzzzzzzzzzzzznnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnW.                                     \n    *MnnnnnnnnnnnnnnzzzzzzzzzzzzzzzznnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnWi                                      \n   `WnnnnnnnnnnnnnnzzzzzzzzzzzzzzzznnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnW#                                       \n   iMnnnnnnnnnnnnnzzzzzzzzzzzzzzzznnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnMn`                                       \n   MnnnnnnnnnnnnnnzzzzzzzzzzzzzzznnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnMM`                                        \n  :WnnnnnnnnnnnnnzzzzzzzzzzzzzzznnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnxW.                                         \n  zxnnnnnnnnnnnnnzzzzzzzzzzzzzznnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnxW,                                          \n `Wnnnnnnnnnnnnnzzzzzzzzzzzzzznnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn@:                                           \n :WnnnnnnnnnnnnnzzzzzzzzzzzzzznnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnW;                                            \n +MnnnnnnnnnnnnzzzzzzzzzzzzzznnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnW*                                             \n xxnnnnnnnnnnnnzzzzzzzzzzzzznnnnnnnnnnnnnnnnnnnnnxxnnnnnnnnnnnnnnW*                                              \n`WnnnnnnnnnnnnnzzzzzzzzzzzznnnnnnnnnnnnnnnnnnnnnMMMnnnnnnnnnnnnnW#                                               \n,@nnnnnnnnnnnnnzzzzzzzzzzznnnnnnnnnnnnnnnnnnnnnMMMMxnnnnnnnnnnnMz`                                               \n:WnnnnnnnnnnnnnzzzzzzzzzznnnnnnnnnnnnnnnnnnnnnxMMMMnnnnnnnnnnnMn                                                 \n*MnnnnnnnnnnnnnnzzzzzzznnnnnnnnnnnnnnnnnnnnnnnxMMMMznnnnnnnnnMx`                                                 \n+Mnnnnnnnnnnnnnnnzzznnnnnnnnnnnnnnnnnnnnnnnnnnzxxxznnnnnnnnnxx`                                                  \nzMnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnznnnnnnnnnnxM`                                                   \nzxnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnxM.                                                    \n#xnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnxM.                                                     \n#MnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnxM.                                                      \n#MnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnxM.                                                       \niMnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnxM.                                                        \n;WnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnxM.                                                         \n.@nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnxM.                                                          \n MxnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnxM.                                                           \n *MnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnMx`                                                            \n .WnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnMn`                                                             \n  *WnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnW#`                                                              \n  `nMnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnW*                                                                \n   `xMnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnMM:                                                                 \n    `zWnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnxWz.                                                     `            \n      *Wxnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnx@x;                                                      `.            \n       .#WxnnnnnnnnnnnnnnnnnnnnnnnnnnnnM@x:`                                                                     \n         .#WMnnnnnnnnnnnnnnnnnnnnnnnxWW#,                                                                        \n           `ixWMxnnnnnnnnnnnnnnnnxW@ni`                                                                          \n              .izMWWMxxxxxxxMMW@M#;`                                                                             \n                 `.;+#nxxxzz+*;.`                                        http://www.asciify.net/ascii/ascii/11190\n' Push a Python string object.
+17122: \x85 TUPLE1                    Build a one-tuple out of the topmost item on the stack.
+17123: R    REDUCE                    Push an object built from a callable and an argument tuple.
+17124: c    GLOBAL     'builtins print' Push a global object (module.attr) on the stack.
+17140: S    STRING     'Pickle Rick says:' Push a Python string object.
+17161: \x85 TUPLE1                         Build a one-tuple out of the topmost item on the stack.
+17162: R    REDUCE                         Push an object built from a callable and an argument tuple.
+17163: c    GLOBAL     'builtins print'    Push a global object (module.attr) on the stack.
+17179: c    GLOBAL     '__main__ rick_says' Push a global object (module.attr) on the stack.
+17199: \x85 TUPLE1                          Build a one-tuple out of the topmost item on the stack.
+17200: R    REDUCE                          Push an object built from a callable and an argument tuple.
+17201: c    GLOBAL     'builtins print'     Push a global object (module.attr) on the stack.
+17217: S    STRING     'The flag machine says:' Push a Python string object.
+17243: \x85 TUPLE1                              Build a one-tuple out of the topmost item on the stack.
+17244: R    REDUCE                              Push an object built from a callable and an argument tuple.
+17245: J    BININT     115                      Push a four-byte signed integer.
+17250: \x85 TUPLE1                              Build a one-tuple out of the topmost item on the stack.
+17251: J    BININT     99                       Push a four-byte signed integer.
+17256: \x85 TUPLE1                              Build a one-tuple out of the topmost item on the stack.
+17257: \x86 TUPLE2                              Build a two-tuple out of the top two items on the stack.
+17258: J    BININT     97                       Push a four-byte signed integer.
+17263: \x85 TUPLE1                              Build a one-tuple out of the topmost item on the stack.
+17264: J    BININT     162                      Push a four-byte signed integer.
+17269: \x85 TUPLE1                              Build a one-tuple out of the topmost item on the stack.
+17270: \x86 TUPLE2                              Build a two-tuple out of the top two items on the stack.
+17271: \x86 TUPLE2                              Build a two-tuple out of the top two items on the stack.
+17272: J    BININT     81                       Push a four-byte signed integer.
+17277: \x85 TUPLE1                              Build a one-tuple out of the topmost item on the stack.
+17278: J    BININT     225                      Push a four-byte signed integer.
+17283: \x85 TUPLE1                              Build a one-tuple out of the topmost item on the stack.
+17284: \x86 TUPLE2                              Build a two-tuple out of the top two items on the stack.
+17285: J    BININT     215                      Push a four-byte signed integer.
+17290: \x85 TUPLE1                              Build a one-tuple out of the topmost item on the stack.
+17291: J    BININT     72                       Push a four-byte signed integer.
+17296: \x85 TUPLE1                              Build a one-tuple out of the topmost item on the stack.
+17297: \x86 TUPLE2                              Build a two-tuple out of the top two items on the stack.
+17298: \x86 TUPLE2                              Build a two-tuple out of the top two items on the stack.
+17299: \x86 TUPLE2                              Build a two-tuple out of the top two items on the stack.
+17300: J    BININT     111                      Push a four-byte signed integer.
+17305: \x85 TUPLE1                              Build a one-tuple out of the topmost item on the stack.
+17306: J    BININT     229                      Push a four-byte signed integer.
+17311: \x85 TUPLE1                              Build a one-tuple out of the topmost item on the stack.
+17312: \x86 TUPLE2                              Build a two-tuple out of the top two items on the stack.
+17313: J    BININT     64                       Push a four-byte signed integer.
+17318: \x85 TUPLE1                              Build a one-tuple out of the topmost item on the stack.
+17319: J    BININT     155                      Push a four-byte signed integer.
+17324: \x85 TUPLE1                              Build a one-tuple out of the topmost item on the stack.
+17325: \x86 TUPLE2                              Build a two-tuple out of the top two items on the stack.
+17326: \x86 TUPLE2                              Build a two-tuple out of the top two items on the stack.
+17327: J    BININT     212                      Push a four-byte signed integer.
+17332: \x85 TUPLE1                              Build a one-tuple out of the topmost item on the stack.
+17333: J    BININT     66                       Push a four-byte signed integer.
+17338: \x85 TUPLE1                              Build a one-tuple out of the topmost item on the stack.
+17339: \x86 TUPLE2                              Build a two-tuple out of the top two items on the stack.
+17340: J    BININT     95                       Push a four-byte signed integer.
+17345: \x85 TUPLE1                              Build a one-tuple out of the topmost item on the stack.
+17346: J    BININT     200                      Push a four-byte signed integer.
+17351: \x85 TUPLE1                              Build a one-tuple out of the topmost item on the stack.
+17352: \x86 TUPLE2                              Build a two-tuple out of the top two items on the stack.
+17353: \x86 TUPLE2                              Build a two-tuple out of the top two items on the stack.
+17354: \x86 TUPLE2                              Build a two-tuple out of the top two items on the stack.
+17355: \x86 TUPLE2                              Build a two-tuple out of the top two items on the stack.
+17356: J    BININT     177                      Push a four-byte signed integer.
+17361: \x85 TUPLE1                              Build a one-tuple out of the topmost item on the stack.
+17362: J    BININT     45                       Push a four-byte signed integer.
+17367: \x85 TUPLE1                              Build a one-tuple out of the topmost item on the stack.
+17368: \x86 TUPLE2                              Build a two-tuple out of the top two items on the stack.
+17369: J    BININT     206                      Push a four-byte signed integer.
+17374: \x85 TUPLE1                              Build a one-tuple out of the topmost item on the stack.
+17375: J    BININT     18                       Push a four-byte signed integer.
+17380: \x85 TUPLE1                              Build a one-tuple out of the topmost item on the stack.
+17381: \x86 TUPLE2                              Build a two-tuple out of the top two items on the stack.
+17382: \x86 TUPLE2                              Build a two-tuple out of the top two items on the stack.
+17383: J    BININT     140                      Push a four-byte signed integer.
+17388: \x85 TUPLE1                              Build a one-tuple out of the topmost item on the stack.
+17389: J    BININT     47                       Push a four-byte signed integer.
+17394: \x85 TUPLE1                              Build a one-tuple out of the topmost item on the stack.
+17395: \x86 TUPLE2                              Build a two-tuple out of the top two items on the stack.
+17396: J    BININT     122                      Push a four-byte signed integer.
+17401: \x85 TUPLE1                              Build a one-tuple out of the topmost item on the stack.
+17402: J    BININT     19                       Push a four-byte signed integer.
+17407: \x85 TUPLE1                              Build a one-tuple out of the topmost item on the stack.
+17408: \x86 TUPLE2                              Build a two-tuple out of the top two items on the stack.
+17409: \x86 TUPLE2                              Build a two-tuple out of the top two items on the stack.
+17410: \x86 TUPLE2                              Build a two-tuple out of the top two items on the stack.
+17411: J    BININT     186                      Push a four-byte signed integer.
+17416: \x85 TUPLE1                              Build a one-tuple out of the topmost item on the stack.
+17417: J    BININT     123                      Push a four-byte signed integer.
+17422: \x85 TUPLE1                              Build a one-tuple out of the topmost item on the stack.
+17423: \x86 TUPLE2                              Build a two-tuple out of the top two items on the stack.
+17424: J    BININT     91                       Push a four-byte signed integer.
+17429: \x85 TUPLE1                              Build a one-tuple out of the topmost item on the stack.
+17430: J    BININT     94                       Push a four-byte signed integer.
+17435: \x85 TUPLE1                              Build a one-tuple out of the topmost item on the stack.
+17436: \x86 TUPLE2                              Build a two-tuple out of the top two items on the stack.
+17437: \x86 TUPLE2                              Build a two-tuple out of the top two items on the stack.
+17438: J    BININT     26                       Push a four-byte signed integer.
+17443: \x85 TUPLE1                              Build a one-tuple out of the topmost item on the stack.
+17444: J    BININT     104                      Push a four-byte signed integer.
+17449: \x85 TUPLE1                              Build a one-tuple out of the topmost item on the stack.
+17450: \x86 TUPLE2                              Build a two-tuple out of the top two items on the stack.
+17451: J    BININT     119                      Push a four-byte signed integer.
+17456: \x85 TUPLE1                              Build a one-tuple out of the topmost item on the stack.
+17457: J    BININT     88                       Push a four-byte signed integer.
+17462: \x85 TUPLE1                              Build a one-tuple out of the topmost item on the stack.
+17463: \x86 TUPLE2                              Build a two-tuple out of the top two items on the stack.
+17464: \x86 TUPLE2                              Build a two-tuple out of the top two items on the stack.
+17465: \x86 TUPLE2                              Build a two-tuple out of the top two items on the stack.
+17466: \x86 TUPLE2                              Build a two-tuple out of the top two items on the stack.
+17467: \x86 TUPLE2                              Build a two-tuple out of the top two items on the stack.
+17468: J    BININT     44                       Push a four-byte signed integer.
+17473: \x85 TUPLE1                              Build a one-tuple out of the topmost item on the stack.
+17474: J    BININT     82                       Push a four-byte signed integer.
+17479: \x85 TUPLE1                              Build a one-tuple out of the topmost item on the stack.
+17480: \x86 TUPLE2                              Build a two-tuple out of the top two items on the stack.
+17481: J    BININT     58                       Push a four-byte signed integer.
+17486: \x85 TUPLE1                              Build a one-tuple out of the topmost item on the stack.
+17487: J    BININT     139                      Push a four-byte signed integer.
+17492: \x85 TUPLE1                              Build a one-tuple out of the topmost item on the stack.
+17493: \x86 TUPLE2                              Build a two-tuple out of the top two items on the stack.
+17494: \x86 TUPLE2                              Build a two-tuple out of the top two items on the stack.
+17495: J    BININT     193                      Push a four-byte signed integer.
+17500: \x85 TUPLE1                              Build a one-tuple out of the topmost item on the stack.
+17501: J    BININT     101                      Push a four-byte signed integer.
+17506: \x85 TUPLE1                              Build a one-tuple out of the topmost item on the stack.
+17507: \x86 TUPLE2                              Build a two-tuple out of the top two items on the stack.
+17508: J    BININT     209                      Push a four-byte signed integer.
+17513: \x85 TUPLE1                              Build a one-tuple out of the topmost item on the stack.
+17514: J    BININT     213                      Push a four-byte signed integer.
+17519: \x85 TUPLE1                              Build a one-tuple out of the topmost item on the stack.
+17520: \x86 TUPLE2                              Build a two-tuple out of the top two items on the stack.
+17521: \x86 TUPLE2                              Build a two-tuple out of the top two items on the stack.
+17522: \x86 TUPLE2                              Build a two-tuple out of the top two items on the stack.
+17523: J    BININT     65                       Push a four-byte signed integer.
+17528: \x85 TUPLE1                              Build a one-tuple out of the topmost item on the stack.
+17529: J    BININT     16                       Push a four-byte signed integer.
+17534: \x85 TUPLE1                              Build a one-tuple out of the topmost item on the stack.
+17535: \x86 TUPLE2                              Build a two-tuple out of the top two items on the stack.
+17536: J    BININT     164                      Push a four-byte signed integer.
+17541: \x85 TUPLE1                              Build a one-tuple out of the topmost item on the stack.
+17542: J    BININT     124                      Push a four-byte signed integer.
+17547: \x85 TUPLE1                              Build a one-tuple out of the topmost item on the stack.
+17548: \x86 TUPLE2                              Build a two-tuple out of the top two items on the stack.
+17549: \x86 TUPLE2                              Build a two-tuple out of the top two items on the stack.
+17550: J    BININT     150                      Push a four-byte signed integer.
+17555: \x85 TUPLE1                              Build a one-tuple out of the topmost item on the stack.
+17556: J    BININT     149                      Push a four-byte signed integer.
+17561: \x85 TUPLE1                              Build a one-tuple out of the topmost item on the stack.
+17562: \x86 TUPLE2                              Build a two-tuple out of the top two items on the stack.
+17563: J    BININT     132                      Push a four-byte signed integer.
+17568: \x85 TUPLE1                              Build a one-tuple out of the topmost item on the stack.
+17569: J    BININT     1                        Push a four-byte signed integer.
+17574: \x85 TUPLE1                              Build a one-tuple out of the topmost item on the stack.
+17575: \x86 TUPLE2                              Build a two-tuple out of the top two items on the stack.
+17576: \x86 TUPLE2                              Build a two-tuple out of the top two items on the stack.
+17577: \x86 TUPLE2                              Build a two-tuple out of the top two items on the stack.
+17578: \x86 TUPLE2                              Build a two-tuple out of the top two items on the stack.
+17579: J    BININT     79                       Push a four-byte signed integer.
+17584: \x85 TUPLE1                              Build a one-tuple out of the topmost item on the stack.
+17585: J    BININT     236                      Push a four-byte signed integer.
+17590: \x85 TUPLE1                              Build a one-tuple out of the topmost item on the stack.
+17591: \x86 TUPLE2                              Build a two-tuple out of the top two items on the stack.
+17592: J    BININT     131                      Push a four-byte signed integer.
+17597: \x85 TUPLE1                              Build a one-tuple out of the topmost item on the stack.
+17598: J    BININT     196                      Push a four-byte signed integer.
+17603: \x85 TUPLE1                              Build a one-tuple out of the topmost item on the stack.
+17604: \x86 TUPLE2                              Build a two-tuple out of the top two items on the stack.
+17605: \x86 TUPLE2                              Build a two-tuple out of the top two items on the stack.
+17606: J    BININT     113                      Push a four-byte signed integer.
+17611: \x85 TUPLE1                              Build a one-tuple out of the topmost item on the stack.
+17612: J    BININT     194                      Push a four-byte signed integer.
+17617: \x85 TUPLE1                              Build a one-tuple out of the topmost item on the stack.
+17618: \x86 TUPLE2                              Build a two-tuple out of the top two items on the stack.
+17619: J    BININT     185                      Push a four-byte signed integer.
+17624: \x85 TUPLE1                              Build a one-tuple out of the topmost item on the stack.
+17625: J    BININT     4                        Push a four-byte signed integer.
+17630: \x85 TUPLE1                              Build a one-tuple out of the topmost item on the stack.
+17631: \x86 TUPLE2                              Build a two-tuple out of the top two items on the stack.
+17632: \x86 TUPLE2                              Build a two-tuple out of the top two items on the stack.
+17633: \x86 TUPLE2                              Build a two-tuple out of the top two items on the stack.
+17634: J    BININT     107                      Push a four-byte signed integer.
+17639: \x85 TUPLE1                              Build a one-tuple out of the topmost item on the stack.
+17640: J    BININT     36                       Push a four-byte signed integer.
+17645: \x85 TUPLE1                              Build a one-tuple out of the topmost item on the stack.
+17646: \x86 TUPLE2                              Build a two-tuple out of the top two items on the stack.
+17647: J    BININT     181                      Push a four-byte signed integer.
+17652: \x85 TUPLE1                              Build a one-tuple out of the topmost item on the stack.
+17653: J    BININT     218                      Push a four-byte signed integer.
+17658: \x85 TUPLE1                              Build a one-tuple out of the topmost item on the stack.
+17659: \x86 TUPLE2                              Build a two-tuple out of the top two items on the stack.
+17660: \x86 TUPLE2                              Build a two-tuple out of the top two items on the stack.
+17661: J    BININT     120                      Push a four-byte signed integer.
+17666: \x85 TUPLE1                              Build a one-tuple out of the topmost item on the stack.
+17667: J    BININT     40                       Push a four-byte signed integer.
+17672: \x85 TUPLE1                              Build a one-tuple out of the topmost item on the stack.
+17673: \x86 TUPLE2                              Build a two-tuple out of the top two items on the stack.
+17674: J    BININT     142                      Push a four-byte signed integer.
+17679: \x85 TUPLE1                              Build a one-tuple out of the topmost item on the stack.
+17680: J    BININT     11                       Push a four-byte signed integer.
+17685: \x85 TUPLE1                              Build a one-tuple out of the topmost item on the stack.
+17686: \x86 TUPLE2                              Build a two-tuple out of the top two items on the stack.
+17687: \x86 TUPLE2                              Build a two-tuple out of the top two items on the stack.
+17688: \x86 TUPLE2                              Build a two-tuple out of the top two items on the stack.
+17689: \x86 TUPLE2                              Build a two-tuple out of the top two items on the stack.
+17690: \x86 TUPLE2                              Build a two-tuple out of the top two items on the stack.
+17691: \x86 TUPLE2                              Build a two-tuple out of the top two items on the stack.
+17692: J    BININT     183                      Push a four-byte signed integer.
+17697: \x85 TUPLE1                              Build a one-tuple out of the topmost item on the stack.
+17698: J    BININT     129                      Push a four-byte signed integer.
+17703: \x85 TUPLE1                              Build a one-tuple out of the topmost item on the stack.
+17704: \x86 TUPLE2                              Build a two-tuple out of the top two items on the stack.
+17705: J    BININT     51                       Push a four-byte signed integer.
+17710: \x85 TUPLE1                              Build a one-tuple out of the topmost item on the stack.
+17711: J    BININT     125                      Push a four-byte signed integer.
+17716: \x85 TUPLE1                              Build a one-tuple out of the topmost item on the stack.
+17717: \x86 TUPLE2                              Build a two-tuple out of the top two items on the stack.
+17718: \x86 TUPLE2                              Build a two-tuple out of the top two items on the stack.
+17719: J    BININT     6                        Push a four-byte signed integer.
+17724: \x85 TUPLE1                              Build a one-tuple out of the topmost item on the stack.
+17725: J    BININT     222                      Push a four-byte signed integer.
+17730: \x85 TUPLE1                              Build a one-tuple out of the topmost item on the stack.
+17731: \x86 TUPLE2                              Build a two-tuple out of the top two items on the stack.
+17732: J    BININT     13                       Push a four-byte signed integer.
+17737: \x85 TUPLE1                              Build a one-tuple out of the topmost item on the stack.
+17738: J    BININT     161                      Push a four-byte signed integer.
+17743: \x85 TUPLE1                              Build a one-tuple out of the topmost item on the stack.
+17744: \x86 TUPLE2                              Build a two-tuple out of the top two items on the stack.
+17745: \x86 TUPLE2                              Build a two-tuple out of the top two items on the stack.
+17746: \x86 TUPLE2                              Build a two-tuple out of the top two items on the stack.
+17747: J    BININT     141                      Push a four-byte signed integer.
+17752: \x85 TUPLE1                              Build a one-tuple out of the topmost item on the stack.
+17753: J    BININT     109                      Push a four-byte signed integer.
+17758: \x85 TUPLE1                              Build a one-tuple out of the topmost item on the stack.
+17759: \x86 TUPLE2                              Build a two-tuple out of the top two items on the stack.
+17760: J    BININT     100                      Push a four-byte signed integer.
+17765: \x85 TUPLE1                              Build a one-tuple out of the topmost item on the stack.
+17766: J    BININT     175                      Push a four-byte signed integer.
+17771: \x85 TUPLE1                              Build a one-tuple out of the topmost item on the stack.
+17772: \x86 TUPLE2                              Build a two-tuple out of the top two items on the stack.
+17773: \x86 TUPLE2                              Build a two-tuple out of the top two items on the stack.
+17774: J    BININT     153                      Push a four-byte signed integer.
+17779: \x85 TUPLE1                              Build a one-tuple out of the topmost item on the stack.
+17780: J    BININT     252                      Push a four-byte signed integer.
+17785: \x85 TUPLE1                              Build a one-tuple out of the topmost item on the stack.
+17786: \x86 TUPLE2                              Build a two-tuple out of the top two items on the stack.
+17787: J    BININT     117                      Push a four-byte signed integer.
+17792: \x85 TUPLE1                              Build a one-tuple out of the topmost item on the stack.
+17793: J    BININT     127                      Push a four-byte signed integer.
+17798: \x85 TUPLE1                              Build a one-tuple out of the topmost item on the stack.
+17799: \x86 TUPLE2                              Build a two-tuple out of the top two items on the stack.
+17800: \x86 TUPLE2                              Build a two-tuple out of the top two items on the stack.
+17801: \x86 TUPLE2                              Build a two-tuple out of the top two items on the stack.
+17802: \x86 TUPLE2                              Build a two-tuple out of the top two items on the stack.
+17803: J    BININT     54                       Push a four-byte signed integer.
+17808: \x85 TUPLE1                              Build a one-tuple out of the topmost item on the stack.
+17809: J    BININT     156                      Push a four-byte signed integer.
+17814: \x85 TUPLE1                              Build a one-tuple out of the topmost item on the stack.
+17815: \x86 TUPLE2                              Build a two-tuple out of the top two items on the stack.
+17816: J    BININT     62                       Push a four-byte signed integer.
+17821: \x85 TUPLE1                              Build a one-tuple out of the topmost item on the stack.
+17822: J    BININT     167                      Push a four-byte signed integer.
+17827: \x85 TUPLE1                              Build a one-tuple out of the topmost item on the stack.
+17828: \x86 TUPLE2                              Build a two-tuple out of the top two items on the stack.
+17829: \x86 TUPLE2                              Build a two-tuple out of the top two items on the stack.
+17830: J    BININT     160                      Push a four-byte signed integer.
+17835: \x85 TUPLE1                              Build a one-tuple out of the topmost item on the stack.
+17836: J    BININT     198                      Push a four-byte signed integer.
+17841: \x85 TUPLE1                              Build a one-tuple out of the topmost item on the stack.
+17842: \x86 TUPLE2                              Build a two-tuple out of the top two items on the stack.
+17843: J    BININT     152                      Push a four-byte signed integer.
+17848: \x85 TUPLE1                              Build a one-tuple out of the topmost item on the stack.
+17849: J    BININT     211                      Push a four-byte signed integer.
+17854: \x85 TUPLE1                              Build a one-tuple out of the topmost item on the stack.
+17855: \x86 TUPLE2                              Build a two-tuple out of the top two items on the stack.
+17856: \x86 TUPLE2                              Build a two-tuple out of the top two items on the stack.
+17857: \x86 TUPLE2                              Build a two-tuple out of the top two items on the stack.
+17858: J    BININT     178                      Push a four-byte signed integer.
+17863: \x85 TUPLE1                              Build a one-tuple out of the topmost item on the stack.
+17864: J    BININT     21                       Push a four-byte signed integer.
+17869: \x85 TUPLE1                              Build a one-tuple out of the topmost item on the stack.
+17870: \x86 TUPLE2                              Build a two-tuple out of the top two items on the stack.
+17871: J    BININT     73                       Push a four-byte signed integer.
+17876: \x85 TUPLE1                              Build a one-tuple out of the topmost item on the stack.
+17877: J    BININT     214                      Push a four-byte signed integer.
+17882: \x85 TUPLE1                              Build a one-tuple out of the topmost item on the stack.
+17883: \x86 TUPLE2                              Build a two-tuple out of the top two items on the stack.
+17884: \x86 TUPLE2                              Build a two-tuple out of the top two items on the stack.
+17885: J    BININT     253                      Push a four-byte signed integer.
+17890: \x85 TUPLE1                              Build a one-tuple out of the topmost item on the stack.
+17891: J    BININT     135                      Push a four-byte signed integer.
+17896: \x85 TUPLE1                              Build a one-tuple out of the topmost item on the stack.
+17897: \x86 TUPLE2                              Build a two-tuple out of the top two items on the stack.
+17898: J    BININT     105                      Push a four-byte signed integer.
+17903: \x85 TUPLE1                              Build a one-tuple out of the topmost item on the stack.
+17904: J    BININT     190                      Push a four-byte signed integer.
+17909: \x85 TUPLE1                              Build a one-tuple out of the topmost item on the stack.
+17910: \x86 TUPLE2                              Build a two-tuple out of the top two items on the stack.
+17911: \x86 TUPLE2                              Build a two-tuple out of the top two items on the stack.
+17912: \x86 TUPLE2                              Build a two-tuple out of the top two items on the stack.
+17913: \x86 TUPLE2                              Build a two-tuple out of the top two items on the stack.
+17914: \x86 TUPLE2                              Build a two-tuple out of the top two items on the stack.
+17915: J    BININT     85                       Push a four-byte signed integer.
+17920: \x85 TUPLE1                              Build a one-tuple out of the topmost item on the stack.
+17921: J    BININT     12                       Push a four-byte signed integer.
+17926: \x85 TUPLE1                              Build a one-tuple out of the topmost item on the stack.
+17927: \x86 TUPLE2                              Build a two-tuple out of the top two items on the stack.
+17928: J    BININT     243                      Push a four-byte signed integer.
+17933: \x85 TUPLE1                              Build a one-tuple out of the topmost item on the stack.
+17934: J    BININT     34                       Push a four-byte signed integer.
+17939: \x85 TUPLE1                              Build a one-tuple out of the topmost item on the stack.
+17940: \x86 TUPLE2                              Build a two-tuple out of the top two items on the stack.
+17941: \x86 TUPLE2                              Build a two-tuple out of the top two items on the stack.
+17942: J    BININT     137                      Push a four-byte signed integer.
+17947: \x85 TUPLE1                              Build a one-tuple out of the topmost item on the stack.
+17948: J    BININT     233                      Push a four-byte signed integer.
+17953: \x85 TUPLE1                              Build a one-tuple out of the topmost item on the stack.
+17954: \x86 TUPLE2                              Build a two-tuple out of the top two items on the stack.
+17955: J    BININT     128                      Push a four-byte signed integer.
+17960: \x85 TUPLE1                              Build a one-tuple out of the topmost item on the stack.
+17961: J    BININT     228                      Push a four-byte signed integer.
+17966: \x85 TUPLE1                              Build a one-tuple out of the topmost item on the stack.
+17967: \x86 TUPLE2                              Build a two-tuple out of the top two items on the stack.
+17968: \x86 TUPLE2                              Build a two-tuple out of the top two items on the stack.
+17969: \x86 TUPLE2                              Build a two-tuple out of the top two items on the stack.
+17970: J    BININT     151                      Push a four-byte signed integer.
+17975: \x85 TUPLE1                              Build a one-tuple out of the topmost item on the stack.
+17976: J    BININT     8                        Push a four-byte signed integer.
+17981: \x85 TUPLE1                              Build a one-tuple out of the topmost item on the stack.
+17982: \x86 TUPLE2                              Build a two-tuple out of the top two items on the stack.
+17983: J    BININT     247                      Push a four-byte signed integer.
+17988: \x85 TUPLE1                              Build a one-tuple out of the topmost item on the stack.
+17989: J    BININT     92                       Push a four-byte signed integer.
+17994: \x85 TUPLE1                              Build a one-tuple out of the topmost item on the stack.
+17995: \x86 TUPLE2                              Build a two-tuple out of the top two items on the stack.
+17996: \x86 TUPLE2                              Build a two-tuple out of the top two items on the stack.
+17997: J    BININT     60                       Push a four-byte signed integer.
+18002: \x85 TUPLE1                              Build a one-tuple out of the topmost item on the stack.
+18003: J    BININT     174                      Push a four-byte signed integer.
+18008: \x85 TUPLE1                              Build a one-tuple out of the topmost item on the stack.
+18009: \x86 TUPLE2                              Build a two-tuple out of the top two items on the stack.
+18010: J    BININT     138                      Push a four-byte signed integer.
+18015: \x85 TUPLE1                              Build a one-tuple out of the topmost item on the stack.
+18016: J    BININT     114                      Push a four-byte signed integer.
+18021: \x85 TUPLE1                              Build a one-tuple out of the topmost item on the stack.
+18022: \x86 TUPLE2                              Build a two-tuple out of the top two items on the stack.
+18023: \x86 TUPLE2                              Build a two-tuple out of the top two items on the stack.
+18024: \x86 TUPLE2                              Build a two-tuple out of the top two items on the stack.
+18025: \x86 TUPLE2                              Build a two-tuple out of the top two items on the stack.
+18026: J    BININT     130                      Push a four-byte signed integer.
+18031: \x85 TUPLE1                              Build a one-tuple out of the topmost item on the stack.
+18032: J    BININT     169                      Push a four-byte signed integer.
+18037: \x85 TUPLE1                              Build a one-tuple out of the topmost item on the stack.
+18038: \x86 TUPLE2                              Build a two-tuple out of the top two items on the stack.
+18039: J    BININT     15                       Push a four-byte signed integer.
+18044: \x85 TUPLE1                              Build a one-tuple out of the topmost item on the stack.
+18045: J    BININT     103                      Push a four-byte signed integer.
+18050: \x85 TUPLE1                              Build a one-tuple out of the topmost item on the stack.
+18051: \x86 TUPLE2                              Build a two-tuple out of the top two items on the stack.
+18052: \x86 TUPLE2                              Build a two-tuple out of the top two items on the stack.
+18053: J    BININT     230                      Push a four-byte signed integer.
+18058: \x85 TUPLE1                              Build a one-tuple out of the topmost item on the stack.
+18059: J    BININT     106                      Push a four-byte signed integer.
+18064: \x85 TUPLE1                              Build a one-tuple out of the topmost item on the stack.
+18065: \x86 TUPLE2                              Build a two-tuple out of the top two items on the stack.
+18066: J    BININT     158                      Push a four-byte signed integer.
+18071: \x85 TUPLE1                              Build a one-tuple out of the topmost item on the stack.
+18072: J    BININT     57                       Push a four-byte signed integer.
+18077: \x85 TUPLE1                              Build a one-tuple out of the topmost item on the stack.
+18078: \x86 TUPLE2                              Build a two-tuple out of the top two items on the stack.
+18079: \x86 TUPLE2                              Build a two-tuple out of the top two items on the stack.
+18080: \x86 TUPLE2                              Build a two-tuple out of the top two items on the stack.
+18081: J    BININT     76                       Push a four-byte signed integer.
+18086: \x85 TUPLE1                              Build a one-tuple out of the topmost item on the stack.
+18087: J    BININT     5                        Push a four-byte signed integer.
+18092: \x85 TUPLE1                              Build a one-tuple out of the topmost item on the stack.
+18093: \x86 TUPLE2                              Build a two-tuple out of the top two items on the stack.
+18094: J    BININT     84                       Push a four-byte signed integer.
+18099: \x85 TUPLE1                              Build a one-tuple out of the topmost item on the stack.
+18100: J    BININT     210                      Push a four-byte signed integer.
+18105: \x85 TUPLE1                              Build a one-tuple out of the topmost item on the stack.
+18106: \x86 TUPLE2                              Build a two-tuple out of the top two items on the stack.
+18107: \x86 TUPLE2                              Build a two-tuple out of the top two items on the stack.
+18108: J    BININT     32                       Push a four-byte signed integer.
+18113: \x85 TUPLE1                              Build a one-tuple out of the topmost item on the stack.
+18114: J    BININT     39                       Push a four-byte signed integer.
+18119: \x85 TUPLE1                              Build a one-tuple out of the topmost item on the stack.
+18120: \x86 TUPLE2                              Build a two-tuple out of the top two items on the stack.
+18121: J    BININT     165                      Push a four-byte signed integer.
+18126: \x85 TUPLE1                              Build a one-tuple out of the topmost item on the stack.
+18127: J    BININT     87                       Push a four-byte signed integer.
+18132: \x85 TUPLE1                              Build a one-tuple out of the topmost item on the stack.
+18133: \x86 TUPLE2                              Build a two-tuple out of the top two items on the stack.
+18134: \x86 TUPLE2                              Build a two-tuple out of the top two items on the stack.
+18135: \x86 TUPLE2                              Build a two-tuple out of the top two items on the stack.
+18136: \x86 TUPLE2                              Build a two-tuple out of the top two items on the stack.
+18137: \x86 TUPLE2                              Build a two-tuple out of the top two items on the stack.
+18138: \x86 TUPLE2                              Build a two-tuple out of the top two items on the stack.
+18139: \x86 TUPLE2                              Build a two-tuple out of the top two items on the stack.
+18140: J    BININT     184                      Push a four-byte signed integer.
+18145: \x85 TUPLE1                              Build a one-tuple out of the topmost item on the stack.
+18146: J    BININT     237                      Push a four-byte signed integer.
+18151: \x85 TUPLE1                              Build a one-tuple out of the topmost item on the stack.
+18152: \x86 TUPLE2                              Build a two-tuple out of the top two items on the stack.
+18153: J    BININT     28                       Push a four-byte signed integer.
+18158: \x85 TUPLE1                              Build a one-tuple out of the topmost item on the stack.
+18159: J    BININT     207                      Push a four-byte signed integer.
+18164: \x85 TUPLE1                              Build a one-tuple out of the topmost item on the stack.
+18165: \x86 TUPLE2                              Build a two-tuple out of the top two items on the stack.
+18166: \x86 TUPLE2                              Build a two-tuple out of the top two items on the stack.
+18167: J    BININT     75                       Push a four-byte signed integer.
+18172: \x85 TUPLE1                              Build a one-tuple out of the topmost item on the stack.
+18173: J    BININT     172                      Push a four-byte signed integer.
+18178: \x85 TUPLE1                              Build a one-tuple out of the topmost item on the stack.
+18179: \x86 TUPLE2                              Build a two-tuple out of the top two items on the stack.
+18180: J    BININT     176                      Push a four-byte signed integer.
+18185: \x85 TUPLE1                              Build a one-tuple out of the topmost item on the stack.
+18186: J    BININT     231                      Push a four-byte signed integer.
+18191: \x85 TUPLE1                              Build a one-tuple out of the topmost item on the stack.
+18192: \x86 TUPLE2                              Build a two-tuple out of the top two items on the stack.
+18193: \x86 TUPLE2                              Build a two-tuple out of the top two items on the stack.
+18194: \x86 TUPLE2                              Build a two-tuple out of the top two items on the stack.
+18195: J    BININT     37                       Push a four-byte signed integer.
+18200: \x85 TUPLE1                              Build a one-tuple out of the topmost item on the stack.
+18201: J    BININT     195                      Push a four-byte signed integer.
+18206: \x85 TUPLE1                              Build a one-tuple out of the topmost item on the stack.
+18207: \x86 TUPLE2                              Build a two-tuple out of the top two items on the stack.
+18208: J    BININT     232                      Push a four-byte signed integer.
+18213: \x85 TUPLE1                              Build a one-tuple out of the topmost item on the stack.
+18214: J    BININT     182                      Push a four-byte signed integer.
+18219: \x85 TUPLE1                              Build a one-tuple out of the topmost item on the stack.
+18220: \x86 TUPLE2                              Build a two-tuple out of the top two items on the stack.
+18221: \x86 TUPLE2                              Build a two-tuple out of the top two items on the stack.
+18222: J    BININT     25                       Push a four-byte signed integer.
+18227: \x85 TUPLE1                              Build a one-tuple out of the topmost item on the stack.
+18228: J    BININT     201                      Push a four-byte signed integer.
+18233: \x85 TUPLE1                              Build a one-tuple out of the topmost item on the stack.
+18234: \x86 TUPLE2                              Build a two-tuple out of the top two items on the stack.
+18235: J    BININT     188                      Push a four-byte signed integer.
+18240: \x85 TUPLE1                              Build a one-tuple out of the topmost item on the stack.
+18241: J    BININT     61                       Push a four-byte signed integer.
+18246: \x85 TUPLE1                              Build a one-tuple out of the topmost item on the stack.
+18247: \x86 TUPLE2                              Build a two-tuple out of the top two items on the stack.
+18248: \x86 TUPLE2                              Build a two-tuple out of the top two items on the stack.
+18249: \x86 TUPLE2                              Build a two-tuple out of the top two items on the stack.
+18250: \x86 TUPLE2                              Build a two-tuple out of the top two items on the stack.
+18251: J    BININT     163                      Push a four-byte signed integer.
+18256: \x85 TUPLE1                              Build a one-tuple out of the topmost item on the stack.
+18257: J    BININT     251                      Push a four-byte signed integer.
+18262: \x85 TUPLE1                              Build a one-tuple out of the topmost item on the stack.
+18263: \x86 TUPLE2                              Build a two-tuple out of the top two items on the stack.
+18264: J    BININT     227                      Push a four-byte signed integer.
+18269: \x85 TUPLE1                              Build a one-tuple out of the topmost item on the stack.
+18270: J    BININT     2                        Push a four-byte signed integer.
+18275: \x85 TUPLE1                              Build a one-tuple out of the topmost item on the stack.
+18276: \x86 TUPLE2                              Build a two-tuple out of the top two items on the stack.
+18277: \x86 TUPLE2                              Build a two-tuple out of the top two items on the stack.
+18278: J    BININT     46                       Push a four-byte signed integer.
+18283: \x85 TUPLE1                              Build a one-tuple out of the topmost item on the stack.
+18284: J    BININT     35                       Push a four-byte signed integer.
+18289: \x85 TUPLE1                              Build a one-tuple out of the topmost item on the stack.
+18290: \x86 TUPLE2                              Build a two-tuple out of the top two items on the stack.
+18291: J    BININT     71                       Push a four-byte signed integer.
+18296: \x85 TUPLE1                              Build a one-tuple out of the topmost item on the stack.
+18297: J    BININT     250                      Push a four-byte signed integer.
+18302: \x85 TUPLE1                              Build a one-tuple out of the topmost item on the stack.
+18303: \x86 TUPLE2                              Build a two-tuple out of the top two items on the stack.
+18304: \x86 TUPLE2                              Build a two-tuple out of the top two items on the stack.
+18305: \x86 TUPLE2                              Build a two-tuple out of the top two items on the stack.
+18306: J    BININT     246                      Push a four-byte signed integer.
+18311: \x85 TUPLE1                              Build a one-tuple out of the topmost item on the stack.
+18312: J    BININT     38                       Push a four-byte signed integer.
+18317: \x85 TUPLE1                              Build a one-tuple out of the topmost item on the stack.
+18318: \x86 TUPLE2                              Build a two-tuple out of the top two items on the stack.
+18319: J    BININT     136                      Push a four-byte signed integer.
+18324: \x85 TUPLE1                              Build a one-tuple out of the topmost item on the stack.
+18325: J    BININT     255                      Push a four-byte signed integer.
+18330: \x85 TUPLE1                              Build a one-tuple out of the topmost item on the stack.
+18331: \x86 TUPLE2                              Build a two-tuple out of the top two items on the stack.
+18332: \x86 TUPLE2                              Build a two-tuple out of the top two items on the stack.
+18333: J    BININT     199                      Push a four-byte signed integer.
+18338: \x85 TUPLE1                              Build a one-tuple out of the topmost item on the stack.
+18339: J    BININT     29                       Push a four-byte signed integer.
+18344: \x85 TUPLE1                              Build a one-tuple out of the topmost item on the stack.
+18345: \x86 TUPLE2                              Build a two-tuple out of the top two items on the stack.
+18346: J    BININT     20                       Push a four-byte signed integer.
+18351: \x85 TUPLE1                              Build a one-tuple out of the topmost item on the stack.
+18352: J    BININT     242                      Push a four-byte signed integer.
+18357: \x85 TUPLE1                              Build a one-tuple out of the topmost item on the stack.
+18358: \x86 TUPLE2                              Build a two-tuple out of the top two items on the stack.
+18359: \x86 TUPLE2                              Build a two-tuple out of the top two items on the stack.
+18360: \x86 TUPLE2                              Build a two-tuple out of the top two items on the stack.
+18361: \x86 TUPLE2                              Build a two-tuple out of the top two items on the stack.
+18362: \x86 TUPLE2                              Build a two-tuple out of the top two items on the stack.
+18363: J    BININT     238                      Push a four-byte signed integer.
+18368: \x85 TUPLE1                              Build a one-tuple out of the topmost item on the stack.
+18369: J    BININT     126                      Push a four-byte signed integer.
+18374: \x85 TUPLE1                              Build a one-tuple out of the topmost item on the stack.
+18375: \x86 TUPLE2                              Build a two-tuple out of the top two items on the stack.
+18376: J    BININT     17                       Push a four-byte signed integer.
+18381: \x85 TUPLE1                              Build a one-tuple out of the topmost item on the stack.
+18382: J    BININT     179                      Push a four-byte signed integer.
+18387: \x85 TUPLE1                              Build a one-tuple out of the topmost item on the stack.
+18388: \x86 TUPLE2                              Build a two-tuple out of the top two items on the stack.
+18389: \x86 TUPLE2                              Build a two-tuple out of the top two items on the stack.
+18390: J    BININT     148                      Push a four-byte signed integer.
+18395: \x85 TUPLE1                              Build a one-tuple out of the topmost item on the stack.
+18396: J    BININT     220                      Push a four-byte signed integer.
+18401: \x85 TUPLE1                              Build a one-tuple out of the topmost item on the stack.
+18402: \x86 TUPLE2                              Build a two-tuple out of the top two items on the stack.
+18403: J    BININT     240                      Push a four-byte signed integer.
+18408: \x85 TUPLE1                              Build a one-tuple out of the topmost item on the stack.
+18409: J    BININT     86                       Push a four-byte signed integer.
+18414: \x85 TUPLE1                              Build a one-tuple out of the topmost item on the stack.
+18415: \x86 TUPLE2                              Build a two-tuple out of the top two items on the stack.
+18416: \x86 TUPLE2                              Build a two-tuple out of the top two items on the stack.
+18417: \x86 TUPLE2                              Build a two-tuple out of the top two items on the stack.
+18418: J    BININT     59                       Push a four-byte signed integer.
+18423: \x85 TUPLE1                              Build a one-tuple out of the topmost item on the stack.
+18424: J    BININT     145                      Push a four-byte signed integer.
+18429: \x85 TUPLE1                              Build a one-tuple out of the topmost item on the stack.
+18430: \x86 TUPLE2                              Build a two-tuple out of the top two items on the stack.
+18431: J    BININT     80                       Push a four-byte signed integer.
+18436: \x85 TUPLE1                              Build a one-tuple out of the topmost item on the stack.
+18437: J    BININT     189                      Push a four-byte signed integer.
+18442: \x85 TUPLE1                              Build a one-tuple out of the topmost item on the stack.
+18443: \x86 TUPLE2                              Build a two-tuple out of the top two items on the stack.
+18444: \x86 TUPLE2                              Build a two-tuple out of the top two items on the stack.
+18445: J    BININT     224                      Push a four-byte signed integer.
+18450: \x85 TUPLE1                              Build a one-tuple out of the topmost item on the stack.
+18451: J    BININT     170                      Push a four-byte signed integer.
+18456: \x85 TUPLE1                              Build a one-tuple out of the topmost item on the stack.
+18457: \x86 TUPLE2                              Build a two-tuple out of the top two items on the stack.
+18458: J    BININT     24                       Push a four-byte signed integer.
+18463: \x85 TUPLE1                              Build a one-tuple out of the topmost item on the stack.
+18464: J    BININT     143                      Push a four-byte signed integer.
+18469: \x85 TUPLE1                              Build a one-tuple out of the topmost item on the stack.
+18470: \x86 TUPLE2                              Build a two-tuple out of the top two items on the stack.
+18471: \x86 TUPLE2                              Build a two-tuple out of the top two items on the stack.
+18472: \x86 TUPLE2                              Build a two-tuple out of the top two items on the stack.
+18473: \x86 TUPLE2                              Build a two-tuple out of the top two items on the stack.
+18474: J    BININT     0                        Push a four-byte signed integer.
+18479: \x85 TUPLE1                              Build a one-tuple out of the topmost item on the stack.
+18480: J    BININT     10                       Push a four-byte signed integer.
+18485: \x85 TUPLE1                              Build a one-tuple out of the topmost item on the stack.
+18486: \x86 TUPLE2                              Build a two-tuple out of the top two items on the stack.
+18487: J    BININT     166                      Push a four-byte signed integer.
+18492: \x85 TUPLE1                              Build a one-tuple out of the topmost item on the stack.
+18493: J    BININT     77                       Push a four-byte signed integer.
+18498: \x85 TUPLE1                              Build a one-tuple out of the topmost item on the stack.
+18499: \x86 TUPLE2                              Build a two-tuple out of the top two items on the stack.
+18500: \x86 TUPLE2                              Build a two-tuple out of the top two items on the stack.
+18501: J    BININT     41                       Push a four-byte signed integer.
+18506: \x85 TUPLE1                              Build a one-tuple out of the topmost item on the stack.
+18507: J    BININT     203                      Push a four-byte signed integer.
+18512: \x85 TUPLE1                              Build a one-tuple out of the topmost item on the stack.
+18513: \x86 TUPLE2                              Build a two-tuple out of the top two items on the stack.
+18514: J    BININT     31                       Push a four-byte signed integer.
+18519: \x85 TUPLE1                              Build a one-tuple out of the topmost item on the stack.
+18520: J    BININT     90                       Push a four-byte signed integer.
+18525: \x85 TUPLE1                              Build a one-tuple out of the topmost item on the stack.
+18526: \x86 TUPLE2                              Build a two-tuple out of the top two items on the stack.
+18527: \x86 TUPLE2                              Build a two-tuple out of the top two items on the stack.
+18528: \x86 TUPLE2                              Build a two-tuple out of the top two items on the stack.
+18529: J    BININT     239                      Push a four-byte signed integer.
+18534: \x85 TUPLE1                              Build a one-tuple out of the topmost item on the stack.
+18535: J    BININT     191                      Push a four-byte signed integer.
+18540: \x85 TUPLE1                              Build a one-tuple out of the topmost item on the stack.
+18541: \x86 TUPLE2                              Build a two-tuple out of the top two items on the stack.
+18542: J    BININT     197                      Push a four-byte signed integer.
+18547: \x85 TUPLE1                              Build a one-tuple out of the topmost item on the stack.
+18548: J    BININT     112                      Push a four-byte signed integer.
+18553: \x85 TUPLE1                              Build a one-tuple out of the topmost item on the stack.
+18554: \x86 TUPLE2                              Build a two-tuple out of the top two items on the stack.
+18555: \x86 TUPLE2                              Build a two-tuple out of the top two items on the stack.
+18556: J    BININT     159                      Push a four-byte signed integer.
+18561: \x85 TUPLE1                              Build a one-tuple out of the topmost item on the stack.
+18562: J    BININT     118                      Push a four-byte signed integer.
+18567: \x85 TUPLE1                              Build a one-tuple out of the topmost item on the stack.
+18568: \x86 TUPLE2                              Build a two-tuple out of the top two items on the stack.
+18569: J    BININT     157                      Push a four-byte signed integer.
+18574: \x85 TUPLE1                              Build a one-tuple out of the topmost item on the stack.
+18575: J    BININT     244                      Push a four-byte signed integer.
+18580: \x85 TUPLE1                              Build a one-tuple out of the topmost item on the stack.
+18581: \x86 TUPLE2                              Build a two-tuple out of the top two items on the stack.
+18582: \x86 TUPLE2                              Build a two-tuple out of the top two items on the stack.
+18583: \x86 TUPLE2                              Build a two-tuple out of the top two items on the stack.
+18584: \x86 TUPLE2                              Build a two-tuple out of the top two items on the stack.
+18585: \x86 TUPLE2                              Build a two-tuple out of the top two items on the stack.
+18586: \x86 TUPLE2                              Build a two-tuple out of the top two items on the stack.
+18587: J    BININT     226                      Push a four-byte signed integer.
+18592: \x85 TUPLE1                              Build a one-tuple out of the topmost item on the stack.
+18593: J    BININT     216                      Push a four-byte signed integer.
+18598: \x85 TUPLE1                              Build a one-tuple out of the topmost item on the stack.
+18599: \x86 TUPLE2                              Build a two-tuple out of the top two items on the stack.
+18600: J    BININT     43                       Push a four-byte signed integer.
+18605: \x85 TUPLE1                              Build a one-tuple out of the topmost item on the stack.
+18606: J    BININT     49                       Push a four-byte signed integer.
+18611: \x85 TUPLE1                              Build a one-tuple out of the topmost item on the stack.
+18612: \x86 TUPLE2                              Build a two-tuple out of the top two items on the stack.
+18613: \x86 TUPLE2                              Build a two-tuple out of the top two items on the stack.
+18614: J    BININT     70                       Push a four-byte signed integer.
+18619: \x85 TUPLE1                              Build a one-tuple out of the topmost item on the stack.
+18620: J    BININT     93                       Push a four-byte signed integer.
+18625: \x85 TUPLE1                              Build a one-tuple out of the topmost item on the stack.
+18626: \x86 TUPLE2                              Build a two-tuple out of the top two items on the stack.
+18627: J    BININT     50                       Push a four-byte signed integer.
+18632: \x85 TUPLE1                              Build a one-tuple out of the topmost item on the stack.
+18633: J    BININT     78                       Push a four-byte signed integer.
+18638: \x85 TUPLE1                              Build a one-tuple out of the topmost item on the stack.
+18639: \x86 TUPLE2                              Build a two-tuple out of the top two items on the stack.
+18640: \x86 TUPLE2                              Build a two-tuple out of the top two items on the stack.
+18641: \x86 TUPLE2                              Build a two-tuple out of the top two items on the stack.
+18642: J    BININT     7                        Push a four-byte signed integer.
+18647: \x85 TUPLE1                              Build a one-tuple out of the topmost item on the stack.
+18648: J    BININT     208                      Push a four-byte signed integer.
+18653: \x85 TUPLE1                              Build a one-tuple out of the topmost item on the stack.
+18654: \x86 TUPLE2                              Build a two-tuple out of the top two items on the stack.
+18655: J    BININT     96                       Push a four-byte signed integer.
+18660: \x85 TUPLE1                              Build a one-tuple out of the topmost item on the stack.
+18661: J    BININT     202                      Push a four-byte signed integer.
+18666: \x85 TUPLE1                              Build a one-tuple out of the topmost item on the stack.
+18667: \x86 TUPLE2                              Build a two-tuple out of the top two items on the stack.
+18668: \x86 TUPLE2                              Build a two-tuple out of the top two items on the stack.
+18669: J    BININT     89                       Push a four-byte signed integer.
+18674: \x85 TUPLE1                              Build a one-tuple out of the topmost item on the stack.
+18675: J    BININT     108                      Push a four-byte signed integer.
+18680: \x85 TUPLE1                              Build a one-tuple out of the topmost item on the stack.
+18681: \x86 TUPLE2                              Build a two-tuple out of the top two items on the stack.
+18682: J    BININT     168                      Push a four-byte signed integer.
+18687: \x85 TUPLE1                              Build a one-tuple out of the topmost item on the stack.
+18688: J    BININT     235                      Push a four-byte signed integer.
+18693: \x85 TUPLE1                              Build a one-tuple out of the topmost item on the stack.
+18694: \x86 TUPLE2                              Build a two-tuple out of the top two items on the stack.
+18695: \x86 TUPLE2                              Build a two-tuple out of the top two items on the stack.
+18696: \x86 TUPLE2                              Build a two-tuple out of the top two items on the stack.
+18697: \x86 TUPLE2                              Build a two-tuple out of the top two items on the stack.
+18698: J    BININT     3                        Push a four-byte signed integer.
+18703: \x85 TUPLE1                              Build a one-tuple out of the topmost item on the stack.
+18704: J    BININT     254                      Push a four-byte signed integer.
+18709: \x85 TUPLE1                              Build a one-tuple out of the topmost item on the stack.
+18710: \x86 TUPLE2                              Build a two-tuple out of the top two items on the stack.
+18711: J    BININT     146                      Push a four-byte signed integer.
+18716: \x85 TUPLE1                              Build a one-tuple out of the topmost item on the stack.
+18717: J    BININT     55                       Push a four-byte signed integer.
+18722: \x85 TUPLE1                              Build a one-tuple out of the topmost item on the stack.
+18723: \x86 TUPLE2                              Build a two-tuple out of the top two items on the stack.
+18724: \x86 TUPLE2                              Build a two-tuple out of the top two items on the stack.
+18725: J    BININT     9                        Push a four-byte signed integer.
+18730: \x85 TUPLE1                              Build a one-tuple out of the topmost item on the stack.
+18731: J    BININT     180                      Push a four-byte signed integer.
+18736: \x85 TUPLE1                              Build a one-tuple out of the topmost item on the stack.
+18737: \x86 TUPLE2                              Build a two-tuple out of the top two items on the stack.
+18738: J    BININT     241                      Push a four-byte signed integer.
+18743: \x85 TUPLE1                              Build a one-tuple out of the topmost item on the stack.
+18744: J    BININT     121                      Push a four-byte signed integer.
+18749: \x85 TUPLE1                              Build a one-tuple out of the topmost item on the stack.
+18750: \x86 TUPLE2                              Build a two-tuple out of the top two items on the stack.
+18751: \x86 TUPLE2                              Build a two-tuple out of the top two items on the stack.
+18752: \x86 TUPLE2                              Build a two-tuple out of the top two items on the stack.
+18753: J    BININT     98                       Push a four-byte signed integer.
+18758: \x85 TUPLE1                              Build a one-tuple out of the topmost item on the stack.
+18759: J    BININT     110                      Push a four-byte signed integer.
+18764: \x85 TUPLE1                              Build a one-tuple out of the topmost item on the stack.
+18765: \x86 TUPLE2                              Build a two-tuple out of the top two items on the stack.
+18766: J    BININT     68                       Push a four-byte signed integer.
+18771: \x85 TUPLE1                              Build a one-tuple out of the topmost item on the stack.
+18772: J    BININT     83                       Push a four-byte signed integer.
+18777: \x85 TUPLE1                              Build a one-tuple out of the topmost item on the stack.
+18778: \x86 TUPLE2                              Build a two-tuple out of the top two items on the stack.
+18779: \x86 TUPLE2                              Build a two-tuple out of the top two items on the stack.
+18780: J    BININT     63                       Push a four-byte signed integer.
+18785: \x85 TUPLE1                              Build a one-tuple out of the topmost item on the stack.
+18786: J    BININT     42                       Push a four-byte signed integer.
+18791: \x85 TUPLE1                              Build a one-tuple out of the topmost item on the stack.
+18792: \x86 TUPLE2                              Build a two-tuple out of the top two items on the stack.
+18793: J    BININT     69                       Push a four-byte signed integer.
+18798: \x85 TUPLE1                              Build a one-tuple out of the topmost item on the stack.
+18799: J    BININT     52                       Push a four-byte signed integer.
+18804: \x85 TUPLE1                              Build a one-tuple out of the topmost item on the stack.
+18805: \x86 TUPLE2                              Build a two-tuple out of the top two items on the stack.
+18806: \x86 TUPLE2                              Build a two-tuple out of the top two items on the stack.
+18807: \x86 TUPLE2                              Build a two-tuple out of the top two items on the stack.
+18808: \x86 TUPLE2                              Build a two-tuple out of the top two items on the stack.
+18809: \x86 TUPLE2                              Build a two-tuple out of the top two items on the stack.
+18810: J    BININT     30                       Push a four-byte signed integer.
+18815: \x85 TUPLE1                              Build a one-tuple out of the topmost item on the stack.
+18816: J    BININT     221                      Push a four-byte signed integer.
+18821: \x85 TUPLE1                              Build a one-tuple out of the topmost item on the stack.
+18822: \x86 TUPLE2                              Build a two-tuple out of the top two items on the stack.
+18823: J    BININT     27                       Push a four-byte signed integer.
+18828: \x85 TUPLE1                              Build a one-tuple out of the topmost item on the stack.
+18829: J    BININT     248                      Push a four-byte signed integer.
+18834: \x85 TUPLE1                              Build a one-tuple out of the topmost item on the stack.
+18835: \x86 TUPLE2                              Build a two-tuple out of the top two items on the stack.
+18836: \x86 TUPLE2                              Build a two-tuple out of the top two items on the stack.
+18837: J    BININT     33                       Push a four-byte signed integer.
+18842: \x85 TUPLE1                              Build a one-tuple out of the topmost item on the stack.
+18843: J    BININT     147                      Push a four-byte signed integer.
+18848: \x85 TUPLE1                              Build a one-tuple out of the topmost item on the stack.
+18849: \x86 TUPLE2                              Build a two-tuple out of the top two items on the stack.
+18850: J    BININT     205                      Push a four-byte signed integer.
+18855: \x85 TUPLE1                              Build a one-tuple out of the topmost item on the stack.
+18856: J    BININT     14                       Push a four-byte signed integer.
+18861: \x85 TUPLE1                              Build a one-tuple out of the topmost item on the stack.
+18862: \x86 TUPLE2                              Build a two-tuple out of the top two items on the stack.
+18863: \x86 TUPLE2                              Build a two-tuple out of the top two items on the stack.
+18864: \x86 TUPLE2                              Build a two-tuple out of the top two items on the stack.
+18865: J    BININT     56                       Push a four-byte signed integer.
+18870: \x85 TUPLE1                              Build a one-tuple out of the topmost item on the stack.
+18871: J    BININT     116                      Push a four-byte signed integer.
+18876: \x85 TUPLE1                              Build a one-tuple out of the topmost item on the stack.
+18877: \x86 TUPLE2                              Build a two-tuple out of the top two items on the stack.
+18878: J    BININT     173                      Push a four-byte signed integer.
+18883: \x85 TUPLE1                              Build a one-tuple out of the topmost item on the stack.
+18884: J    BININT     192                      Push a four-byte signed integer.
+18889: \x85 TUPLE1                              Build a one-tuple out of the topmost item on the stack.
+18890: \x86 TUPLE2                              Build a two-tuple out of the top two items on the stack.
+18891: \x86 TUPLE2                              Build a two-tuple out of the top two items on the stack.
+18892: J    BININT     53                       Push a four-byte signed integer.
+18897: \x85 TUPLE1                              Build a one-tuple out of the topmost item on the stack.
+18898: J    BININT     74                       Push a four-byte signed integer.
+18903: \x85 TUPLE1                              Build a one-tuple out of the topmost item on the stack.
+18904: \x86 TUPLE2                              Build a two-tuple out of the top two items on the stack.
+18905: J    BININT     234                      Push a four-byte signed integer.
+18910: \x85 TUPLE1                              Build a one-tuple out of the topmost item on the stack.
+18911: J    BININT     223                      Push a four-byte signed integer.
+18916: \x85 TUPLE1                              Build a one-tuple out of the topmost item on the stack.
+18917: \x86 TUPLE2                              Build a two-tuple out of the top two items on the stack.
+18918: \x86 TUPLE2                              Build a two-tuple out of the top two items on the stack.
+18919: \x86 TUPLE2                              Build a two-tuple out of the top two items on the stack.
+18920: \x86 TUPLE2                              Build a two-tuple out of the top two items on the stack.
+18921: J    BININT     154                      Push a four-byte signed integer.
+18926: \x85 TUPLE1                              Build a one-tuple out of the topmost item on the stack.
+18927: J    BININT     67                       Push a four-byte signed integer.
+18932: \x85 TUPLE1                              Build a one-tuple out of the topmost item on the stack.
+18933: \x86 TUPLE2                              Build a two-tuple out of the top two items on the stack.
+18934: J    BININT     187                      Push a four-byte signed integer.
+18939: \x85 TUPLE1                              Build a one-tuple out of the topmost item on the stack.
+18940: J    BININT     217                      Push a four-byte signed integer.
+18945: \x85 TUPLE1                              Build a one-tuple out of the topmost item on the stack.
+18946: \x86 TUPLE2                              Build a two-tuple out of the top two items on the stack.
+18947: \x86 TUPLE2                              Build a two-tuple out of the top two items on the stack.
+18948: J    BININT     23                       Push a four-byte signed integer.
+18953: \x85 TUPLE1                              Build a one-tuple out of the topmost item on the stack.
+18954: J    BININT     134                      Push a four-byte signed integer.
+18959: \x85 TUPLE1                              Build a one-tuple out of the topmost item on the stack.
+18960: \x86 TUPLE2                              Build a two-tuple out of the top two items on the stack.
+18961: J    BININT     171                      Push a four-byte signed integer.
+18966: \x85 TUPLE1                              Build a one-tuple out of the topmost item on the stack.
+18967: J    BININT     102                      Push a four-byte signed integer.
+18972: \x85 TUPLE1                              Build a one-tuple out of the topmost item on the stack.
+18973: \x86 TUPLE2                              Build a two-tuple out of the top two items on the stack.
+18974: \x86 TUPLE2                              Build a two-tuple out of the top two items on the stack.
+18975: \x86 TUPLE2                              Build a two-tuple out of the top two items on the stack.
+18976: J    BININT     22                       Push a four-byte signed integer.
+18981: \x85 TUPLE1                              Build a one-tuple out of the topmost item on the stack.
+18982: J    BININT     204                      Push a four-byte signed integer.
+18987: \x85 TUPLE1                              Build a one-tuple out of the topmost item on the stack.
+18988: \x86 TUPLE2                              Build a two-tuple out of the top two items on the stack.
+18989: J    BININT     249                      Push a four-byte signed integer.
+18994: \x85 TUPLE1                              Build a one-tuple out of the topmost item on the stack.
+18995: J    BININT     245                      Push a four-byte signed integer.
+19000: \x85 TUPLE1                              Build a one-tuple out of the topmost item on the stack.
+19001: \x86 TUPLE2                              Build a two-tuple out of the top two items on the stack.
+19002: \x86 TUPLE2                              Build a two-tuple out of the top two items on the stack.
+19003: J    BININT     219                      Push a four-byte signed integer.
+19008: \x85 TUPLE1                              Build a one-tuple out of the topmost item on the stack.
+19009: J    BININT     144                      Push a four-byte signed integer.
+19014: \x85 TUPLE1                              Build a one-tuple out of the topmost item on the stack.
+19015: \x86 TUPLE2                              Build a two-tuple out of the top two items on the stack.
+19016: J    BININT     48                       Push a four-byte signed integer.
+19021: \x85 TUPLE1                              Build a one-tuple out of the topmost item on the stack.
+19022: J    BININT     133                      Push a four-byte signed integer.
+19027: \x85 TUPLE1                              Build a one-tuple out of the topmost item on the stack.
+19028: \x86 TUPLE2                              Build a two-tuple out of the top two items on the stack.
+19029: \x86 TUPLE2                              Build a two-tuple out of the top two items on the stack.
+19030: \x86 TUPLE2                              Build a two-tuple out of the top two items on the stack.
+19031: \x86 TUPLE2                              Build a two-tuple out of the top two items on the stack.
+19032: \x86 TUPLE2                              Build a two-tuple out of the top two items on the stack.
+19033: \x86 TUPLE2                              Build a two-tuple out of the top two items on the stack.
+19034: \x86 TUPLE2                              Build a two-tuple out of the top two items on the stack.
+19035: \x86 TUPLE2                              Build a two-tuple out of the top two items on the stack.
+19036: \x94 MEMOIZE    (as 0)                   Store the stack top into the memo.  The stack is not popped.
+19037: 0    POP                                 Discard the top stack item, shrinking the stack by one item.
+19038: c    GLOBAL     'builtins type'          Push a global object (module.attr) on the stack.
+19053: c    GLOBAL     '__main__ amazing_function' Push a global object (module.attr) on the stack.
+19080: \x85 TUPLE1                                 Build a one-tuple out of the topmost item on the stack.
+19081: R    REDUCE                                 Push an object built from a callable and an argument tuple.
+19082: c    GLOBAL     'builtins type'             Push a global object (module.attr) on the stack.
+19097: c    GLOBAL     'builtins getattr'          Push a global object (module.attr) on the stack.
+19115: c    GLOBAL     '__main__ amazing_function' Push a global object (module.attr) on the stack.
+19142: S    STRING     '__code__'                  Push a Python string object.
+19154: \x86 TUPLE2                                 Build a two-tuple out of the top two items on the stack.
+19155: R    REDUCE                                 Push an object built from a callable and an argument tuple.
+19156: \x85 TUPLE1                                 Build a one-tuple out of the topmost item on the stack.
+19157: R    REDUCE                                 Push an object built from a callable and an argument tuple.
+19158: (    MARK                                   Push markobject onto the stack.
+19159: J        BININT     2                       Push a four-byte signed integer.
+19164: J        BININT     0                       Push a four-byte signed integer.
+19169: J        BININT     0                       Push a four-byte signed integer.
+19174: J        BININT     5                       Push a four-byte signed integer.
+19179: J        BININT     6                       Push a four-byte signed integer.
+19184: J        BININT     67                      Push a four-byte signed integer.
+19189: B        BINBYTES   b'd\x01}\x02zB|\x00\\\x02}\x03}\x04|\x01d\x02\x16\x00|\x02k\x02r0|\x04}\x00|\x01d\x02\x1c\x00}\x01d\x03|\x02\x18\x00}\x02n\x14|\x03}\x00|\x01d\x02\x1c\x00}\x01d\x03|\x02\x18\x00}\x02W\x00q\x04\x01\x00\x01\x00\x01\x00|\x00d\x01\x19\x00\x06\x00Y\x00S\x000\x00q\x04d\x00S\x00' Push a Python bytes object.
+19292: (        MARK                  Push markobject onto the stack.
+19293: N            NONE              Push None on the stack.
+19294: J            BININT     0      Push a four-byte signed integer.
+19299: J            BININT     2      Push a four-byte signed integer.
+19304: J            BININT     1      Push a four-byte signed integer.
+19309: t            TUPLE      (MARK at 19292) Build a tuple out of the topmost stack slice, after markobject.
+19310: (        MARK                           Push markobject onto the stack.
+19311: t            TUPLE      (MARK at 19310) Build a tuple out of the topmost stack slice, after markobject.
+19312: (        MARK                           Push markobject onto the stack.
+19313: S            STRING     'a'             Push a Python string object.
+19318: S            STRING     'b'             Push a Python string object.
+19323: S            STRING     'c'             Push a Python string object.
+19328: S            STRING     'a0'            Push a Python string object.
+19334: S            STRING     'a1'            Push a Python string object.
+19340: t            TUPLE      (MARK at 19312) Build a tuple out of the topmost stack slice, after markobject.
+19341: S        STRING     'something_suspicious.py' Push a Python string object.
+19368: S        STRING     'search'                  Push a Python string object.
+19378: J        BININT     45                        Push a four-byte signed integer.
+19383: B        BINBYTES   b'\x00\x01\x04\x02\x02\x01\x08\x01\x0c\x01\x04\x01\x08\x01\n\x02\x04\x01\x08\x01\x0c\x01\x06\x01' Push a Python bytes object.
+19412: (        MARK                  Push markobject onto the stack.
+19413: t            TUPLE      (MARK at 19412) Build a tuple out of the topmost stack slice, after markobject.
+19414: (        MARK                           Push markobject onto the stack.
+19415: t            TUPLE      (MARK at 19414) Build a tuple out of the topmost stack slice, after markobject.
+19416: t        TUPLE      (MARK at 19158)     Build a tuple out of the topmost stack slice, after markobject.
+19417: R    REDUCE                             Push an object built from a callable and an argument tuple.
+19418: }    EMPTY_DICT                         Push an empty dict.
+19419: \x86 TUPLE2                             Build a two-tuple out of the top two items on the stack.
+19420: R    REDUCE                             Push an object built from a callable and an argument tuple.
+19421: \x94 MEMOIZE    (as 1)                  Store the stack top into the memo.  The stack is not popped.
+19422: 0    POP                                Discard the top stack item, shrinking the stack by one item.
+19423: c    GLOBAL     'builtins type'         Push a global object (module.attr) on the stack.
+19438: c    GLOBAL     '__main__ amazing_function' Push a global object (module.attr) on the stack.
+19465: \x85 TUPLE1                                 Build a one-tuple out of the topmost item on the stack.
+19466: R    REDUCE                                 Push an object built from a callable and an argument tuple.
+19467: c    GLOBAL     'builtins type'             Push a global object (module.attr) on the stack.
+19482: c    GLOBAL     'builtins getattr'          Push a global object (module.attr) on the stack.
+19500: c    GLOBAL     '__main__ amazing_function' Push a global object (module.attr) on the stack.
+19527: S    STRING     '__code__'                  Push a Python string object.
+19539: \x86 TUPLE2                                 Build a two-tuple out of the top two items on the stack.
+19540: R    REDUCE                                 Push an object built from a callable and an argument tuple.
+19541: \x85 TUPLE1                                 Build a one-tuple out of the topmost item on the stack.
+19542: R    REDUCE                                 Push an object built from a callable and an argument tuple.
+19543: (    MARK                                   Push markobject onto the stack.
+19544: J        BININT     1                       Push a four-byte signed integer.
+19549: J        BININT     0                       Push a four-byte signed integer.
+19554: J        BININT     0                       Push a four-byte signed integer.
+19559: J        BININT     6                       Push a four-byte signed integer.
+19564: J        BININT     5                       Push a four-byte signed integer.
+19569: J        BININT     67                      Push a four-byte signed integer.
+19574: B        BINBYTES   b'|\x00\xa0\x00\xa1\x00}\x01g\x00}\x02d\x01}\x03|\x03|\x01k\x00rvd\x02\\\x02}\x04}\x05|\x05|\x01k\x00rN|\x04|\x05d\x03\x17\x00|\x00|\x03|\x05\x17\x00|\x01\x16\x00\x19\x00\x14\x007\x00}\x04|\x05d\x037\x00}\x05q |\x04d\x04;\x00}\x04|\x04d\x05k\x00sbJ\x00\x82\x01|\x02\xa0\x01|\x04\xa1\x01\x01\x00|\x03d\x037\x00}\x03q\x10|\x02S\x00' Push a Python bytes object.
+19701: (        MARK                  Push markobject onto the stack.
+19702: N            NONE              Push None on the stack.
+19703: J            BININT     0      Push a four-byte signed integer.
+19708: (            MARK              Push markobject onto the stack.
+19709: J                BININT     0  Push a four-byte signed integer.
+19714: J                BININT     0  Push a four-byte signed integer.
+19719: t                TUPLE      (MARK at 19708) Build a tuple out of the topmost stack slice, after markobject.
+19720: J            BININT     1                   Push a four-byte signed integer.
+19725: J            BININT     257                 Push a four-byte signed integer.
+19730: J            BININT     256                 Push a four-byte signed integer.
+19735: t            TUPLE      (MARK at 19701)     Build a tuple out of the topmost stack slice, after markobject.
+19736: (        MARK                               Push markobject onto the stack.
+19737: S            STRING     '__len__'           Push a Python string object.
+19748: S            STRING     'append'            Push a Python string object.
+19758: t            TUPLE      (MARK at 19736)     Build a tuple out of the topmost stack slice, after markobject.
+19759: (        MARK                               Push markobject onto the stack.
+19760: S            STRING     'a'                 Push a Python string object.
+19765: S            STRING     'ln'                Push a Python string object.
+19771: S            STRING     'arr'               Push a Python string object.
+19778: S            STRING     'i'                 Push a Python string object.
+19783: S            STRING     's'                 Push a Python string object.
+19788: S            STRING     'j'                 Push a Python string object.
+19793: t            TUPLE      (MARK at 19759)     Build a tuple out of the topmost stack slice, after markobject.
+19794: S        STRING     'something_suspicious.py' Push a Python string object.
+19821: S        STRING     'mix'                     Push a Python string object.
+19828: J        BININT     61                        Push a four-byte signed integer.
+19833: B        BINBYTES   b'\x00\x01\x08\x01\x04\x01\x04\x01\x08\x01\x08\x01\x08\x01\x1c\x01\n\x01\x08\x01\x0c\x01\n\x01\n\x01' Push a Python bytes object.
+19864: (        MARK                  Push markobject onto the stack.
+19865: t            TUPLE      (MARK at 19864) Build a tuple out of the topmost stack slice, after markobject.
+19866: (        MARK                           Push markobject onto the stack.
+19867: t            TUPLE      (MARK at 19866) Build a tuple out of the topmost stack slice, after markobject.
+19868: t        TUPLE      (MARK at 19543)     Build a tuple out of the topmost stack slice, after markobject.
+19869: R    REDUCE                             Push an object built from a callable and an argument tuple.
+19870: }    EMPTY_DICT                         Push an empty dict.
+19871: \x86 TUPLE2                             Build a two-tuple out of the top two items on the stack.
+19872: R    REDUCE                             Push an object built from a callable and an argument tuple.
+19873: c    GLOBAL     '__main__ rick_says'    Push a global object (module.attr) on the stack.
+19893: \x85 TUPLE1                             Build a one-tuple out of the topmost item on the stack.
+19894: R    REDUCE                             Push an object built from a callable and an argument tuple.
+19895: \x94 MEMOIZE    (as 2)                  Store the stack top into the memo.  The stack is not popped.
+19896: 0    POP                                Discard the top stack item, shrinking the stack by one item.
+19897: c    GLOBAL     'builtins print'        Push a global object (module.attr) on the stack.
+19913: c    GLOBAL     '__main__ amazing_function' Push a global object (module.attr) on the stack.
+19940: (    MARK                                   Push markobject onto the stack.
+19941: g        GET        1                       Read an object from the memo and push it on the stack.
+19944: g        GET        0                       Read an object from the memo and push it on the stack.
+19947: c        GLOBAL     '__main__ amazing_function' Push a global object (module.attr) on the stack.
+19974: g        GET        2                           Read an object from the memo and push it on the stack.
+19977: J        BININT     0                           Push a four-byte signed integer.
+19982: \x86     TUPLE2                                 Build a two-tuple out of the top two items on the stack.
+19983: R        REDUCE                                 Push an object built from a callable and an argument tuple.
+19984: \x86     TUPLE2                                 Build a two-tuple out of the top two items on the stack.
+19985: R        REDUCE                                 Push an object built from a callable and an argument tuple.
+19986: g        GET        1                           Read an object from the memo and push it on the stack.
+19989: g        GET        0                           Read an object from the memo and push it on the stack.
+19992: c        GLOBAL     '__main__ amazing_function' Push a global object (module.attr) on the stack.
+20019: g        GET        2                           Read an object from the memo and push it on the stack.
+20022: J        BININT     1                           Push a four-byte signed integer.
+20027: \x86     TUPLE2                                 Build a two-tuple out of the top two items on the stack.
+20028: R        REDUCE                                 Push an object built from a callable and an argument tuple.
+20029: \x86     TUPLE2                                 Build a two-tuple out of the top two items on the stack.
+20030: R        REDUCE                                 Push an object built from a callable and an argument tuple.
+20031: g        GET        1                           Read an object from the memo and push it on the stack.
+20034: g        GET        0                           Read an object from the memo and push it on the stack.
+20037: c        GLOBAL     '__main__ amazing_function' Push a global object (module.attr) on the stack.
+20064: g        GET        2                           Read an object from the memo and push it on the stack.
+20067: J        BININT     2                           Push a four-byte signed integer.
+20072: \x86     TUPLE2                                 Build a two-tuple out of the top two items on the stack.
+20073: R        REDUCE                                 Push an object built from a callable and an argument tuple.
+20074: \x86     TUPLE2                                 Build a two-tuple out of the top two items on the stack.
+20075: R        REDUCE                                 Push an object built from a callable and an argument tuple.
+20076: g        GET        1                           Read an object from the memo and push it on the stack.
+20079: g        GET        0                           Read an object from the memo and push it on the stack.
+20082: c        GLOBAL     '__main__ amazing_function' Push a global object (module.attr) on the stack.
+20109: g        GET        2                           Read an object from the memo and push it on the stack.
+20112: J        BININT     3                           Push a four-byte signed integer.
+20117: \x86     TUPLE2                                 Build a two-tuple out of the top two items on the stack.
+20118: R        REDUCE                                 Push an object built from a callable and an argument tuple.
+20119: \x86     TUPLE2                                 Build a two-tuple out of the top two items on the stack.
+20120: R        REDUCE                                 Push an object built from a callable and an argument tuple.
+20121: g        GET        1                           Read an object from the memo and push it on the stack.
+20124: g        GET        0                           Read an object from the memo and push it on the stack.
+20127: c        GLOBAL     '__main__ amazing_function' Push a global object (module.attr) on the stack.
+20154: g        GET        2                           Read an object from the memo and push it on the stack.
+20157: J        BININT     4                           Push a four-byte signed integer.
+20162: \x86     TUPLE2                                 Build a two-tuple out of the top two items on the stack.
+20163: R        REDUCE                                 Push an object built from a callable and an argument tuple.
+20164: \x86     TUPLE2                                 Build a two-tuple out of the top two items on the stack.
+20165: R        REDUCE                                 Push an object built from a callable and an argument tuple.
+20166: g        GET        1                           Read an object from the memo and push it on the stack.
+20169: g        GET        0                           Read an object from the memo and push it on the stack.
+20172: c        GLOBAL     '__main__ amazing_function' Push a global object (module.attr) on the stack.
+20199: g        GET        2                           Read an object from the memo and push it on the stack.
+20202: J        BININT     5                           Push a four-byte signed integer.
+20207: \x86     TUPLE2                                 Build a two-tuple out of the top two items on the stack.
+20208: R        REDUCE                                 Push an object built from a callable and an argument tuple.
+20209: \x86     TUPLE2                                 Build a two-tuple out of the top two items on the stack.
+20210: R        REDUCE                                 Push an object built from a callable and an argument tuple.
+20211: g        GET        1                           Read an object from the memo and push it on the stack.
+20214: g        GET        0                           Read an object from the memo and push it on the stack.
+20217: c        GLOBAL     '__main__ amazing_function' Push a global object (module.attr) on the stack.
+20244: g        GET        2                           Read an object from the memo and push it on the stack.
+20247: J        BININT     6                           Push a four-byte signed integer.
+20252: \x86     TUPLE2                                 Build a two-tuple out of the top two items on the stack.
+20253: R        REDUCE                                 Push an object built from a callable and an argument tuple.
+20254: \x86     TUPLE2                                 Build a two-tuple out of the top two items on the stack.
+20255: R        REDUCE                                 Push an object built from a callable and an argument tuple.
+20256: g        GET        1                           Read an object from the memo and push it on the stack.
+20259: g        GET        0                           Read an object from the memo and push it on the stack.
+20262: c        GLOBAL     '__main__ amazing_function' Push a global object (module.attr) on the stack.
+20289: g        GET        2                           Read an object from the memo and push it on the stack.
+20292: J        BININT     7                           Push a four-byte signed integer.
+20297: \x86     TUPLE2                                 Build a two-tuple out of the top two items on the stack.
+20298: R        REDUCE                                 Push an object built from a callable and an argument tuple.
+20299: \x86     TUPLE2                                 Build a two-tuple out of the top two items on the stack.
+20300: R        REDUCE                                 Push an object built from a callable and an argument tuple.
+20301: g        GET        1                           Read an object from the memo and push it on the stack.
+20304: g        GET        0                           Read an object from the memo and push it on the stack.
+20307: c        GLOBAL     '__main__ amazing_function' Push a global object (module.attr) on the stack.
+20334: g        GET        2                           Read an object from the memo and push it on the stack.
+20337: J        BININT     8                           Push a four-byte signed integer.
+20342: \x86     TUPLE2                                 Build a two-tuple out of the top two items on the stack.
+20343: R        REDUCE                                 Push an object built from a callable and an argument tuple.
+20344: \x86     TUPLE2                                 Build a two-tuple out of the top two items on the stack.
+20345: R        REDUCE                                 Push an object built from a callable and an argument tuple.
+20346: g        GET        1                           Read an object from the memo and push it on the stack.
+20349: g        GET        0                           Read an object from the memo and push it on the stack.
+20352: c        GLOBAL     '__main__ amazing_function' Push a global object (module.attr) on the stack.
+20379: g        GET        2                           Read an object from the memo and push it on the stack.
+20382: J        BININT     9                           Push a four-byte signed integer.
+20387: \x86     TUPLE2                                 Build a two-tuple out of the top two items on the stack.
+20388: R        REDUCE                                 Push an object built from a callable and an argument tuple.
+20389: \x86     TUPLE2                                 Build a two-tuple out of the top two items on the stack.
+20390: R        REDUCE                                 Push an object built from a callable and an argument tuple.
+20391: g        GET        1                           Read an object from the memo and push it on the stack.
+20394: g        GET        0                           Read an object from the memo and push it on the stack.
+20397: c        GLOBAL     '__main__ amazing_function' Push a global object (module.attr) on the stack.
+20424: g        GET        2                           Read an object from the memo and push it on the stack.
+20427: J        BININT     10                          Push a four-byte signed integer.
+20432: \x86     TUPLE2                                 Build a two-tuple out of the top two items on the stack.
+20433: R        REDUCE                                 Push an object built from a callable and an argument tuple.
+20434: \x86     TUPLE2                                 Build a two-tuple out of the top two items on the stack.
+20435: R        REDUCE                                 Push an object built from a callable and an argument tuple.
+20436: g        GET        1                           Read an object from the memo and push it on the stack.
+20439: g        GET        0                           Read an object from the memo and push it on the stack.
+20442: c        GLOBAL     '__main__ amazing_function' Push a global object (module.attr) on the stack.
+20469: g        GET        2                           Read an object from the memo and push it on the stack.
+20472: J        BININT     11                          Push a four-byte signed integer.
+20477: \x86     TUPLE2                                 Build a two-tuple out of the top two items on the stack.
+20478: R        REDUCE                                 Push an object built from a callable and an argument tuple.
+20479: \x86     TUPLE2                                 Build a two-tuple out of the top two items on the stack.
+20480: R        REDUCE                                 Push an object built from a callable and an argument tuple.
+20481: g        GET        1                           Read an object from the memo and push it on the stack.
+20484: g        GET        0                           Read an object from the memo and push it on the stack.
+20487: c        GLOBAL     '__main__ amazing_function' Push a global object (module.attr) on the stack.
+20514: g        GET        2                           Read an object from the memo and push it on the stack.
+20517: J        BININT     12                          Push a four-byte signed integer.
+20522: \x86     TUPLE2                                 Build a two-tuple out of the top two items on the stack.
+20523: R        REDUCE                                 Push an object built from a callable and an argument tuple.
+20524: \x86     TUPLE2                                 Build a two-tuple out of the top two items on the stack.
+20525: R        REDUCE                                 Push an object built from a callable and an argument tuple.
+20526: g        GET        1                           Read an object from the memo and push it on the stack.
+20529: g        GET        0                           Read an object from the memo and push it on the stack.
+20532: c        GLOBAL     '__main__ amazing_function' Push a global object (module.attr) on the stack.
+20559: g        GET        2                           Read an object from the memo and push it on the stack.
+20562: J        BININT     13                          Push a four-byte signed integer.
+20567: \x86     TUPLE2                                 Build a two-tuple out of the top two items on the stack.
+20568: R        REDUCE                                 Push an object built from a callable and an argument tuple.
+20569: \x86     TUPLE2                                 Build a two-tuple out of the top two items on the stack.
+20570: R        REDUCE                                 Push an object built from a callable and an argument tuple.
+20571: g        GET        1                           Read an object from the memo and push it on the stack.
+20574: g        GET        0                           Read an object from the memo and push it on the stack.
+20577: c        GLOBAL     '__main__ amazing_function' Push a global object (module.attr) on the stack.
+20604: g        GET        2                           Read an object from the memo and push it on the stack.
+20607: J        BININT     14                          Push a four-byte signed integer.
+20612: \x86     TUPLE2                                 Build a two-tuple out of the top two items on the stack.
+20613: R        REDUCE                                 Push an object built from a callable and an argument tuple.
+20614: \x86     TUPLE2                                 Build a two-tuple out of the top two items on the stack.
+20615: R        REDUCE                                 Push an object built from a callable and an argument tuple.
+20616: g        GET        1                           Read an object from the memo and push it on the stack.
+20619: g        GET        0                           Read an object from the memo and push it on the stack.
+20622: c        GLOBAL     '__main__ amazing_function' Push a global object (module.attr) on the stack.
+20649: g        GET        2                           Read an object from the memo and push it on the stack.
+20652: J        BININT     15                          Push a four-byte signed integer.
+20657: \x86     TUPLE2                                 Build a two-tuple out of the top two items on the stack.
+20658: R        REDUCE                                 Push an object built from a callable and an argument tuple.
+20659: \x86     TUPLE2                                 Build a two-tuple out of the top two items on the stack.
+20660: R        REDUCE                                 Push an object built from a callable and an argument tuple.
+20661: g        GET        1                           Read an object from the memo and push it on the stack.
+20664: g        GET        0                           Read an object from the memo and push it on the stack.
+20667: c        GLOBAL     '__main__ amazing_function' Push a global object (module.attr) on the stack.
+20694: g        GET        2                           Read an object from the memo and push it on the stack.
+20697: J        BININT     16                          Push a four-byte signed integer.
+20702: \x86     TUPLE2                                 Build a two-tuple out of the top two items on the stack.
+20703: R        REDUCE                                 Push an object built from a callable and an argument tuple.
+20704: \x86     TUPLE2                                 Build a two-tuple out of the top two items on the stack.
+20705: R        REDUCE                                 Push an object built from a callable and an argument tuple.
+20706: g        GET        1                           Read an object from the memo and push it on the stack.
+20709: g        GET        0                           Read an object from the memo and push it on the stack.
+20712: c        GLOBAL     '__main__ amazing_function' Push a global object (module.attr) on the stack.
+20739: g        GET        2                           Read an object from the memo and push it on the stack.
+20742: J        BININT     17                          Push a four-byte signed integer.
+20747: \x86     TUPLE2                                 Build a two-tuple out of the top two items on the stack.
+20748: R        REDUCE                                 Push an object built from a callable and an argument tuple.
+20749: \x86     TUPLE2                                 Build a two-tuple out of the top two items on the stack.
+20750: R        REDUCE                                 Push an object built from a callable and an argument tuple.
+20751: g        GET        1                           Read an object from the memo and push it on the stack.
+20754: g        GET        0                           Read an object from the memo and push it on the stack.
+20757: c        GLOBAL     '__main__ amazing_function' Push a global object (module.attr) on the stack.
+20784: g        GET        2                           Read an object from the memo and push it on the stack.
+20787: J        BININT     18                          Push a four-byte signed integer.
+20792: \x86     TUPLE2                                 Build a two-tuple out of the top two items on the stack.
+20793: R        REDUCE                                 Push an object built from a callable and an argument tuple.
+20794: \x86     TUPLE2                                 Build a two-tuple out of the top two items on the stack.
+20795: R        REDUCE                                 Push an object built from a callable and an argument tuple.
+20796: g        GET        1                           Read an object from the memo and push it on the stack.
+20799: g        GET        0                           Read an object from the memo and push it on the stack.
+20802: c        GLOBAL     '__main__ amazing_function' Push a global object (module.attr) on the stack.
+20829: g        GET        2                           Read an object from the memo and push it on the stack.
+20832: J        BININT     19                          Push a four-byte signed integer.
+20837: \x86     TUPLE2                                 Build a two-tuple out of the top two items on the stack.
+20838: R        REDUCE                                 Push an object built from a callable and an argument tuple.
+20839: \x86     TUPLE2                                 Build a two-tuple out of the top two items on the stack.
+20840: R        REDUCE                                 Push an object built from a callable and an argument tuple.
+20841: g        GET        1                           Read an object from the memo and push it on the stack.
+20844: g        GET        0                           Read an object from the memo and push it on the stack.
+20847: c        GLOBAL     '__main__ amazing_function' Push a global object (module.attr) on the stack.
+20874: g        GET        2                           Read an object from the memo and push it on the stack.
+20877: J        BININT     20                          Push a four-byte signed integer.
+20882: \x86     TUPLE2                                 Build a two-tuple out of the top two items on the stack.
+20883: R        REDUCE                                 Push an object built from a callable and an argument tuple.
+20884: \x86     TUPLE2                                 Build a two-tuple out of the top two items on the stack.
+20885: R        REDUCE                                 Push an object built from a callable and an argument tuple.
+20886: t        TUPLE      (MARK at 19940)             Build a tuple out of the topmost stack slice, after markobject.
+20887: (    MARK                                       Push markobject onto the stack.
+20888: J        BININT     53                          Push a four-byte signed integer.
+20893: J        BININT     158                         Push a four-byte signed integer.
+20898: J        BININT     33                          Push a four-byte signed integer.
+20903: J        BININT     115                         Push a four-byte signed integer.
+20908: J        BININT     5                           Push a four-byte signed integer.
+20913: J        BININT     17                          Push a four-byte signed integer.
+20918: J        BININT     103                         Push a four-byte signed integer.
+20923: J        BININT     3                           Push a four-byte signed integer.
+20928: J        BININT     67                          Push a four-byte signed integer.
+20933: J        BININT     240                         Push a four-byte signed integer.
+20938: J        BININT     39                          Push a four-byte signed integer.
+20943: J        BININT     27                          Push a four-byte signed integer.
+20948: J        BININT     19                          Push a four-byte signed integer.
+20953: J        BININT     68                          Push a four-byte signed integer.
+20958: J        BININT     81                          Push a four-byte signed integer.
+20963: J        BININT     107                         Push a four-byte signed integer.
+20968: J        BININT     245                         Push a four-byte signed integer.
+20973: J        BININT     82                          Push a four-byte signed integer.
+20978: J        BININT     130                         Push a four-byte signed integer.
+20983: J        BININT     159                         Push a four-byte signed integer.
+20988: J        BININT     227                         Push a four-byte signed integer.
+20993: t        TUPLE      (MARK at 20887)             Build a tuple out of the topmost stack slice, after markobject.
+20994: c    GLOBAL     '__main__ rick_says'            Push a global object (module.attr) on the stack.
+21014: \x87 TUPLE3                                     Build a three-tuple out of the top three items on the stack.
+21015: R    REDUCE                                     Push an object built from a callable and an argument tuple.
+21016: \x85 TUPLE1                                     Build a one-tuple out of the topmost item on the stack.
+21017: R    REDUCE                                     Push an object built from a callable and an argument tuple.
+21018: .    STOP                                       Stop the unpickling machine.
+highest protocol among opcodes = 4
+stack not empty after STOP: [any, any, any, any]

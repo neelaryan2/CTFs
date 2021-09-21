@@ -1,0 +1,5 @@
+https://www.google.com/maps/place/Restaurant+Ruta+40/@42.5692313,1.4893204,3a,75y,243.85h,90t/data=!3m8!1e2!3m6!1sAF1QipMscUud5bni1BIyyUtVoHDe7Z0RoTETM6NzX00f!2e10!3e12!6shttps:%2F%2Flh5.googleusercontent.com%2Fp%2FAF1QipMscUud5bni1BIyyUtVoHDe7Z0RoTETM6NzX00f%3Dw203-h152-k-no!7i5664!8i4248!4m7!3m6!1s0x12af5fa4d15a4c05:0x6661bbb763238946!8m2!3d42.5692313!4d1.4893204!14m1!1BCgIgARICCAI
+https://www.google.com/maps/@47.5042318,19.0449766,3a,75y,200.16h,59.37t/data=!3m6!1e1!3m4!1sXrDm-4SEMowZpNM3hDdJgg!2e0!7i16384!8i8192
+https://www.google.com/maps/@53.6206565,11.4133335,3a,75y,233.91h,90t/data=!3m8!1e2!3m6!1sAF1QipMfYAXoBdOWBXdjNFv6RTV10FxdfYiGc2QLCDhA!2e10!3e12!6shttps:%2F%2Flh5.googleusercontent.com%2Fp%2FAF1QipMfYAXoBdOWBXdjNFv6RTV10FxdfYiGc2QLCDhA%3Dw203-h203-k-no!7i2400!8i2400?hl=en
+
+IITB{42.569,1.489,47.504,19.044,53.62,11.41}

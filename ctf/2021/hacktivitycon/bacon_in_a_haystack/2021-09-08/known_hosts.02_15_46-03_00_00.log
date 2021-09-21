@@ -1,0 +1,10 @@
+#separator \x09
+#set_separator	,
+#empty_field	(empty)
+#unset_field	-
+#path	known_hosts
+#open	2021-09-08-02-15-46
+#fields	ts	host
+#types	time	addr
+1631067346.950277	10.24.0.2
+#close	2021-09-08-03-00-00

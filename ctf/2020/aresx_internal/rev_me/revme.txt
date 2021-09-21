@@ -1,0 +1,37 @@
+FIELD-SYMBOLS <f> TYPE x.
+types: BEGIN OF ty_data, data type c LENGTH 2, END OF ty_data, tytab_data type table of ty_data.
+data: output type string, n type i, x type x, res type tytab_data.
+
+" Initialize variables
+data(lv_aux) = '0'.
+data(lv_flag) = ?????????????????.
+data lv_secret type x length 2 value '1337'.
+data(tmp) = ' '.
+do STRLEN( lv_flag ) times.
+    data(index) = sy-index - 1.
+    tmp = lv_flag+index(1).
+    ASSIGN tmp TO <f> TYPE 'X'.
+    data(tx) = <f> bit-xor lv_secret.
+    append INITIAL LINE TO res REFERENCE INTO data(dr).
+    IF dr is bound.
+      move tx to dr->data.
+    ENDIF.
+enddo.
+
+lv_aux = '694201337'.
+
+LOOP AT res into DATA(d).
+  x = d-data.
+  DO lv_aux TIMES.
+    if lv_aux > 10.
+      data: n1 type x, n2 type x, n3 type x.
+      n1 = 1337 + 69 * 420.
+      n2 = 1337 + 420.
+      n3 = 1010.
+      x =  n1 bit-xor n2 bit-and n3.
+    ENDIF.
+    n = x.
+    n = n + n.
+  ENDDO.
+  write: n.
+ENDLOOP.

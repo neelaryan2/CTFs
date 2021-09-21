@@ -1,0 +1,1 @@
+nc chall.bsidesalgiers.com 5001

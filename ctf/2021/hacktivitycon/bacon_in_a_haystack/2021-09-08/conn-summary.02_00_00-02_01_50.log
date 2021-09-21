@@ -1,0 +1,78 @@
+
+>== Total === 2021-09-08-02-01-28 - 2021-09-08-02-01-28
+   - Connections  1.0 - Payload  133.0 - 
+     Ports        | Sources                   | Destinations              | Services           | Protocols | States        |
+     53    100.0% | 10.24.0.2#1        100.0% | 1.1.1.1#2          100.0% | dns         100.0% | 17 100.0% | SF     100.0% | 
+                  |                           |                           |                    |           |               | 
+                  |                           |                           |                    |           |               | 
+                  |                           |                           |                    |           |               | 
+                  |                           |                           |                    |           |               | 
+                  |                           |                           |                    |           |               | 
+                  |                           |                           |                    |           |               | 
+                  |                           |                           |                    |           |               | 
+                  |                           |                           |                    |           |               | 
+                  |                           |                           |                    |           |               | 
+
+        #1=<???>  #2=one.one.one.one  
+
+
+>== Top 10 local networks by number of connections
+
+     1   1.0  10.24.0.0/24     Private IP Space 
+     2     0  10.0.0.0/8       Private IP space 
+     3     0  172.16.0.0/12    Private IP space 
+     4     0  192.168.0.0/16   Private IP space 
+
+
+>== Incoming === N/A - N/A
+   - Connections 0 - Payload 0 - 
+     Ports        | Sources                   | Destinations              | Services           | Protocols | States        |
+                  |                           |                           |                    |           |               | 
+                  |                           |                           |                    |           |               | 
+                  |                           |                           |                    |           |               | 
+                  |                           |                           |                    |           |               | 
+                  |                           |                           |                    |           |               | 
+                  |                           |                           |                    |           |               | 
+                  |                           |                           |                    |           |               | 
+                  |                           |                           |                    |           |               | 
+                  |                           |                           |                    |           |               | 
+                  |                           |                           |                    |           |               | 
+
+        
+
+
+>== Outgoing === 2021-09-08-02-01-28 - 2021-09-08-02-01-28
+   - Connections  1.0 - Payload  133.0 - 
+     Ports        | Sources                   | Destinations              | Services           | Protocols | States        |
+     53    100.0% | 10.24.0.2#1        100.0% | 1.1.1.1#2          100.0% | dns         100.0% | 17 100.0% | SF     100.0% | 
+                  |                           |                           |                    |           |               | 
+                  |                           |                           |                    |           |               | 
+                  |                           |                           |                    |           |               | 
+                  |                           |                           |                    |           |               | 
+                  |                           |                           |                    |           |               | 
+                  |                           |                           |                    |           |               | 
+                  |                           |                           |                    |           |               | 
+                  |                           |                           |                    |           |               | 
+                  |                           |                           |                    |           |               | 
+
+        #1=<???>  #2=one.one.one.one  
+
+
+>== 10.24.0.0/24 Private IP Space === 2021-09-08-02-01-28 - 2021-09-08-02-01-28
+   - Connections  1.0 - Payload  133.0 - 
+     Ports        | Sources                   | Destinations              | Services           | Protocols | States        |
+     53    100.0% | 10.24.0.2#1        100.0% | 1.1.1.1#2          100.0% | dns         100.0% | 17 100.0% | SF     100.0% | 
+                  |                           |                           |                    |           |               | 
+                  |                           |                           |                    |           |               | 
+                  |                           |                           |                    |           |               | 
+                  |                           |                           |                    |           |               | 
+                  |                           |                           |                    |           |               | 
+                  |                           |                           |                    |           |               | 
+                  |                           |                           |                    |           |               | 
+                  |                           |                           |                    |           |               | 
+                  |                           |                           |                    |           |               | 
+
+        #1=<???>  #2=one.one.one.one  
+
+First: 2021-09-08-02-01-28 (1631066488.602992) Last: 2021-09-08-02-01-28 1631066488.639951
+0:00.20 real, 0.09 user, 0.04 sys, 0K total memory

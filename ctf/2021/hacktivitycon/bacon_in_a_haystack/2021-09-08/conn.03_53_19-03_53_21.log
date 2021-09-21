@@ -1,0 +1,18 @@
+#separator \x09
+#set_separator	,
+#empty_field	(empty)
+#unset_field	-
+#path	conn
+#open	2021-09-08-03-53-19
+#fields	ts	uid	id.orig_h	id.orig_p	id.resp_h	id.resp_p	proto	service	duration	orig_bytes	resp_bytes	conn_state	local_orig	local_resp	missed_bytes	history	orig_pkts	orig_ip_bytes	resp_pkts	resp_ip_bytes	tunnel_parents
+#types	time	string	addr	port	addr	port	enum	string	interval	count	count	string	bool	bool	count	string	count	count	count	count	set[string]
+1631073185.276850	CWY1CR1AOfO3OqhKl1	10.24.0.2	65108	185.199.108.153	443	tcp	ssl	0.152335	621	2744	S1	T	F	0	ShADad	5	833	6	2996	-
+1631073177.697331	CAKKzj15kTqMIxzEfa	10.24.0.2	65107	52.168.112.66	443	tcp	ssl	0.605912	11654	7940	S1	T	F	2760	ShADdtCaG	20	9742	14	8512	-
+1631073156.753829	COm1tC3raqKkXlsWIj	10.24.0.2	57812	142.250.72.227	443	udp	-	0.273879	6466	6605	SF	T	F	0	Dd	13	6830	12	6941	-
+1631073154.909771	CCV98y4yyGBdDDAYyd	10.24.0.2	62866	142.251.2.157	443	udp	-	0.229090	2632	7401	SF	T	F	0	Dd	12	2968	15	7821	-
+1631073154.653534	CQ1a2B4nLjqM0KYEh1	10.24.0.2	56153	172.217.4.174	443	udp	-	0.385929	2939	28938	SF	T	F	0	Dd	22	3555	31	29806	-
+1631073153.835372	CrRcgl1EwLldS0WRe6	10.24.0.2	53074	239.255.255.250	1900	udp	-	2.928660	692	0	S0	T	F	0	D	4	804	0	0	-
+1631073154.396853	CqZ7a01uFfnXpdFkX7	10.24.0.2	54077	142.250.68.72	443	udp	-	0.266122	3769	44706	SF	T	F	0	Dd	24	4441	38	45770	-
+1631073021.677836	CVj3jR17TcTR2VCz86	10.24.0.2	59934	52.52.178.179	443	tcp	ssl	1.227471	4516	44139	SF	T	F	0	ShADadtFfR	17	5220	41	47107	-
+1631073021.646368	CIoMktxl9KPqA5Fy7	10.24.0.2	61907	8.39.36.144	443	tcp	ssl	1.258565	7021	4682	SF	T	F	0	ShADdtaFfR	18	7789	16	8266	-
+#close	2021-09-08-03-53-19

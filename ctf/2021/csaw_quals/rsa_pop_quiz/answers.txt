@@ -1,0 +1,8 @@
+Wiener wiener chicken dinner
+Who came up with this math term anyway?
+0
+no
+Totally did not mean to put an oracle there
+I'll be careful next time to not leak the key
+
+flag{l00K5_L1K3_y0u_H4v3_p4223D_7h3_D1ff1Cul7_r54_p0p_Kw12_w17H_fLy1N9_C0L0r2}

@@ -1,0 +1,16 @@
+#separator \x09
+#set_separator	,
+#empty_field	(empty)
+#unset_field	-
+#path	notice
+#open	2021-09-08-01-08-11
+#fields	ts	uid	id.orig_h	id.orig_p	id.resp_h	id.resp_p	fuid	file_mime_type	file_desc	proto	note	msg	sub	src	dst	p	n	peer_descr	actions	email_dest	suppress_for	remote_location.country_code	remote_location.region	remote_location.city	remote_location.latitude	remote_location.longitude
+#types	time	string	addr	port	addr	port	string	string	string	enum	enum	string	string	addr	addr	port	count	string	set[enum]	set[string]	interval	string	string	string	double	double
+1631063291.508379	-	-	-	-	-	-	-	-	-	CaptureLoss::Too_Little_Traffic	Only observed 0 TCP ACKs and was expecting at least 1.	-	-	-	-	-	-	Notice::ACTION_LOG	(empty)	3600.000000	-	-	-	-	-
+1631064191.508815	-	-	-	-	-	-	-	-	-	CaptureLoss::Too_Little_Traffic	Only observed 0 TCP ACKs and was expecting at least 1.	-	-	-	-	-	-	Notice::ACTION_LOG	(empty)	3600.000000	-	-	-	-	-
+1631064587.125766	C7UnJt4ztlnCJiPGfa	10.24.0.2	60533	52.137.106.217	443	Fo2kMA4TSwR8dwO3Jc	-	-	tcp	SSL::Invalid_Server_Cert	SSL certificate validation failed with (unable to get local issuer certificate)	CN=settings-win.data.microsoft.com,OU=WSE,O=Microsoft,L=Redmond,ST=WA,C=US	10.24.0.2	52.137.106.217	443	-	-	Notice::ACTION_LOG	(empty)	3600.000000	-	-	-	-	-
+1631064587.785859	CRGaJA1rdC2xx2LBi6	10.24.0.2	60536	20.189.173.22	443	FwjC6K3Gii0hxIPO5c	-	-	tcp	SSL::Invalid_Server_Cert	SSL certificate validation failed with (unable to get local issuer certificate)	CN=*.events.data.microsoft.com,OU=WSE,O=Microsoft,L=Redmond,ST=WA,C=US	10.24.0.2	20.189.173.22	443	-	-	Notice::ACTION_LOG	(empty)	3600.000000	-	-	-	-	-
+1631065199.428858	CRfIuz3NPO2lB5pTI1	10.24.0.2	58576	52.184.217.20	443	FSbqC12wJohrFWWOu	-	-	tcp	SSL::Invalid_Server_Cert	SSL certificate validation failed with (unable to get local issuer certificate)	CN=*.prod.do.dsp.mp.microsoft.com,OU=DSP,O=Microsoft,L=Redmond,ST=WA,C=US	10.24.0.2	52.184.217.20	443	-	-	Notice::ACTION_LOG	(empty)	3600.000000	-	-	-	-	-
+1631065649.096614	CJgdlg35bx5ExMqIh7	10.24.0.2	64989	52.182.143.208	443	FRGLIN2nr553q1lRGc	-	-	tcp	SSL::Invalid_Server_Cert	SSL certificate validation failed with (unable to get local issuer certificate)	CN=*.events.data.microsoft.com,OU=WSE,O=Microsoft,L=Redmond,ST=WA,C=US	10.24.0.2	52.182.143.208	443	-	-	Notice::ACTION_LOG	(empty)	3600.000000	-	-	-	-	-
+1631066258.748626	CUcHRCvvOMUWQLAe8	10.24.0.2	64993	20.72.205.209	443	FPQ2mG1HA5An7RYxl5	-	-	tcp	SSL::Invalid_Server_Cert	SSL certificate validation failed with (unable to get local issuer certificate)	CN=settings-win.data.microsoft.com,OU=WSE,O=Microsoft,L=Redmond,ST=WA,C=US	10.24.0.2	20.72.205.209	443	-	-	Notice::ACTION_LOG	(empty)	3600.000000	-	-	-	-	-
+#close	2021-09-08-02-00-00

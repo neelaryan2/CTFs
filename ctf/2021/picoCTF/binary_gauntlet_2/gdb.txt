@@ -1,0 +1,1922 @@
+Starting program: /mnt/c/Users/Neel/Downloads/picoCTF_2021/binary_gauntlet_2/gauntlet 
+
+Breakpoint 1, 0x00000000004006d5 in main ()
+[ Legend: Modified register | Code | Heap | Stack | String ]
+───────────────────────────────────────────────────────────────────────────────────────────────────────── registers ────
+$rax   : 0x0               
+$rbx   : 0x0000000000400730  →  <__libc_csu_init+0> push r15
+$rcx   : 0x00000000006026a5  →  0x0000000000000000
+$rdx   : 0x0               
+$rsp   : 0x00007fffffffddd0  →  0x00007fffffffdf48  →  0x00007fffffffe189  →  "/mnt/c/Users/Neel/Downloads/picoCTF_2021/binary_ga[...]"
+$rbp   : 0x00007fffffffde50  →  0x0000000000000000
+$rsi   : 0x0000000000602691  →  "p|%p|%p|%p|%p|%p|%p\n"
+$rdi   : 0x00000000006022a0  →  "%p|%p|%p|%p|%p|%p|%p\n"
+$rip   : 0x00000000004006d5  →  <main+78> call 0x400560 <printf@plt>
+$r8    : 0x00000000006022a0  →  "%p|%p|%p|%p|%p|%p|%p\n"
+$r9    : 0x7c              
+$r10   : 0xfffffffffffff279
+$r11   : 0x246             
+$r12   : 0x00000000004005a0  →  <_start+0> xor ebp, ebp
+$r13   : 0x00007fffffffdf40  →  0x0000000000000001
+$r14   : 0x0               
+$r15   : 0x0               
+$eflags: [zero carry PARITY adjust sign trap INTERRUPT direction overflow resume virtualx86 identification]
+$cs: 0x0033 $ss: 0x002b $ds: 0x0000 $es: 0x0000 $fs: 0x0000 $gs: 0x0000 
+───────────────────────────────────────────────────────────────────────────────────────────────────────────── stack ────
+0x00007fffffffddd0│+0x0000: 0x00007fffffffdf48  →  0x00007fffffffe189  →  "/mnt/c/Users/Neel/Downloads/picoCTF_2021/binary_ga[...]"	 ← $rsp
+0x00007fffffffddd8│+0x0008: 0x0000000100000000
+0x00007fffffffdde0│+0x0010: 0x0000000000000000
+0x00007fffffffdde8│+0x0018: 0x0000000000000000
+0x00007fffffffddf0│+0x0020: 0x0000000000400040  →   (bad) 
+0x00007fffffffddf8│+0x0028: 0x0000000000f0b5ff
+0x00007fffffffde00│+0x0030: 0x00000000000000c2
+0x00007fffffffde08│+0x0038: 0x00007fffffffde37  →  0x000000004005a000
+─────────────────────────────────────────────────────────────────────────────────────────────────────── code:x86:64 ────
+     0x4006c9 <main+66>        mov    rax, QWORD PTR [rbp-0x8]
+     0x4006cd <main+70>        mov    rdi, rax
+     0x4006d0 <main+73>        mov    eax, 0x0
+ →   0x4006d5 <main+78>        call   0x400560 <printf@plt>
+   ↳    0x400560 <printf@plt+0>   jmp    QWORD PTR [rip+0x200aba]        # 0x601020 <printf@got.plt>
+        0x400566 <printf@plt+6>   push   0x1
+        0x40056b <printf@plt+11>  jmp    0x400540
+        0x400570 <fgets@plt+0>    jmp    QWORD PTR [rip+0x200ab2]        # 0x601028 <fgets@got.plt>
+        0x400576 <fgets@plt+6>    push   0x2
+        0x40057b <fgets@plt+11>   jmp    0x400540
+─────────────────────────────────────────────────────────────────────────────────────────────── arguments (guessed) ────
+printf@plt (
+   $rdi = 0x00000000006022a0 → "%p|%p|%p|%p|%p|%p|%p\n",
+   $rsi = 0x0000000000602691 → "p|%p|%p|%p|%p|%p|%p\n",
+   $rdx = 0x0000000000000000
+)
+─────────────────────────────────────────────────────────────────────────────────────────────────────────── threads ────
+[#0] Id 1, Name: "gauntlet", stopped 0x4006d5 in main (), reason: BREAKPOINT
+───────────────────────────────────────────────────────────────────────────────────────────────────────────── trace ────
+[#0] 0x4006d5 → main()
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+[ Legend: Modified register | Code | Heap | Stack | String ]
+───────────────────────────────────────────────────────────────────────────────────────────────────────── registers ────
+$rax   : 0x0               
+$rbx   : 0x0000000000400730  →  <__libc_csu_init+0> push r15
+$rcx   : 0x00000000006026a5  →  0x0000000000000000
+$rdx   : 0x0               
+$rsp   : 0x00007fffffffddd0  →  0x00007fffffffdf48  →  0x00007fffffffe189  →  "/mnt/c/Users/Neel/Downloads/picoCTF_2021/binary_ga[...]"
+$rbp   : 0x00007fffffffde50  →  0x0000000000000000
+$rsi   : 0x0000000000602691  →  "p|%p|%p|%p|%p|%p|%p\n"
+$rdi   : 0x00000000006022a0  →  "%p|%p|%p|%p|%p|%p|%p\n"
+$rip   : 0x00000000004006d5  →  <main+78> call 0x400560 <printf@plt>
+$r8    : 0x00000000006022a0  →  "%p|%p|%p|%p|%p|%p|%p\n"
+$r9    : 0x7c              
+$r10   : 0xfffffffffffff279
+$r11   : 0x246             
+$r12   : 0x00000000004005a0  →  <_start+0> xor ebp, ebp
+$r13   : 0x00007fffffffdf40  →  0x0000000000000001
+$r14   : 0x0               
+$r15   : 0x0               
+$eflags: [zero carry PARITY adjust sign trap INTERRUPT direction overflow resume virtualx86 identification]
+$cs: 0x0033 $ss: 0x002b $ds: 0x0000 $es: 0x0000 $fs: 0x0000 $gs: 0x0000 
+───────────────────────────────────────────────────────────────────────────────────────────────────────────── stack ────
+0x00007fffffffddd0│+0x0000: 0x00007fffffffdf48  →  0x00007fffffffe189  →  "/mnt/c/Users/Neel/Downloads/picoCTF_2021/binary_ga[...]"	 ← $rsp
+0x00007fffffffddd8│+0x0008: 0x0000000100000000
+0x00007fffffffdde0│+0x0010: 0x0000000000000000
+0x00007fffffffdde8│+0x0018: 0x0000000000000000
+0x00007fffffffddf0│+0x0020: 0x0000000000400040  →   (bad) 
+0x00007fffffffddf8│+0x0028: 0x0000000000f0b5ff
+0x00007fffffffde00│+0x0030: 0x00000000000000c2
+0x00007fffffffde08│+0x0038: 0x00007fffffffde37  →  0x000000004005a000
+─────────────────────────────────────────────────────────────────────────────────────────────────────── code:x86:64 ────
+     0x4006c9 <main+66>        mov    rax, QWORD PTR [rbp-0x8]
+     0x4006cd <main+70>        mov    rdi, rax
+     0x4006d0 <main+73>        mov    eax, 0x0
+ →   0x4006d5 <main+78>        call   0x400560 <printf@plt>
+   ↳    0x400560 <printf@plt+0>   jmp    QWORD PTR [rip+0x200aba]        # 0x601020 <printf@got.plt>
+        0x400566 <printf@plt+6>   push   0x1
+        0x40056b <printf@plt+11>  jmp    0x400540
+        0x400570 <fgets@plt+0>    jmp    QWORD PTR [rip+0x200ab2]        # 0x601028 <fgets@got.plt>
+        0x400576 <fgets@plt+6>    push   0x2
+        0x40057b <fgets@plt+11>   jmp    0x400540
+─────────────────────────────────────────────────────────────────────────────────────────────── arguments (guessed) ────
+printf@plt (
+   $rdi = 0x00000000006022a0 → "%p|%p|%p|%p|%p|%p|%p\n",
+   $rsi = 0x0000000000602691 → "p|%p|%p|%p|%p|%p|%p\n",
+   $rdx = 0x0000000000000000
+)
+─────────────────────────────────────────────────────────────────────────────────────────────────────────── threads ────
+[#0] Id 1, Name: "gauntlet", stopped 0x4006d5 in main (), reason: BREAKPOINT
+───────────────────────────────────────────────────────────────────────────────────────────────────────────── trace ────
+[#0] 0x4006d5 → main()
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+0x00000000004006da in main ()
+[ Legend: Modified register | Code | Heap | Stack | String ]
+───────────────────────────────────────────────────────────────────────────────────────────────────────── registers ────
+$rax   : 0x41              
+$rbx   : 0x0000000000400730  →  <__libc_csu_init+0> push r15
+$rcx   : 0x0               
+$rdx   : 0x0               
+$rsp   : 0x00007fffffffddd0  →  0x00007fffffffdf48  →  0x00007fffffffe189  →  "/mnt/c/Users/Neel/Downloads/picoCTF_2021/binary_ga[...]"
+$rbp   : 0x00007fffffffde50  →  0x0000000000000000
+$rsi   : 0x0000000000602aa0  →  "0x602691|(nil)|0x6026a5|0x6022a0|0x7c|0x7fffffffdf[...]"
+$rdi   : 0x00007ffff7fac4c0  →  0x0000000000000000
+$rip   : 0x00000000004006da  →  <main+83> mov rax, QWORD PTR [rip+0x20096f]        # 0x601050 <stdout@@GLIBC_2.2.5>
+$r8    : 0x0               
+$r9    : 0x41              
+$r10   : 0x00000000006022b4  →  0x000000000000000a
+$r11   : 0x246             
+$r12   : 0x00000000004005a0  →  <_start+0> xor ebp, ebp
+$r13   : 0x00007fffffffdf40  →  0x0000000000000001
+$r14   : 0x0               
+$r15   : 0x0               
+$eflags: [zero carry parity adjust sign trap INTERRUPT direction overflow resume virtualx86 identification]
+$cs: 0x0033 $ss: 0x002b $ds: 0x0000 $es: 0x0000 $fs: 0x0000 $gs: 0x0000 
+───────────────────────────────────────────────────────────────────────────────────────────────────────────── stack ────
+0x00007fffffffddd0│+0x0000: 0x00007fffffffdf48  →  0x00007fffffffe189  →  "/mnt/c/Users/Neel/Downloads/picoCTF_2021/binary_ga[...]"	 ← $rsp
+0x00007fffffffddd8│+0x0008: 0x0000000100000000
+0x00007fffffffdde0│+0x0010: 0x0000000000000000
+0x00007fffffffdde8│+0x0018: 0x0000000000000000
+0x00007fffffffddf0│+0x0020: 0x0000000000400040  →   (bad) 
+0x00007fffffffddf8│+0x0028: 0x0000000000f0b5ff
+0x00007fffffffde00│+0x0030: 0x00000000000000c2
+0x00007fffffffde08│+0x0038: 0x00007fffffffde37  →  0x000000004005a000
+─────────────────────────────────────────────────────────────────────────────────────────────────────── code:x86:64 ────
+     0x4006cd <main+70>        mov    rdi, rax
+     0x4006d0 <main+73>        mov    eax, 0x0
+     0x4006d5 <main+78>        call   0x400560 <printf@plt>
+ →   0x4006da <main+83>        mov    rax, QWORD PTR [rip+0x20096f]        # 0x601050 <stdout@@GLIBC_2.2.5>
+     0x4006e1 <main+90>        mov    rdi, rax
+     0x4006e4 <main+93>        call   0x400590 <fflush@plt>
+     0x4006e9 <main+98>        mov    rdx, QWORD PTR [rip+0x200970]        # 0x601060 <stdin@@GLIBC_2.2.5>
+     0x4006f0 <main+105>       mov    rax, QWORD PTR [rbp-0x8]
+     0x4006f4 <main+109>       mov    esi, 0x3e8
+─────────────────────────────────────────────────────────────────────────────────────────────────────────── threads ────
+[#0] Id 1, Name: "gauntlet", stopped 0x4006da in main (), reason: SINGLE STEP
+───────────────────────────────────────────────────────────────────────────────────────────────────────────── trace ────
+[#0] 0x4006da → main()
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+[ Legend: Modified register | Code | Heap | Stack | String ]
+───────────────────────────────────────────────────────────────────────────────────────────────────────── registers ────
+$rax   : 0x41              
+$rbx   : 0x0000000000400730  →  <__libc_csu_init+0> push r15
+$rcx   : 0x0               
+$rdx   : 0x0               
+$rsp   : 0x00007fffffffddd0  →  0x00007fffffffdf48  →  0x00007fffffffe189  →  "/mnt/c/Users/Neel/Downloads/picoCTF_2021/binary_ga[...]"
+$rbp   : 0x00007fffffffde50  →  0x0000000000000000
+$rsi   : 0x0000000000602aa0  →  "0x602691|(nil)|0x6026a5|0x6022a0|0x7c|0x7fffffffdf[...]"
+$rdi   : 0x00007ffff7fac4c0  →  0x0000000000000000
+$rip   : 0x00000000004006da  →  <main+83> mov rax, QWORD PTR [rip+0x20096f]        # 0x601050 <stdout@@GLIBC_2.2.5>
+$r8    : 0x0               
+$r9    : 0x41              
+$r10   : 0x00000000006022b4  →  0x000000000000000a
+$r11   : 0x246             
+$r12   : 0x00000000004005a0  →  <_start+0> xor ebp, ebp
+$r13   : 0x00007fffffffdf40  →  0x0000000000000001
+$r14   : 0x0               
+$r15   : 0x0               
+$eflags: [zero carry parity adjust sign trap INTERRUPT direction overflow resume virtualx86 identification]
+$cs: 0x0033 $ss: 0x002b $ds: 0x0000 $es: 0x0000 $fs: 0x0000 $gs: 0x0000 
+───────────────────────────────────────────────────────────────────────────────────────────────────────────── stack ────
+0x00007fffffffddd0│+0x0000: 0x00007fffffffdf48  →  0x00007fffffffe189  →  "/mnt/c/Users/Neel/Downloads/picoCTF_2021/binary_ga[...]"	 ← $rsp
+0x00007fffffffddd8│+0x0008: 0x0000000100000000
+0x00007fffffffdde0│+0x0010: 0x0000000000000000
+0x00007fffffffdde8│+0x0018: 0x0000000000000000
+0x00007fffffffddf0│+0x0020: 0x0000000000400040  →   (bad) 
+0x00007fffffffddf8│+0x0028: 0x0000000000f0b5ff
+0x00007fffffffde00│+0x0030: 0x00000000000000c2
+0x00007fffffffde08│+0x0038: 0x00007fffffffde37  →  0x000000004005a000
+─────────────────────────────────────────────────────────────────────────────────────────────────────── code:x86:64 ────
+     0x4006cd <main+70>        mov    rdi, rax
+     0x4006d0 <main+73>        mov    eax, 0x0
+     0x4006d5 <main+78>        call   0x400560 <printf@plt>
+ →   0x4006da <main+83>        mov    rax, QWORD PTR [rip+0x20096f]        # 0x601050 <stdout@@GLIBC_2.2.5>
+     0x4006e1 <main+90>        mov    rdi, rax
+     0x4006e4 <main+93>        call   0x400590 <fflush@plt>
+     0x4006e9 <main+98>        mov    rdx, QWORD PTR [rip+0x200970]        # 0x601060 <stdin@@GLIBC_2.2.5>
+     0x4006f0 <main+105>       mov    rax, QWORD PTR [rbp-0x8]
+     0x4006f4 <main+109>       mov    esi, 0x3e8
+─────────────────────────────────────────────────────────────────────────────────────────────────────────── threads ────
+[#0] Id 1, Name: "gauntlet", stopped 0x4006da in main (), reason: SINGLE STEP
+───────────────────────────────────────────────────────────────────────────────────────────────────────────── trace ────
+[#0] 0x4006da → main()
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+0x00000000004006e1 in main ()
+[ Legend: Modified register | Code | Heap | Stack | String ]
+───────────────────────────────────────────────────────────────────────────────────────────────────────── registers ────
+$rax   : 0x00007ffff7faa6a0  →  0x00000000fbad2a84
+$rbx   : 0x0000000000400730  →  <__libc_csu_init+0> push r15
+$rcx   : 0x0               
+$rdx   : 0x0               
+$rsp   : 0x00007fffffffddd0  →  0x00007fffffffdf48  →  0x00007fffffffe189  →  "/mnt/c/Users/Neel/Downloads/picoCTF_2021/binary_ga[...]"
+$rbp   : 0x00007fffffffde50  →  0x0000000000000000
+$rsi   : 0x0000000000602aa0  →  "0x602691|(nil)|0x6026a5|0x6022a0|0x7c|0x7fffffffdf[...]"
+$rdi   : 0x00007ffff7fac4c0  →  0x0000000000000000
+$rip   : 0x00000000004006e1  →  <main+90> mov rdi, rax
+$r8    : 0x0               
+$r9    : 0x41              
+$r10   : 0x00000000006022b4  →  0x000000000000000a
+$r11   : 0x246             
+$r12   : 0x00000000004005a0  →  <_start+0> xor ebp, ebp
+$r13   : 0x00007fffffffdf40  →  0x0000000000000001
+$r14   : 0x0               
+$r15   : 0x0               
+$eflags: [zero carry parity adjust sign trap INTERRUPT direction overflow resume virtualx86 identification]
+$cs: 0x0033 $ss: 0x002b $ds: 0x0000 $es: 0x0000 $fs: 0x0000 $gs: 0x0000 
+───────────────────────────────────────────────────────────────────────────────────────────────────────────── stack ────
+0x00007fffffffddd0│+0x0000: 0x00007fffffffdf48  →  0x00007fffffffe189  →  "/mnt/c/Users/Neel/Downloads/picoCTF_2021/binary_ga[...]"	 ← $rsp
+0x00007fffffffddd8│+0x0008: 0x0000000100000000
+0x00007fffffffdde0│+0x0010: 0x0000000000000000
+0x00007fffffffdde8│+0x0018: 0x0000000000000000
+0x00007fffffffddf0│+0x0020: 0x0000000000400040  →   (bad) 
+0x00007fffffffddf8│+0x0028: 0x0000000000f0b5ff
+0x00007fffffffde00│+0x0030: 0x00000000000000c2
+0x00007fffffffde08│+0x0038: 0x00007fffffffde37  →  0x000000004005a000
+─────────────────────────────────────────────────────────────────────────────────────────────────────── code:x86:64 ────
+     0x4006d0 <main+73>        mov    eax, 0x0
+     0x4006d5 <main+78>        call   0x400560 <printf@plt>
+     0x4006da <main+83>        mov    rax, QWORD PTR [rip+0x20096f]        # 0x601050 <stdout@@GLIBC_2.2.5>
+ →   0x4006e1 <main+90>        mov    rdi, rax
+     0x4006e4 <main+93>        call   0x400590 <fflush@plt>
+     0x4006e9 <main+98>        mov    rdx, QWORD PTR [rip+0x200970]        # 0x601060 <stdin@@GLIBC_2.2.5>
+     0x4006f0 <main+105>       mov    rax, QWORD PTR [rbp-0x8]
+     0x4006f4 <main+109>       mov    esi, 0x3e8
+     0x4006f9 <main+114>       mov    rdi, rax
+─────────────────────────────────────────────────────────────────────────────────────────────────────────── threads ────
+[#0] Id 1, Name: "gauntlet", stopped 0x4006e1 in main (), reason: SINGLE STEP
+───────────────────────────────────────────────────────────────────────────────────────────────────────────── trace ────
+[#0] 0x4006e1 → main()
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+[ Legend: Modified register | Code | Heap | Stack | String ]
+───────────────────────────────────────────────────────────────────────────────────────────────────────── registers ────
+$rax   : 0x00007ffff7faa6a0  →  0x00000000fbad2a84
+$rbx   : 0x0000000000400730  →  <__libc_csu_init+0> push r15
+$rcx   : 0x0               
+$rdx   : 0x0               
+$rsp   : 0x00007fffffffddd0  →  0x00007fffffffdf48  →  0x00007fffffffe189  →  "/mnt/c/Users/Neel/Downloads/picoCTF_2021/binary_ga[...]"
+$rbp   : 0x00007fffffffde50  →  0x0000000000000000
+$rsi   : 0x0000000000602aa0  →  "0x602691|(nil)|0x6026a5|0x6022a0|0x7c|0x7fffffffdf[...]"
+$rdi   : 0x00007ffff7fac4c0  →  0x0000000000000000
+$rip   : 0x00000000004006e1  →  <main+90> mov rdi, rax
+$r8    : 0x0               
+$r9    : 0x41              
+$r10   : 0x00000000006022b4  →  0x000000000000000a
+$r11   : 0x246             
+$r12   : 0x00000000004005a0  →  <_start+0> xor ebp, ebp
+$r13   : 0x00007fffffffdf40  →  0x0000000000000001
+$r14   : 0x0               
+$r15   : 0x0               
+$eflags: [zero carry parity adjust sign trap INTERRUPT direction overflow resume virtualx86 identification]
+$cs: 0x0033 $ss: 0x002b $ds: 0x0000 $es: 0x0000 $fs: 0x0000 $gs: 0x0000 
+───────────────────────────────────────────────────────────────────────────────────────────────────────────── stack ────
+0x00007fffffffddd0│+0x0000: 0x00007fffffffdf48  →  0x00007fffffffe189  →  "/mnt/c/Users/Neel/Downloads/picoCTF_2021/binary_ga[...]"	 ← $rsp
+0x00007fffffffddd8│+0x0008: 0x0000000100000000
+0x00007fffffffdde0│+0x0010: 0x0000000000000000
+0x00007fffffffdde8│+0x0018: 0x0000000000000000
+0x00007fffffffddf0│+0x0020: 0x0000000000400040  →   (bad) 
+0x00007fffffffddf8│+0x0028: 0x0000000000f0b5ff
+0x00007fffffffde00│+0x0030: 0x00000000000000c2
+0x00007fffffffde08│+0x0038: 0x00007fffffffde37  →  0x000000004005a000
+─────────────────────────────────────────────────────────────────────────────────────────────────────── code:x86:64 ────
+     0x4006d0 <main+73>        mov    eax, 0x0
+     0x4006d5 <main+78>        call   0x400560 <printf@plt>
+     0x4006da <main+83>        mov    rax, QWORD PTR [rip+0x20096f]        # 0x601050 <stdout@@GLIBC_2.2.5>
+ →   0x4006e1 <main+90>        mov    rdi, rax
+     0x4006e4 <main+93>        call   0x400590 <fflush@plt>
+     0x4006e9 <main+98>        mov    rdx, QWORD PTR [rip+0x200970]        # 0x601060 <stdin@@GLIBC_2.2.5>
+     0x4006f0 <main+105>       mov    rax, QWORD PTR [rbp-0x8]
+     0x4006f4 <main+109>       mov    esi, 0x3e8
+     0x4006f9 <main+114>       mov    rdi, rax
+─────────────────────────────────────────────────────────────────────────────────────────────────────────── threads ────
+[#0] Id 1, Name: "gauntlet", stopped 0x4006e1 in main (), reason: SINGLE STEP
+───────────────────────────────────────────────────────────────────────────────────────────────────────────── trace ────
+[#0] 0x4006e1 → main()
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+0x00000000004006e4 in main ()
+[ Legend: Modified register | Code | Heap | Stack | String ]
+───────────────────────────────────────────────────────────────────────────────────────────────────────── registers ────
+$rax   : 0x00007ffff7faa6a0  →  0x00000000fbad2a84
+$rbx   : 0x0000000000400730  →  <__libc_csu_init+0> push r15
+$rcx   : 0x0               
+$rdx   : 0x0               
+$rsp   : 0x00007fffffffddd0  →  0x00007fffffffdf48  →  0x00007fffffffe189  →  "/mnt/c/Users/Neel/Downloads/picoCTF_2021/binary_ga[...]"
+$rbp   : 0x00007fffffffde50  →  0x0000000000000000
+$rsi   : 0x0000000000602aa0  →  "0x602691|(nil)|0x6026a5|0x6022a0|0x7c|0x7fffffffdf[...]"
+$rdi   : 0x00007ffff7faa6a0  →  0x00000000fbad2a84
+$rip   : 0x00000000004006e4  →  <main+93> call 0x400590 <fflush@plt>
+$r8    : 0x0               
+$r9    : 0x41              
+$r10   : 0x00000000006022b4  →  0x000000000000000a
+$r11   : 0x246             
+$r12   : 0x00000000004005a0  →  <_start+0> xor ebp, ebp
+$r13   : 0x00007fffffffdf40  →  0x0000000000000001
+$r14   : 0x0               
+$r15   : 0x0               
+$eflags: [zero carry parity adjust sign trap INTERRUPT direction overflow resume virtualx86 identification]
+$cs: 0x0033 $ss: 0x002b $ds: 0x0000 $es: 0x0000 $fs: 0x0000 $gs: 0x0000 
+───────────────────────────────────────────────────────────────────────────────────────────────────────────── stack ────
+0x00007fffffffddd0│+0x0000: 0x00007fffffffdf48  →  0x00007fffffffe189  →  "/mnt/c/Users/Neel/Downloads/picoCTF_2021/binary_ga[...]"	 ← $rsp
+0x00007fffffffddd8│+0x0008: 0x0000000100000000
+0x00007fffffffdde0│+0x0010: 0x0000000000000000
+0x00007fffffffdde8│+0x0018: 0x0000000000000000
+0x00007fffffffddf0│+0x0020: 0x0000000000400040  →   (bad) 
+0x00007fffffffddf8│+0x0028: 0x0000000000f0b5ff
+0x00007fffffffde00│+0x0030: 0x00000000000000c2
+0x00007fffffffde08│+0x0038: 0x00007fffffffde37  →  0x000000004005a000
+─────────────────────────────────────────────────────────────────────────────────────────────────────── code:x86:64 ────
+     0x4006d5 <main+78>        call   0x400560 <printf@plt>
+     0x4006da <main+83>        mov    rax, QWORD PTR [rip+0x20096f]        # 0x601050 <stdout@@GLIBC_2.2.5>
+     0x4006e1 <main+90>        mov    rdi, rax
+ →   0x4006e4 <main+93>        call   0x400590 <fflush@plt>
+   ↳    0x400590 <fflush@plt+0>   jmp    QWORD PTR [rip+0x200aa2]        # 0x601038 <fflush@got.plt>
+        0x400596 <fflush@plt+6>   push   0x4
+        0x40059b <fflush@plt+11>  jmp    0x400540
+        0x4005a0 <_start+0>       xor    ebp, ebp
+        0x4005a2 <_start+2>       mov    r9, rdx
+        0x4005a5 <_start+5>       pop    rsi
+─────────────────────────────────────────────────────────────────────────────────────────────── arguments (guessed) ────
+fflush@plt (
+   $rdi = 0x00007ffff7faa6a0 → 0x00000000fbad2a84,
+   $rsi = 0x0000000000602aa0 → "0x602691|(nil)|0x6026a5|0x6022a0|0x7c|0x7fffffffdf[...]",
+   $rdx = 0x0000000000000000
+)
+─────────────────────────────────────────────────────────────────────────────────────────────────────────── threads ────
+[#0] Id 1, Name: "gauntlet", stopped 0x4006e4 in main (), reason: SINGLE STEP
+───────────────────────────────────────────────────────────────────────────────────────────────────────────── trace ────
+[#0] 0x4006e4 → main()
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+[ Legend: Modified register | Code | Heap | Stack | String ]
+───────────────────────────────────────────────────────────────────────────────────────────────────────── registers ────
+$rax   : 0x00007ffff7faa6a0  →  0x00000000fbad2a84
+$rbx   : 0x0000000000400730  →  <__libc_csu_init+0> push r15
+$rcx   : 0x0               
+$rdx   : 0x0               
+$rsp   : 0x00007fffffffddd0  →  0x00007fffffffdf48  →  0x00007fffffffe189  →  "/mnt/c/Users/Neel/Downloads/picoCTF_2021/binary_ga[...]"
+$rbp   : 0x00007fffffffde50  →  0x0000000000000000
+$rsi   : 0x0000000000602aa0  →  "0x602691|(nil)|0x6026a5|0x6022a0|0x7c|0x7fffffffdf[...]"
+$rdi   : 0x00007ffff7faa6a0  →  0x00000000fbad2a84
+$rip   : 0x00000000004006e4  →  <main+93> call 0x400590 <fflush@plt>
+$r8    : 0x0               
+$r9    : 0x41              
+$r10   : 0x00000000006022b4  →  0x000000000000000a
+$r11   : 0x246             
+$r12   : 0x00000000004005a0  →  <_start+0> xor ebp, ebp
+$r13   : 0x00007fffffffdf40  →  0x0000000000000001
+$r14   : 0x0               
+$r15   : 0x0               
+$eflags: [zero carry parity adjust sign trap INTERRUPT direction overflow resume virtualx86 identification]
+$cs: 0x0033 $ss: 0x002b $ds: 0x0000 $es: 0x0000 $fs: 0x0000 $gs: 0x0000 
+───────────────────────────────────────────────────────────────────────────────────────────────────────────── stack ────
+0x00007fffffffddd0│+0x0000: 0x00007fffffffdf48  →  0x00007fffffffe189  →  "/mnt/c/Users/Neel/Downloads/picoCTF_2021/binary_ga[...]"	 ← $rsp
+0x00007fffffffddd8│+0x0008: 0x0000000100000000
+0x00007fffffffdde0│+0x0010: 0x0000000000000000
+0x00007fffffffdde8│+0x0018: 0x0000000000000000
+0x00007fffffffddf0│+0x0020: 0x0000000000400040  →   (bad) 
+0x00007fffffffddf8│+0x0028: 0x0000000000f0b5ff
+0x00007fffffffde00│+0x0030: 0x00000000000000c2
+0x00007fffffffde08│+0x0038: 0x00007fffffffde37  →  0x000000004005a000
+─────────────────────────────────────────────────────────────────────────────────────────────────────── code:x86:64 ────
+     0x4006d5 <main+78>        call   0x400560 <printf@plt>
+     0x4006da <main+83>        mov    rax, QWORD PTR [rip+0x20096f]        # 0x601050 <stdout@@GLIBC_2.2.5>
+     0x4006e1 <main+90>        mov    rdi, rax
+ →   0x4006e4 <main+93>        call   0x400590 <fflush@plt>
+   ↳    0x400590 <fflush@plt+0>   jmp    QWORD PTR [rip+0x200aa2]        # 0x601038 <fflush@got.plt>
+        0x400596 <fflush@plt+6>   push   0x4
+        0x40059b <fflush@plt+11>  jmp    0x400540
+        0x4005a0 <_start+0>       xor    ebp, ebp
+        0x4005a2 <_start+2>       mov    r9, rdx
+        0x4005a5 <_start+5>       pop    rsi
+─────────────────────────────────────────────────────────────────────────────────────────────── arguments (guessed) ────
+fflush@plt (
+   $rdi = 0x00007ffff7faa6a0 → 0x00000000fbad2a84,
+   $rsi = 0x0000000000602aa0 → "0x602691|(nil)|0x6026a5|0x6022a0|0x7c|0x7fffffffdf[...]",
+   $rdx = 0x0000000000000000
+)
+─────────────────────────────────────────────────────────────────────────────────────────────────────────── threads ────
+[#0] Id 1, Name: "gauntlet", stopped 0x4006e4 in main (), reason: SINGLE STEP
+───────────────────────────────────────────────────────────────────────────────────────────────────────────── trace ────
+[#0] 0x4006e4 → main()
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+0x00000000004006e9 in main ()
+[ Legend: Modified register | Code | Heap | Stack | String ]
+───────────────────────────────────────────────────────────────────────────────────────────────────────── registers ────
+$rax   : 0x0               
+$rbx   : 0x0000000000400730  →  <__libc_csu_init+0> push r15
+$rcx   : 0x0               
+$rdx   : 0x0               
+$rsp   : 0x00007fffffffddd0  →  0x00007fffffffdf48  →  0x00007fffffffe189  →  "/mnt/c/Users/Neel/Downloads/picoCTF_2021/binary_ga[...]"
+$rbp   : 0x00007fffffffde50  →  0x0000000000000000
+$rsi   : 0x0               
+$rdi   : 0x00007ffff7fac4c0  →  0x0000000000000000
+$rip   : 0x00000000004006e9  →  <main+98> mov rdx, QWORD PTR [rip+0x200970]        # 0x601060 <stdin@@GLIBC_2.2.5>
+$r8    : 0x0               
+$r9    : 0x41              
+$r10   : 0xfffffffffffff279
+$r11   : 0x00007ffff7e434c0  →  <fflush+0> endbr64 
+$r12   : 0x00000000004005a0  →  <_start+0> xor ebp, ebp
+$r13   : 0x00007fffffffdf40  →  0x0000000000000001
+$r14   : 0x0               
+$r15   : 0x0               
+$eflags: [zero carry PARITY adjust sign trap INTERRUPT direction overflow resume virtualx86 identification]
+$cs: 0x0033 $ss: 0x002b $ds: 0x0000 $es: 0x0000 $fs: 0x0000 $gs: 0x0000 
+───────────────────────────────────────────────────────────────────────────────────────────────────────────── stack ────
+0x00007fffffffddd0│+0x0000: 0x00007fffffffdf48  →  0x00007fffffffe189  →  "/mnt/c/Users/Neel/Downloads/picoCTF_2021/binary_ga[...]"	 ← $rsp
+0x00007fffffffddd8│+0x0008: 0x0000000100000000
+0x00007fffffffdde0│+0x0010: 0x0000000000000000
+0x00007fffffffdde8│+0x0018: 0x0000000000000000
+0x00007fffffffddf0│+0x0020: 0x0000000000400040  →   (bad) 
+0x00007fffffffddf8│+0x0028: 0x0000000000f0b5ff
+0x00007fffffffde00│+0x0030: 0x00000000000000c2
+0x00007fffffffde08│+0x0038: 0x00007fffffffde37  →  0x000000004005a000
+─────────────────────────────────────────────────────────────────────────────────────────────────────── code:x86:64 ────
+     0x4006da <main+83>        mov    rax, QWORD PTR [rip+0x20096f]        # 0x601050 <stdout@@GLIBC_2.2.5>
+     0x4006e1 <main+90>        mov    rdi, rax
+     0x4006e4 <main+93>        call   0x400590 <fflush@plt>
+ →   0x4006e9 <main+98>        mov    rdx, QWORD PTR [rip+0x200970]        # 0x601060 <stdin@@GLIBC_2.2.5>
+     0x4006f0 <main+105>       mov    rax, QWORD PTR [rbp-0x8]
+     0x4006f4 <main+109>       mov    esi, 0x3e8
+     0x4006f9 <main+114>       mov    rdi, rax
+     0x4006fc <main+117>       call   0x400570 <fgets@plt>
+     0x400701 <main+122>       mov    rax, QWORD PTR [rbp-0x8]
+─────────────────────────────────────────────────────────────────────────────────────────────────────────── threads ────
+[#0] Id 1, Name: "gauntlet", stopped 0x4006e9 in main (), reason: SINGLE STEP
+───────────────────────────────────────────────────────────────────────────────────────────────────────────── trace ────
+[#0] 0x4006e9 → main()
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+[ Legend: Modified register | Code | Heap | Stack | String ]
+───────────────────────────────────────────────────────────────────────────────────────────────────────── registers ────
+$rax   : 0x0               
+$rbx   : 0x0000000000400730  →  <__libc_csu_init+0> push r15
+$rcx   : 0x0               
+$rdx   : 0x0               
+$rsp   : 0x00007fffffffddd0  →  0x00007fffffffdf48  →  0x00007fffffffe189  →  "/mnt/c/Users/Neel/Downloads/picoCTF_2021/binary_ga[...]"
+$rbp   : 0x00007fffffffde50  →  0x0000000000000000
+$rsi   : 0x0               
+$rdi   : 0x00007ffff7fac4c0  →  0x0000000000000000
+$rip   : 0x00000000004006e9  →  <main+98> mov rdx, QWORD PTR [rip+0x200970]        # 0x601060 <stdin@@GLIBC_2.2.5>
+$r8    : 0x0               
+$r9    : 0x41              
+$r10   : 0xfffffffffffff279
+$r11   : 0x00007ffff7e434c0  →  <fflush+0> endbr64 
+$r12   : 0x00000000004005a0  →  <_start+0> xor ebp, ebp
+$r13   : 0x00007fffffffdf40  →  0x0000000000000001
+$r14   : 0x0               
+$r15   : 0x0               
+$eflags: [zero carry PARITY adjust sign trap INTERRUPT direction overflow resume virtualx86 identification]
+$cs: 0x0033 $ss: 0x002b $ds: 0x0000 $es: 0x0000 $fs: 0x0000 $gs: 0x0000 
+───────────────────────────────────────────────────────────────────────────────────────────────────────────── stack ────
+0x00007fffffffddd0│+0x0000: 0x00007fffffffdf48  →  0x00007fffffffe189  →  "/mnt/c/Users/Neel/Downloads/picoCTF_2021/binary_ga[...]"	 ← $rsp
+0x00007fffffffddd8│+0x0008: 0x0000000100000000
+0x00007fffffffdde0│+0x0010: 0x0000000000000000
+0x00007fffffffdde8│+0x0018: 0x0000000000000000
+0x00007fffffffddf0│+0x0020: 0x0000000000400040  →   (bad) 
+0x00007fffffffddf8│+0x0028: 0x0000000000f0b5ff
+0x00007fffffffde00│+0x0030: 0x00000000000000c2
+0x00007fffffffde08│+0x0038: 0x00007fffffffde37  →  0x000000004005a000
+─────────────────────────────────────────────────────────────────────────────────────────────────────── code:x86:64 ────
+     0x4006da <main+83>        mov    rax, QWORD PTR [rip+0x20096f]        # 0x601050 <stdout@@GLIBC_2.2.5>
+     0x4006e1 <main+90>        mov    rdi, rax
+     0x4006e4 <main+93>        call   0x400590 <fflush@plt>
+ →   0x4006e9 <main+98>        mov    rdx, QWORD PTR [rip+0x200970]        # 0x601060 <stdin@@GLIBC_2.2.5>
+     0x4006f0 <main+105>       mov    rax, QWORD PTR [rbp-0x8]
+     0x4006f4 <main+109>       mov    esi, 0x3e8
+     0x4006f9 <main+114>       mov    rdi, rax
+     0x4006fc <main+117>       call   0x400570 <fgets@plt>
+     0x400701 <main+122>       mov    rax, QWORD PTR [rbp-0x8]
+─────────────────────────────────────────────────────────────────────────────────────────────────────────── threads ────
+[#0] Id 1, Name: "gauntlet", stopped 0x4006e9 in main (), reason: SINGLE STEP
+───────────────────────────────────────────────────────────────────────────────────────────────────────────── trace ────
+[#0] 0x4006e9 → main()
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+Starting program: /mnt/c/Users/Neel/Downloads/picoCTF_2021/binary_gauntlet_2/gauntlet 
+
+Breakpoint 1, 0x00000000004006d5 in main ()
+[ Legend: Modified register | Code | Heap | Stack | String ]
+───────────────────────────────────────────────────────────────────────────────────────────────────────── registers ────
+$rax   : 0x0               
+$rbx   : 0x0000000000400730  →  <__libc_csu_init+0> push r15
+$rcx   : 0x00000000006026a5  →  0x0000000000000000
+$rdx   : 0x0               
+$rsp   : 0x00007fffffffddd0  →  0x00007fffffffdf48  →  0x00007fffffffe189  →  "/mnt/c/Users/Neel/Downloads/picoCTF_2021/binary_ga[...]"
+$rbp   : 0x00007fffffffde50  →  0x0000000000000000
+$rsi   : 0x0000000000602691  →  "p|%p|%p|%p|%p|%p|%p\n"
+$rdi   : 0x00000000006022a0  →  "%p|%p|%p|%p|%p|%p|%p\n"
+$rip   : 0x00000000004006d5  →  <main+78> call 0x400560 <printf@plt>
+$r8    : 0x00000000006022a0  →  "%p|%p|%p|%p|%p|%p|%p\n"
+$r9    : 0x7c              
+$r10   : 0xfffffffffffff279
+$r11   : 0x246             
+$r12   : 0x00000000004005a0  →  <_start+0> xor ebp, ebp
+$r13   : 0x00007fffffffdf40  →  0x0000000000000001
+$r14   : 0x0               
+$r15   : 0x0               
+$eflags: [zero carry PARITY adjust sign trap INTERRUPT direction overflow resume virtualx86 identification]
+$cs: 0x0033 $ss: 0x002b $ds: 0x0000 $es: 0x0000 $fs: 0x0000 $gs: 0x0000 
+───────────────────────────────────────────────────────────────────────────────────────────────────────────── stack ────
+0x00007fffffffddd0│+0x0000: 0x00007fffffffdf48  →  0x00007fffffffe189  →  "/mnt/c/Users/Neel/Downloads/picoCTF_2021/binary_ga[...]"	 ← $rsp
+0x00007fffffffddd8│+0x0008: 0x0000000100000000
+0x00007fffffffdde0│+0x0010: 0x0000000000000000
+0x00007fffffffdde8│+0x0018: 0x0000000000000000
+0x00007fffffffddf0│+0x0020: 0x0000000000400040  →   (bad) 
+0x00007fffffffddf8│+0x0028: 0x0000000000f0b5ff
+0x00007fffffffde00│+0x0030: 0x00000000000000c2
+0x00007fffffffde08│+0x0038: 0x00007fffffffde37  →  0x000000004005a000
+─────────────────────────────────────────────────────────────────────────────────────────────────────── code:x86:64 ────
+     0x4006c9 <main+66>        mov    rax, QWORD PTR [rbp-0x8]
+     0x4006cd <main+70>        mov    rdi, rax
+     0x4006d0 <main+73>        mov    eax, 0x0
+ →   0x4006d5 <main+78>        call   0x400560 <printf@plt>
+   ↳    0x400560 <printf@plt+0>   jmp    QWORD PTR [rip+0x200aba]        # 0x601020 <printf@got.plt>
+        0x400566 <printf@plt+6>   push   0x1
+        0x40056b <printf@plt+11>  jmp    0x400540
+        0x400570 <fgets@plt+0>    jmp    QWORD PTR [rip+0x200ab2]        # 0x601028 <fgets@got.plt>
+        0x400576 <fgets@plt+6>    push   0x2
+        0x40057b <fgets@plt+11>   jmp    0x400540
+─────────────────────────────────────────────────────────────────────────────────────────────── arguments (guessed) ────
+printf@plt (
+   $rdi = 0x00000000006022a0 → "%p|%p|%p|%p|%p|%p|%p\n",
+   $rsi = 0x0000000000602691 → "p|%p|%p|%p|%p|%p|%p\n",
+   $rdx = 0x0000000000000000
+)
+─────────────────────────────────────────────────────────────────────────────────────────────────────────── threads ────
+[#0] Id 1, Name: "gauntlet", stopped 0x4006d5 in main (), reason: BREAKPOINT
+───────────────────────────────────────────────────────────────────────────────────────────────────────────── trace ────
+[#0] 0x4006d5 → main()
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+[ Legend: Modified register | Code | Heap | Stack | String ]
+───────────────────────────────────────────────────────────────────────────────────────────────────────── registers ────
+$rax   : 0x0               
+$rbx   : 0x0000000000400730  →  <__libc_csu_init+0> push r15
+$rcx   : 0x00000000006026a5  →  0x0000000000000000
+$rdx   : 0x0               
+$rsp   : 0x00007fffffffddd0  →  0x00007fffffffdf48  →  0x00007fffffffe189  →  "/mnt/c/Users/Neel/Downloads/picoCTF_2021/binary_ga[...]"
+$rbp   : 0x00007fffffffde50  →  0x0000000000000000
+$rsi   : 0x0000000000602691  →  "p|%p|%p|%p|%p|%p|%p\n"
+$rdi   : 0x00000000006022a0  →  "%p|%p|%p|%p|%p|%p|%p\n"
+$rip   : 0x00000000004006d5  →  <main+78> call 0x400560 <printf@plt>
+$r8    : 0x00000000006022a0  →  "%p|%p|%p|%p|%p|%p|%p\n"
+$r9    : 0x7c              
+$r10   : 0xfffffffffffff279
+$r11   : 0x246             
+$r12   : 0x00000000004005a0  →  <_start+0> xor ebp, ebp
+$r13   : 0x00007fffffffdf40  →  0x0000000000000001
+$r14   : 0x0               
+$r15   : 0x0               
+$eflags: [zero carry PARITY adjust sign trap INTERRUPT direction overflow resume virtualx86 identification]
+$cs: 0x0033 $ss: 0x002b $ds: 0x0000 $es: 0x0000 $fs: 0x0000 $gs: 0x0000 
+───────────────────────────────────────────────────────────────────────────────────────────────────────────── stack ────
+0x00007fffffffddd0│+0x0000: 0x00007fffffffdf48  →  0x00007fffffffe189  →  "/mnt/c/Users/Neel/Downloads/picoCTF_2021/binary_ga[...]"	 ← $rsp
+0x00007fffffffddd8│+0x0008: 0x0000000100000000
+0x00007fffffffdde0│+0x0010: 0x0000000000000000
+0x00007fffffffdde8│+0x0018: 0x0000000000000000
+0x00007fffffffddf0│+0x0020: 0x0000000000400040  →   (bad) 
+0x00007fffffffddf8│+0x0028: 0x0000000000f0b5ff
+0x00007fffffffde00│+0x0030: 0x00000000000000c2
+0x00007fffffffde08│+0x0038: 0x00007fffffffde37  →  0x000000004005a000
+─────────────────────────────────────────────────────────────────────────────────────────────────────── code:x86:64 ────
+     0x4006c9 <main+66>        mov    rax, QWORD PTR [rbp-0x8]
+     0x4006cd <main+70>        mov    rdi, rax
+     0x4006d0 <main+73>        mov    eax, 0x0
+ →   0x4006d5 <main+78>        call   0x400560 <printf@plt>
+   ↳    0x400560 <printf@plt+0>   jmp    QWORD PTR [rip+0x200aba]        # 0x601020 <printf@got.plt>
+        0x400566 <printf@plt+6>   push   0x1
+        0x40056b <printf@plt+11>  jmp    0x400540
+        0x400570 <fgets@plt+0>    jmp    QWORD PTR [rip+0x200ab2]        # 0x601028 <fgets@got.plt>
+        0x400576 <fgets@plt+6>    push   0x2
+        0x40057b <fgets@plt+11>   jmp    0x400540
+─────────────────────────────────────────────────────────────────────────────────────────────── arguments (guessed) ────
+printf@plt (
+   $rdi = 0x00000000006022a0 → "%p|%p|%p|%p|%p|%p|%p\n",
+   $rsi = 0x0000000000602691 → "p|%p|%p|%p|%p|%p|%p\n",
+   $rdx = 0x0000000000000000
+)
+─────────────────────────────────────────────────────────────────────────────────────────────────────────── threads ────
+[#0] Id 1, Name: "gauntlet", stopped 0x4006d5 in main (), reason: BREAKPOINT
+───────────────────────────────────────────────────────────────────────────────────────────────────────────── trace ────
+[#0] 0x4006d5 → main()
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+Continuing.
+
+Program received signal SIGINT, Interrupt.
+0x00007ffff7ecf142 in __GI___libc_read (fd=0x0, buf=0x602690, nbytes=0x400) at ../sysdeps/unix/sysv/linux/read.c:26
+26	../sysdeps/unix/sysv/linux/read.c: No such file or directory.
+/home/neelaryan2/.gdbinit-gef.py:2382: DeprecationWarning: invalid escape sequence '\A'
+  res = gdb.Value(address).cast(char_ptr).string(encoding=encoding, length=length).strip()
+[ Legend: Modified register | Code | Heap | Stack | String ]
+───────────────────────────────────────────────────────────────────────────────────────────────────────── registers ────
+$rax   : 0xfffffffffffffe00
+$rbx   : 0x00007ffff7fa9980  →  0x00000000fbad2288
+$rcx   : 0x00007ffff7ecf142  →  0x5677fffff0003d48 ("H="?)
+$rdx   : 0x400             
+$rsp   : 0x00007fffffffdcc8  →  0x00007ffff7e51d1f  →  <_IO_file_underflow+383> test rax, rax
+$rbp   : 0x00007ffff7fab4a0  →  0x0000000000000000
+$rsi   : 0x0000000000602690  →  "%p|%p|%p|%p|%p|%p|%p\n"
+$rdi   : 0x0               
+$rip   : 0x00007ffff7ecf142  →  0x5677fffff0003d48 ("H="?)
+$r8    : 0x0               
+$r9    : 0x0               
+$r10   : 0xfffffffffffff279
+$r11   : 0x246             
+$r12   : 0x00007ffff7faa6a0  →  0x00000000fbad2a84
+$r13   : 0x00007ffff7faa8a0  →  0x0000000000000000
+$r14   : 0xd68             
+$r15   : 0x00007ffff7fab608  →  0x00007ffff7e53ee0  →  <_IO_cleanup+0> endbr64 
+$eflags: [ZERO carry PARITY adjust sign trap INTERRUPT direction overflow resume virtualx86 identification]
+$cs: 0x0033 $ss: 0x002b $ds: 0x0000 $es: 0x0000 $fs: 0x0000 $gs: 0x0000 
+───────────────────────────────────────────────────────────────────────────────────────────────────────────── stack ────
+0x00007fffffffdcc8│+0x0000: 0x00007ffff7e51d1f  →  <_IO_file_underflow+383> test rax, rax	 ← $rsp
+0x00007fffffffdcd0│+0x0008: 0x0000000000000000
+0x00007fffffffdcd8│+0x0010: 0x00007ffff7fab4a0  →  0x0000000000000000
+0x00007fffffffdce0│+0x0018: 0x00007fffffffde50  →  0x0000000000000000
+0x00007fffffffdce8│+0x0020: 0x00007ffff7fa9980  →  0x00000000fbad2288
+0x00007fffffffdcf0│+0x0028: 0x00007ffff7fab4a0  →  0x0000000000000000
+0x00007fffffffdcf8│+0x0030: 0x00007ffff7fa9980  →  0x00000000fbad2288
+0x00007fffffffdd00│+0x0038: 0x00000000006026a5  →  0x0000000000000000
+─────────────────────────────────────────────────────────────────────────────────────────────────────── code:x86:64 ────
+   0x7ffff7ecf13c <read+12>        test   eax, eax
+   0x7ffff7ecf13e <read+14>        jne    0x7ffff7ecf150 <__GI___libc_read+32>
+   0x7ffff7ecf140 <read+16>        syscall 
+ → 0x7ffff7ecf142 <read+18>        cmp    rax, 0xfffffffffffff000
+   0x7ffff7ecf148 <read+24>        ja     0x7ffff7ecf1a0 <__GI___libc_read+112>
+   0x7ffff7ecf14a <read+26>        ret    
+   0x7ffff7ecf14b <read+27>        nop    DWORD PTR [rax+rax*1+0x0]
+   0x7ffff7ecf150 <read+32>        sub    rsp, 0x28
+   0x7ffff7ecf154 <read+36>        mov    QWORD PTR [rsp+0x18], rdx
+─────────────────────────────────────────────────────────────────────────────────────────────────────────── threads ────
+[#0] Id 1, Name: "gauntlet", stopped 0x7ffff7ecf142 in __GI___libc_read (), reason: SIGINT
+───────────────────────────────────────────────────────────────────────────────────────────────────────────── trace ────
+[#0] 0x7ffff7ecf142 → __GI___libc_read(fd=0x0, buf=0x602690, nbytes=0x400)
+[#1] 0x7ffff7e51d1f → _IO_new_file_underflow(fp=0x7ffff7fa9980 <_IO_2_1_stdin_>)
+[#2] 0x7ffff7e53106 → __GI__IO_default_uflow(fp=0x7ffff7fa9980 <_IO_2_1_stdin_>)
+[#3] 0x7ffff7e449ec → __GI__IO_getline_info(fp=0x7ffff7fa9980 <_IO_2_1_stdin_>, buf=0x6022a0 "%p|%p|%p|%p|%p|%p|%p\n", n=0x3e7, delim=0xa, extract_delim=0x1, eof=0x0)
+[#4] 0x7ffff7e44aec → __GI__IO_getline(fp=0x7ffff7fa9980 <_IO_2_1_stdin_>, buf=0x6022a0 "%p|%p|%p|%p|%p|%p|%p\n", n=0x3e7, delim=0xa, extract_delim=0x1)
+[#5] 0x7ffff7e4384a → _IO_fgets(buf=0x6022a0 "%p|%p|%p|%p|%p|%p|%p\n", n=0x3e8, fp=0x7ffff7fa9980 <_IO_2_1_stdin_>)
+[#6] 0x400701 → main()
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+[ Legend: Modified register | Code | Heap | Stack | String ]
+───────────────────────────────────────────────────────────────────────────────────────────────────────── registers ────
+$rax   : 0xfffffffffffffe00
+$rbx   : 0x00007ffff7fa9980  →  0x00000000fbad2288
+$rcx   : 0x00007ffff7ecf142  →  0x5677fffff0003d48 ("H="?)
+$rdx   : 0x400             
+$rsp   : 0x00007fffffffdcc8  →  0x00007ffff7e51d1f  →  <_IO_file_underflow+383> test rax, rax
+$rbp   : 0x00007ffff7fab4a0  →  0x0000000000000000
+$rsi   : 0x0000000000602690  →  "%p|%p|%p|%p|%p|%p|%p\n"
+$rdi   : 0x0               
+$rip   : 0x00007ffff7ecf142  →  0x5677fffff0003d48 ("H="?)
+$r8    : 0x0               
+$r9    : 0x0               
+$r10   : 0xfffffffffffff279
+$r11   : 0x246             
+$r12   : 0x00007ffff7faa6a0  →  0x00000000fbad2a84
+$r13   : 0x00007ffff7faa8a0  →  0x0000000000000000
+$r14   : 0xd68             
+$r15   : 0x00007ffff7fab608  →  0x00007ffff7e53ee0  →  <_IO_cleanup+0> endbr64 
+$eflags: [ZERO carry PARITY adjust sign trap INTERRUPT direction overflow resume virtualx86 identification]
+$cs: 0x0033 $ss: 0x002b $ds: 0x0000 $es: 0x0000 $fs: 0x0000 $gs: 0x0000 
+───────────────────────────────────────────────────────────────────────────────────────────────────────────── stack ────
+0x00007fffffffdcc8│+0x0000: 0x00007ffff7e51d1f  →  <_IO_file_underflow+383> test rax, rax	 ← $rsp
+0x00007fffffffdcd0│+0x0008: 0x0000000000000000
+0x00007fffffffdcd8│+0x0010: 0x00007ffff7fab4a0  →  0x0000000000000000
+0x00007fffffffdce0│+0x0018: 0x00007fffffffde50  →  0x0000000000000000
+0x00007fffffffdce8│+0x0020: 0x00007ffff7fa9980  →  0x00000000fbad2288
+0x00007fffffffdcf0│+0x0028: 0x00007ffff7fab4a0  →  0x0000000000000000
+0x00007fffffffdcf8│+0x0030: 0x00007ffff7fa9980  →  0x00000000fbad2288
+0x00007fffffffdd00│+0x0038: 0x00000000006026a5  →  0x0000000000000000
+─────────────────────────────────────────────────────────────────────────────────────────────────────── code:x86:64 ────
+   0x7ffff7ecf13c <read+12>        test   eax, eax
+   0x7ffff7ecf13e <read+14>        jne    0x7ffff7ecf150 <__GI___libc_read+32>
+   0x7ffff7ecf140 <read+16>        syscall 
+ → 0x7ffff7ecf142 <read+18>        cmp    rax, 0xfffffffffffff000
+   0x7ffff7ecf148 <read+24>        ja     0x7ffff7ecf1a0 <__GI___libc_read+112>
+   0x7ffff7ecf14a <read+26>        ret    
+   0x7ffff7ecf14b <read+27>        nop    DWORD PTR [rax+rax*1+0x0]
+   0x7ffff7ecf150 <read+32>        sub    rsp, 0x28
+   0x7ffff7ecf154 <read+36>        mov    QWORD PTR [rsp+0x18], rdx
+─────────────────────────────────────────────────────────────────────────────────────────────────────────── threads ────
+[#0] Id 1, Name: "gauntlet", stopped 0x7ffff7ecf142 in __GI___libc_read (), reason: SIGINT
+───────────────────────────────────────────────────────────────────────────────────────────────────────────── trace ────
+[#0] 0x7ffff7ecf142 → __GI___libc_read(fd=0x0, buf=0x602690, nbytes=0x400)
+[#1] 0x7ffff7e51d1f → _IO_new_file_underflow(fp=0x7ffff7fa9980 <_IO_2_1_stdin_>)
+[#2] 0x7ffff7e53106 → __GI__IO_default_uflow(fp=0x7ffff7fa9980 <_IO_2_1_stdin_>)
+[#3] 0x7ffff7e449ec → __GI__IO_getline_info(fp=0x7ffff7fa9980 <_IO_2_1_stdin_>, buf=0x6022a0 "%p|%p|%p|%p|%p|%p|%p\n", n=0x3e7, delim=0xa, extract_delim=0x1, eof=0x0)
+[#4] 0x7ffff7e44aec → __GI__IO_getline(fp=0x7ffff7fa9980 <_IO_2_1_stdin_>, buf=0x6022a0 "%p|%p|%p|%p|%p|%p|%p\n", n=0x3e7, delim=0xa, extract_delim=0x1)
+[#5] 0x7ffff7e4384a → _IO_fgets(buf=0x6022a0 "%p|%p|%p|%p|%p|%p|%p\n", n=0x3e8, fp=0x7ffff7fa9980 <_IO_2_1_stdin_>)
+[#6] 0x400701 → main()
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+Starting program: /mnt/c/Users/Neel/Downloads/picoCTF_2021/binary_gauntlet_2/gauntlet 
+
+Breakpoint 1, 0x00000000004006d5 in main ()
+[ Legend: Modified register | Code | Heap | Stack | String ]
+───────────────────────────────────────────────────────────────────────────────────────────────────────── registers ────
+$rax   : 0x0               
+$rbx   : 0x0000000000400730  →  <__libc_csu_init+0> push r15
+$rcx   : 0x00000000006026a5  →  0x0000000000000000
+$rdx   : 0x0               
+$rsp   : 0x00007fffffffddd0  →  0x00007fffffffdf48  →  0x00007fffffffe189  →  "/mnt/c/Users/Neel/Downloads/picoCTF_2021/binary_ga[...]"
+$rbp   : 0x00007fffffffde50  →  0x0000000000000000
+$rsi   : 0x0000000000602691  →  "p|%p|%p|%p|%p|%p|%p\n"
+$rdi   : 0x00000000006022a0  →  "%p|%p|%p|%p|%p|%p|%p\n"
+$rip   : 0x00000000004006d5  →  <main+78> call 0x400560 <printf@plt>
+$r8    : 0x00000000006022a0  →  "%p|%p|%p|%p|%p|%p|%p\n"
+$r9    : 0x7c              
+$r10   : 0xfffffffffffff279
+$r11   : 0x246             
+$r12   : 0x00000000004005a0  →  <_start+0> xor ebp, ebp
+$r13   : 0x00007fffffffdf40  →  0x0000000000000001
+$r14   : 0x0               
+$r15   : 0x0               
+$eflags: [zero carry PARITY adjust sign trap INTERRUPT direction overflow resume virtualx86 identification]
+$cs: 0x0033 $ss: 0x002b $ds: 0x0000 $es: 0x0000 $fs: 0x0000 $gs: 0x0000 
+───────────────────────────────────────────────────────────────────────────────────────────────────────────── stack ────
+0x00007fffffffddd0│+0x0000: 0x00007fffffffdf48  →  0x00007fffffffe189  →  "/mnt/c/Users/Neel/Downloads/picoCTF_2021/binary_ga[...]"	 ← $rsp
+0x00007fffffffddd8│+0x0008: 0x0000000100000000
+0x00007fffffffdde0│+0x0010: 0x0000000000000000
+0x00007fffffffdde8│+0x0018: 0x0000000000000000
+0x00007fffffffddf0│+0x0020: 0x0000000000400040  →   (bad) 
+0x00007fffffffddf8│+0x0028: 0x0000000000f0b5ff
+0x00007fffffffde00│+0x0030: 0x00000000000000c2
+0x00007fffffffde08│+0x0038: 0x00007fffffffde37  →  0x000000004005a000
+─────────────────────────────────────────────────────────────────────────────────────────────────────── code:x86:64 ────
+     0x4006c9 <main+66>        mov    rax, QWORD PTR [rbp-0x8]
+     0x4006cd <main+70>        mov    rdi, rax
+     0x4006d0 <main+73>        mov    eax, 0x0
+ →   0x4006d5 <main+78>        call   0x400560 <printf@plt>
+   ↳    0x400560 <printf@plt+0>   jmp    QWORD PTR [rip+0x200aba]        # 0x601020 <printf@got.plt>
+        0x400566 <printf@plt+6>   push   0x1
+        0x40056b <printf@plt+11>  jmp    0x400540
+        0x400570 <fgets@plt+0>    jmp    QWORD PTR [rip+0x200ab2]        # 0x601028 <fgets@got.plt>
+        0x400576 <fgets@plt+6>    push   0x2
+        0x40057b <fgets@plt+11>   jmp    0x400540
+─────────────────────────────────────────────────────────────────────────────────────────────── arguments (guessed) ────
+printf@plt (
+   $rdi = 0x00000000006022a0 → "%p|%p|%p|%p|%p|%p|%p\n",
+   $rsi = 0x0000000000602691 → "p|%p|%p|%p|%p|%p|%p\n",
+   $rdx = 0x0000000000000000
+)
+─────────────────────────────────────────────────────────────────────────────────────────────────────────── threads ────
+[#0] Id 1, Name: "gauntlet", stopped 0x4006d5 in main (), reason: BREAKPOINT
+───────────────────────────────────────────────────────────────────────────────────────────────────────────── trace ────
+[#0] 0x4006d5 → main()
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+[ Legend: Modified register | Code | Heap | Stack | String ]
+───────────────────────────────────────────────────────────────────────────────────────────────────────── registers ────
+$rax   : 0x0               
+$rbx   : 0x0000000000400730  →  <__libc_csu_init+0> push r15
+$rcx   : 0x00000000006026a5  →  0x0000000000000000
+$rdx   : 0x0               
+$rsp   : 0x00007fffffffddd0  →  0x00007fffffffdf48  →  0x00007fffffffe189  →  "/mnt/c/Users/Neel/Downloads/picoCTF_2021/binary_ga[...]"
+$rbp   : 0x00007fffffffde50  →  0x0000000000000000
+$rsi   : 0x0000000000602691  →  "p|%p|%p|%p|%p|%p|%p\n"
+$rdi   : 0x00000000006022a0  →  "%p|%p|%p|%p|%p|%p|%p\n"
+$rip   : 0x00000000004006d5  →  <main+78> call 0x400560 <printf@plt>
+$r8    : 0x00000000006022a0  →  "%p|%p|%p|%p|%p|%p|%p\n"
+$r9    : 0x7c              
+$r10   : 0xfffffffffffff279
+$r11   : 0x246             
+$r12   : 0x00000000004005a0  →  <_start+0> xor ebp, ebp
+$r13   : 0x00007fffffffdf40  →  0x0000000000000001
+$r14   : 0x0               
+$r15   : 0x0               
+$eflags: [zero carry PARITY adjust sign trap INTERRUPT direction overflow resume virtualx86 identification]
+$cs: 0x0033 $ss: 0x002b $ds: 0x0000 $es: 0x0000 $fs: 0x0000 $gs: 0x0000 
+───────────────────────────────────────────────────────────────────────────────────────────────────────────── stack ────
+0x00007fffffffddd0│+0x0000: 0x00007fffffffdf48  →  0x00007fffffffe189  →  "/mnt/c/Users/Neel/Downloads/picoCTF_2021/binary_ga[...]"	 ← $rsp
+0x00007fffffffddd8│+0x0008: 0x0000000100000000
+0x00007fffffffdde0│+0x0010: 0x0000000000000000
+0x00007fffffffdde8│+0x0018: 0x0000000000000000
+0x00007fffffffddf0│+0x0020: 0x0000000000400040  →   (bad) 
+0x00007fffffffddf8│+0x0028: 0x0000000000f0b5ff
+0x00007fffffffde00│+0x0030: 0x00000000000000c2
+0x00007fffffffde08│+0x0038: 0x00007fffffffde37  →  0x000000004005a000
+─────────────────────────────────────────────────────────────────────────────────────────────────────── code:x86:64 ────
+     0x4006c9 <main+66>        mov    rax, QWORD PTR [rbp-0x8]
+     0x4006cd <main+70>        mov    rdi, rax
+     0x4006d0 <main+73>        mov    eax, 0x0
+ →   0x4006d5 <main+78>        call   0x400560 <printf@plt>
+   ↳    0x400560 <printf@plt+0>   jmp    QWORD PTR [rip+0x200aba]        # 0x601020 <printf@got.plt>
+        0x400566 <printf@plt+6>   push   0x1
+        0x40056b <printf@plt+11>  jmp    0x400540
+        0x400570 <fgets@plt+0>    jmp    QWORD PTR [rip+0x200ab2]        # 0x601028 <fgets@got.plt>
+        0x400576 <fgets@plt+6>    push   0x2
+        0x40057b <fgets@plt+11>   jmp    0x400540
+─────────────────────────────────────────────────────────────────────────────────────────────── arguments (guessed) ────
+printf@plt (
+   $rdi = 0x00000000006022a0 → "%p|%p|%p|%p|%p|%p|%p\n",
+   $rsi = 0x0000000000602691 → "p|%p|%p|%p|%p|%p|%p\n",
+   $rdx = 0x0000000000000000
+)
+─────────────────────────────────────────────────────────────────────────────────────────────────────────── threads ────
+[#0] Id 1, Name: "gauntlet", stopped 0x4006d5 in main (), reason: BREAKPOINT
+───────────────────────────────────────────────────────────────────────────────────────────────────────────── trace ────
+[#0] 0x4006d5 → main()
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+Starting program: /mnt/c/Users/Neel/Downloads/picoCTF_2021/binary_gauntlet_2/gauntlet 
+
+Breakpoint 1, 0x00000000004006d5 in main ()
+[ Legend: Modified register | Code | Heap | Stack | String ]
+───────────────────────────────────────────────────────────────────────────────────────────────────────── registers ────
+$rax   : 0x0               
+$rbx   : 0x0000000000400730  →  <__libc_csu_init+0> push r15
+$rcx   : 0x00000000006026ae  →  0x0000000000000000
+$rdx   : 0x0               
+$rsp   : 0x00007fffffffddd0  →  0x00007fffffffdf48  →  0x00007fffffffe189  →  "/mnt/c/Users/Neel/Downloads/picoCTF_2021/binary_ga[...]"
+$rbp   : 0x00007fffffffde50  →  0x0000000000000000
+$rsi   : 0x0000000000602691  →  "p|%p|%p|%p|%p|%p|%p|%p|%p|%p\n"
+$rdi   : 0x00000000006022a0  →  "%p|%p|%p|%p|%p|%p|%p|%p|%p|%p\n"
+$rip   : 0x00000000004006d5  →  <main+78> call 0x400560 <printf@plt>
+$r8    : 0x00000000006022a0  →  "%p|%p|%p|%p|%p|%p|%p|%p|%p|%p\n"
+$r9    : 0x7c              
+$r10   : 0xfffffffffffff279
+$r11   : 0x246             
+$r12   : 0x00000000004005a0  →  <_start+0> xor ebp, ebp
+$r13   : 0x00007fffffffdf40  →  0x0000000000000001
+$r14   : 0x0               
+$r15   : 0x0               
+$eflags: [zero carry PARITY adjust sign trap INTERRUPT direction overflow resume virtualx86 identification]
+$cs: 0x0033 $ss: 0x002b $ds: 0x0000 $es: 0x0000 $fs: 0x0000 $gs: 0x0000 
+───────────────────────────────────────────────────────────────────────────────────────────────────────────── stack ────
+0x00007fffffffddd0│+0x0000: 0x00007fffffffdf48  →  0x00007fffffffe189  →  "/mnt/c/Users/Neel/Downloads/picoCTF_2021/binary_ga[...]"	 ← $rsp
+0x00007fffffffddd8│+0x0008: 0x0000000100000000
+0x00007fffffffdde0│+0x0010: 0x0000000000000000
+0x00007fffffffdde8│+0x0018: 0x0000000000000000
+0x00007fffffffddf0│+0x0020: 0x0000000000400040  →   (bad) 
+0x00007fffffffddf8│+0x0028: 0x0000000000f0b5ff
+0x00007fffffffde00│+0x0030: 0x00000000000000c2
+0x00007fffffffde08│+0x0038: 0x00007fffffffde37  →  0x000000004005a000
+─────────────────────────────────────────────────────────────────────────────────────────────────────── code:x86:64 ────
+     0x4006c9 <main+66>        mov    rax, QWORD PTR [rbp-0x8]
+     0x4006cd <main+70>        mov    rdi, rax
+     0x4006d0 <main+73>        mov    eax, 0x0
+ →   0x4006d5 <main+78>        call   0x400560 <printf@plt>
+   ↳    0x400560 <printf@plt+0>   jmp    QWORD PTR [rip+0x200aba]        # 0x601020 <printf@got.plt>
+        0x400566 <printf@plt+6>   push   0x1
+        0x40056b <printf@plt+11>  jmp    0x400540
+        0x400570 <fgets@plt+0>    jmp    QWORD PTR [rip+0x200ab2]        # 0x601028 <fgets@got.plt>
+        0x400576 <fgets@plt+6>    push   0x2
+        0x40057b <fgets@plt+11>   jmp    0x400540
+─────────────────────────────────────────────────────────────────────────────────────────────── arguments (guessed) ────
+printf@plt (
+   $rdi = 0x00000000006022a0 → "%p|%p|%p|%p|%p|%p|%p|%p|%p|%p\n",
+   $rsi = 0x0000000000602691 → "p|%p|%p|%p|%p|%p|%p|%p|%p|%p\n",
+   $rdx = 0x0000000000000000
+)
+─────────────────────────────────────────────────────────────────────────────────────────────────────────── threads ────
+[#0] Id 1, Name: "gauntlet", stopped 0x4006d5 in main (), reason: BREAKPOINT
+───────────────────────────────────────────────────────────────────────────────────────────────────────────── trace ────
+[#0] 0x4006d5 → main()
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+[ Legend: Modified register | Code | Heap | Stack | String ]
+───────────────────────────────────────────────────────────────────────────────────────────────────────── registers ────
+$rax   : 0x0               
+$rbx   : 0x0000000000400730  →  <__libc_csu_init+0> push r15
+$rcx   : 0x00000000006026ae  →  0x0000000000000000
+$rdx   : 0x0               
+$rsp   : 0x00007fffffffddd0  →  0x00007fffffffdf48  →  0x00007fffffffe189  →  "/mnt/c/Users/Neel/Downloads/picoCTF_2021/binary_ga[...]"
+$rbp   : 0x00007fffffffde50  →  0x0000000000000000
+$rsi   : 0x0000000000602691  →  "p|%p|%p|%p|%p|%p|%p|%p|%p|%p\n"
+$rdi   : 0x00000000006022a0  →  "%p|%p|%p|%p|%p|%p|%p|%p|%p|%p\n"
+$rip   : 0x00000000004006d5  →  <main+78> call 0x400560 <printf@plt>
+$r8    : 0x00000000006022a0  →  "%p|%p|%p|%p|%p|%p|%p|%p|%p|%p\n"
+$r9    : 0x7c              
+$r10   : 0xfffffffffffff279
+$r11   : 0x246             
+$r12   : 0x00000000004005a0  →  <_start+0> xor ebp, ebp
+$r13   : 0x00007fffffffdf40  →  0x0000000000000001
+$r14   : 0x0               
+$r15   : 0x0               
+$eflags: [zero carry PARITY adjust sign trap INTERRUPT direction overflow resume virtualx86 identification]
+$cs: 0x0033 $ss: 0x002b $ds: 0x0000 $es: 0x0000 $fs: 0x0000 $gs: 0x0000 
+───────────────────────────────────────────────────────────────────────────────────────────────────────────── stack ────
+0x00007fffffffddd0│+0x0000: 0x00007fffffffdf48  →  0x00007fffffffe189  →  "/mnt/c/Users/Neel/Downloads/picoCTF_2021/binary_ga[...]"	 ← $rsp
+0x00007fffffffddd8│+0x0008: 0x0000000100000000
+0x00007fffffffdde0│+0x0010: 0x0000000000000000
+0x00007fffffffdde8│+0x0018: 0x0000000000000000
+0x00007fffffffddf0│+0x0020: 0x0000000000400040  →   (bad) 
+0x00007fffffffddf8│+0x0028: 0x0000000000f0b5ff
+0x00007fffffffde00│+0x0030: 0x00000000000000c2
+0x00007fffffffde08│+0x0038: 0x00007fffffffde37  →  0x000000004005a000
+─────────────────────────────────────────────────────────────────────────────────────────────────────── code:x86:64 ────
+     0x4006c9 <main+66>        mov    rax, QWORD PTR [rbp-0x8]
+     0x4006cd <main+70>        mov    rdi, rax
+     0x4006d0 <main+73>        mov    eax, 0x0
+ →   0x4006d5 <main+78>        call   0x400560 <printf@plt>
+   ↳    0x400560 <printf@plt+0>   jmp    QWORD PTR [rip+0x200aba]        # 0x601020 <printf@got.plt>
+        0x400566 <printf@plt+6>   push   0x1
+        0x40056b <printf@plt+11>  jmp    0x400540
+        0x400570 <fgets@plt+0>    jmp    QWORD PTR [rip+0x200ab2]        # 0x601028 <fgets@got.plt>
+        0x400576 <fgets@plt+6>    push   0x2
+        0x40057b <fgets@plt+11>   jmp    0x400540
+─────────────────────────────────────────────────────────────────────────────────────────────── arguments (guessed) ────
+printf@plt (
+   $rdi = 0x00000000006022a0 → "%p|%p|%p|%p|%p|%p|%p|%p|%p|%p\n",
+   $rsi = 0x0000000000602691 → "p|%p|%p|%p|%p|%p|%p|%p|%p|%p\n",
+   $rdx = 0x0000000000000000
+)
+─────────────────────────────────────────────────────────────────────────────────────────────────────────── threads ────
+[#0] Id 1, Name: "gauntlet", stopped 0x4006d5 in main (), reason: BREAKPOINT
+───────────────────────────────────────────────────────────────────────────────────────────────────────────── trace ────
+[#0] 0x4006d5 → main()
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+Continuing.
+
+Program received signal SIGINT, Interrupt.
+0x00007ffff7ecf142 in __GI___libc_read (fd=0x0, buf=0x602690, nbytes=0x400) at ../sysdeps/unix/sysv/linux/read.c:26
+26	../sysdeps/unix/sysv/linux/read.c: No such file or directory.
+[ Legend: Modified register | Code | Heap | Stack | String ]
+───────────────────────────────────────────────────────────────────────────────────────────────────────── registers ────
+$rax   : 0xfffffffffffffe00
+$rbx   : 0x00007ffff7fa9980  →  0x00000000fbad2288
+$rcx   : 0x00007ffff7ecf142  →  0x5677fffff0003d48 ("H="?)
+$rdx   : 0x400             
+$rsp   : 0x00007fffffffdcc8  →  0x00007ffff7e51d1f  →  <_IO_file_underflow+383> test rax, rax
+$rbp   : 0x00007ffff7fab4a0  →  0x0000000000000000
+$rsi   : 0x0000000000602690  →  "%p|%p|%p|%p|%p|%p|%p|%p|%p|%p\n"
+$rdi   : 0x0               
+$rip   : 0x00007ffff7ecf142  →  0x5677fffff0003d48 ("H="?)
+$r8    : 0x0               
+$r9    : 0x0               
+$r10   : 0xfffffffffffff279
+$r11   : 0x246             
+$r12   : 0x00007ffff7faa6a0  →  0x00000000fbad2a84
+$r13   : 0x00007ffff7faa8a0  →  0x0000000000000000
+$r14   : 0xd68             
+$r15   : 0x00007ffff7fab608  →  0x00007ffff7e53ee0  →  <_IO_cleanup+0> endbr64 
+$eflags: [ZERO carry PARITY adjust sign trap INTERRUPT direction overflow resume virtualx86 identification]
+$cs: 0x0033 $ss: 0x002b $ds: 0x0000 $es: 0x0000 $fs: 0x0000 $gs: 0x0000 
+───────────────────────────────────────────────────────────────────────────────────────────────────────────── stack ────
+0x00007fffffffdcc8│+0x0000: 0x00007ffff7e51d1f  →  <_IO_file_underflow+383> test rax, rax	 ← $rsp
+0x00007fffffffdcd0│+0x0008: 0x0000000000000000
+0x00007fffffffdcd8│+0x0010: 0x00007ffff7fab4a0  →  0x0000000000000000
+0x00007fffffffdce0│+0x0018: 0x00007fffffffde50  →  0x0000000000000000
+0x00007fffffffdce8│+0x0020: 0x00007ffff7fa9980  →  0x00000000fbad2288
+0x00007fffffffdcf0│+0x0028: 0x00007ffff7fab4a0  →  0x0000000000000000
+0x00007fffffffdcf8│+0x0030: 0x00007ffff7fa9980  →  0x00000000fbad2288
+0x00007fffffffdd00│+0x0038: 0x00000000006026ae  →  0x0000000000000000
+─────────────────────────────────────────────────────────────────────────────────────────────────────── code:x86:64 ────
+   0x7ffff7ecf13c <read+12>        test   eax, eax
+   0x7ffff7ecf13e <read+14>        jne    0x7ffff7ecf150 <__GI___libc_read+32>
+   0x7ffff7ecf140 <read+16>        syscall 
+ → 0x7ffff7ecf142 <read+18>        cmp    rax, 0xfffffffffffff000
+   0x7ffff7ecf148 <read+24>        ja     0x7ffff7ecf1a0 <__GI___libc_read+112>
+   0x7ffff7ecf14a <read+26>        ret    
+   0x7ffff7ecf14b <read+27>        nop    DWORD PTR [rax+rax*1+0x0]
+   0x7ffff7ecf150 <read+32>        sub    rsp, 0x28
+   0x7ffff7ecf154 <read+36>        mov    QWORD PTR [rsp+0x18], rdx
+─────────────────────────────────────────────────────────────────────────────────────────────────────────── threads ────
+[#0] Id 1, Name: "gauntlet", stopped 0x7ffff7ecf142 in __GI___libc_read (), reason: SIGINT
+───────────────────────────────────────────────────────────────────────────────────────────────────────────── trace ────
+[#0] 0x7ffff7ecf142 → __GI___libc_read(fd=0x0, buf=0x602690, nbytes=0x400)
+[#1] 0x7ffff7e51d1f → _IO_new_file_underflow(fp=0x7ffff7fa9980 <_IO_2_1_stdin_>)
+[#2] 0x7ffff7e53106 → __GI__IO_default_uflow(fp=0x7ffff7fa9980 <_IO_2_1_stdin_>)
+[#3] 0x7ffff7e449ec → __GI__IO_getline_info(fp=0x7ffff7fa9980 <_IO_2_1_stdin_>, buf=0x6022a0 "%p|%p|%p|%p|%p|%p|%p|%p|%p|%p\n", n=0x3e7, delim=0xa, extract_delim=0x1, eof=0x0)
+[#4] 0x7ffff7e44aec → __GI__IO_getline(fp=0x7ffff7fa9980 <_IO_2_1_stdin_>, buf=0x6022a0 "%p|%p|%p|%p|%p|%p|%p|%p|%p|%p\n", n=0x3e7, delim=0xa, extract_delim=0x1)
+[#5] 0x7ffff7e4384a → _IO_fgets(buf=0x6022a0 "%p|%p|%p|%p|%p|%p|%p|%p|%p|%p\n", n=0x3e8, fp=0x7ffff7fa9980 <_IO_2_1_stdin_>)
+[#6] 0x400701 → main()
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+[ Legend: Modified register | Code | Heap | Stack | String ]
+───────────────────────────────────────────────────────────────────────────────────────────────────────── registers ────
+$rax   : 0xfffffffffffffe00
+$rbx   : 0x00007ffff7fa9980  →  0x00000000fbad2288
+$rcx   : 0x00007ffff7ecf142  →  0x5677fffff0003d48 ("H="?)
+$rdx   : 0x400             
+$rsp   : 0x00007fffffffdcc8  →  0x00007ffff7e51d1f  →  <_IO_file_underflow+383> test rax, rax
+$rbp   : 0x00007ffff7fab4a0  →  0x0000000000000000
+$rsi   : 0x0000000000602690  →  "%p|%p|%p|%p|%p|%p|%p|%p|%p|%p\n"
+$rdi   : 0x0               
+$rip   : 0x00007ffff7ecf142  →  0x5677fffff0003d48 ("H="?)
+$r8    : 0x0               
+$r9    : 0x0               
+$r10   : 0xfffffffffffff279
+$r11   : 0x246             
+$r12   : 0x00007ffff7faa6a0  →  0x00000000fbad2a84
+$r13   : 0x00007ffff7faa8a0  →  0x0000000000000000
+$r14   : 0xd68             
+$r15   : 0x00007ffff7fab608  →  0x00007ffff7e53ee0  →  <_IO_cleanup+0> endbr64 
+$eflags: [ZERO carry PARITY adjust sign trap INTERRUPT direction overflow resume virtualx86 identification]
+$cs: 0x0033 $ss: 0x002b $ds: 0x0000 $es: 0x0000 $fs: 0x0000 $gs: 0x0000 
+───────────────────────────────────────────────────────────────────────────────────────────────────────────── stack ────
+0x00007fffffffdcc8│+0x0000: 0x00007ffff7e51d1f  →  <_IO_file_underflow+383> test rax, rax	 ← $rsp
+0x00007fffffffdcd0│+0x0008: 0x0000000000000000
+0x00007fffffffdcd8│+0x0010: 0x00007ffff7fab4a0  →  0x0000000000000000
+0x00007fffffffdce0│+0x0018: 0x00007fffffffde50  →  0x0000000000000000
+0x00007fffffffdce8│+0x0020: 0x00007ffff7fa9980  →  0x00000000fbad2288
+0x00007fffffffdcf0│+0x0028: 0x00007ffff7fab4a0  →  0x0000000000000000
+0x00007fffffffdcf8│+0x0030: 0x00007ffff7fa9980  →  0x00000000fbad2288
+0x00007fffffffdd00│+0x0038: 0x00000000006026ae  →  0x0000000000000000
+─────────────────────────────────────────────────────────────────────────────────────────────────────── code:x86:64 ────
+   0x7ffff7ecf13c <read+12>        test   eax, eax
+   0x7ffff7ecf13e <read+14>        jne    0x7ffff7ecf150 <__GI___libc_read+32>
+   0x7ffff7ecf140 <read+16>        syscall 
+ → 0x7ffff7ecf142 <read+18>        cmp    rax, 0xfffffffffffff000
+   0x7ffff7ecf148 <read+24>        ja     0x7ffff7ecf1a0 <__GI___libc_read+112>
+   0x7ffff7ecf14a <read+26>        ret    
+   0x7ffff7ecf14b <read+27>        nop    DWORD PTR [rax+rax*1+0x0]
+   0x7ffff7ecf150 <read+32>        sub    rsp, 0x28
+   0x7ffff7ecf154 <read+36>        mov    QWORD PTR [rsp+0x18], rdx
+─────────────────────────────────────────────────────────────────────────────────────────────────────────── threads ────
+[#0] Id 1, Name: "gauntlet", stopped 0x7ffff7ecf142 in __GI___libc_read (), reason: SIGINT
+───────────────────────────────────────────────────────────────────────────────────────────────────────────── trace ────
+[#0] 0x7ffff7ecf142 → __GI___libc_read(fd=0x0, buf=0x602690, nbytes=0x400)
+[#1] 0x7ffff7e51d1f → _IO_new_file_underflow(fp=0x7ffff7fa9980 <_IO_2_1_stdin_>)
+[#2] 0x7ffff7e53106 → __GI__IO_default_uflow(fp=0x7ffff7fa9980 <_IO_2_1_stdin_>)
+[#3] 0x7ffff7e449ec → __GI__IO_getline_info(fp=0x7ffff7fa9980 <_IO_2_1_stdin_>, buf=0x6022a0 "%p|%p|%p|%p|%p|%p|%p|%p|%p|%p\n", n=0x3e7, delim=0xa, extract_delim=0x1, eof=0x0)
+[#4] 0x7ffff7e44aec → __GI__IO_getline(fp=0x7ffff7fa9980 <_IO_2_1_stdin_>, buf=0x6022a0 "%p|%p|%p|%p|%p|%p|%p|%p|%p|%p\n", n=0x3e7, delim=0xa, extract_delim=0x1)
+[#5] 0x7ffff7e4384a → _IO_fgets(buf=0x6022a0 "%p|%p|%p|%p|%p|%p|%p|%p|%p|%p\n", n=0x3e8, fp=0x7ffff7fa9980 <_IO_2_1_stdin_>)
+[#6] 0x400701 → main()
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+Continuing.
+
+Program received signal SIGINT, Interrupt.
+0x00007ffff7ecf142 in __GI___libc_read (fd=0x0, buf=0x602690, nbytes=0x400) at ../sysdeps/unix/sysv/linux/read.c:26
+26	in ../sysdeps/unix/sysv/linux/read.c
+[ Legend: Modified register | Code | Heap | Stack | String ]
+───────────────────────────────────────────────────────────────────────────────────────────────────────── registers ────
+$rax   : 0xfffffffffffffe00
+$rbx   : 0x00007ffff7fa9980  →  0x00000000fbad2288
+$rcx   : 0x00007ffff7ecf142  →  0x5677fffff0003d48 ("H="?)
+$rdx   : 0x400             
+$rsp   : 0x00007fffffffdcc8  →  0x00007ffff7e51d1f  →  <_IO_file_underflow+383> test rax, rax
+$rbp   : 0x00007ffff7fab4a0  →  0x0000000000000000
+$rsi   : 0x0000000000602690  →  "%p|%p|%p|%p|%p|%p|%p|%p|%p|%p\n"
+$rdi   : 0x0               
+$rip   : 0x00007ffff7ecf142  →  0x5677fffff0003d48 ("H="?)
+$r8    : 0x0               
+$r9    : 0x0               
+$r10   : 0xfffffffffffff279
+$r11   : 0x246             
+$r12   : 0x00007ffff7faa6a0  →  0x00000000fbad2a84
+$r13   : 0x00007ffff7faa8a0  →  0x0000000000000000
+$r14   : 0xd68             
+$r15   : 0x00007ffff7fab608  →  0x00007ffff7e53ee0  →  <_IO_cleanup+0> endbr64 
+$eflags: [ZERO carry PARITY adjust sign trap INTERRUPT direction overflow resume virtualx86 identification]
+$cs: 0x0033 $ss: 0x002b $ds: 0x0000 $es: 0x0000 $fs: 0x0000 $gs: 0x0000 
+───────────────────────────────────────────────────────────────────────────────────────────────────────────── stack ────
+0x00007fffffffdcc8│+0x0000: 0x00007ffff7e51d1f  →  <_IO_file_underflow+383> test rax, rax	 ← $rsp
+0x00007fffffffdcd0│+0x0008: 0x0000000000000000
+0x00007fffffffdcd8│+0x0010: 0x00007ffff7fab4a0  →  0x0000000000000000
+0x00007fffffffdce0│+0x0018: 0x00007fffffffde50  →  0x0000000000000000
+0x00007fffffffdce8│+0x0020: 0x00007ffff7fa9980  →  0x00000000fbad2288
+0x00007fffffffdcf0│+0x0028: 0x00007ffff7fab4a0  →  0x0000000000000000
+0x00007fffffffdcf8│+0x0030: 0x00007ffff7fa9980  →  0x00000000fbad2288
+0x00007fffffffdd00│+0x0038: 0x00000000006026ae  →  0x0000000000000000
+─────────────────────────────────────────────────────────────────────────────────────────────────────── code:x86:64 ────
+   0x7ffff7ecf13c <read+12>        test   eax, eax
+   0x7ffff7ecf13e <read+14>        jne    0x7ffff7ecf150 <__GI___libc_read+32>
+   0x7ffff7ecf140 <read+16>        syscall 
+ → 0x7ffff7ecf142 <read+18>        cmp    rax, 0xfffffffffffff000
+   0x7ffff7ecf148 <read+24>        ja     0x7ffff7ecf1a0 <__GI___libc_read+112>
+   0x7ffff7ecf14a <read+26>        ret    
+   0x7ffff7ecf14b <read+27>        nop    DWORD PTR [rax+rax*1+0x0]
+   0x7ffff7ecf150 <read+32>        sub    rsp, 0x28
+   0x7ffff7ecf154 <read+36>        mov    QWORD PTR [rsp+0x18], rdx
+─────────────────────────────────────────────────────────────────────────────────────────────────────────── threads ────
+[#0] Id 1, Name: "gauntlet", stopped 0x7ffff7ecf142 in __GI___libc_read (), reason: SIGINT
+───────────────────────────────────────────────────────────────────────────────────────────────────────────── trace ────
+[#0] 0x7ffff7ecf142 → __GI___libc_read(fd=0x0, buf=0x602690, nbytes=0x400)
+[#1] 0x7ffff7e51d1f → _IO_new_file_underflow(fp=0x7ffff7fa9980 <_IO_2_1_stdin_>)
+[#2] 0x7ffff7e53106 → __GI__IO_default_uflow(fp=0x7ffff7fa9980 <_IO_2_1_stdin_>)
+[#3] 0x7ffff7e449ec → __GI__IO_getline_info(fp=0x7ffff7fa9980 <_IO_2_1_stdin_>, buf=0x6022a0 "%p|%p|%p|%p|%p|%p|%p|%p|%p|%p\n", n=0x3e7, delim=0xa, extract_delim=0x1, eof=0x0)
+[#4] 0x7ffff7e44aec → __GI__IO_getline(fp=0x7ffff7fa9980 <_IO_2_1_stdin_>, buf=0x6022a0 "%p|%p|%p|%p|%p|%p|%p|%p|%p|%p\n", n=0x3e7, delim=0xa, extract_delim=0x1)
+[#5] 0x7ffff7e4384a → _IO_fgets(buf=0x6022a0 "%p|%p|%p|%p|%p|%p|%p|%p|%p|%p\n", n=0x3e8, fp=0x7ffff7fa9980 <_IO_2_1_stdin_>)
+[#6] 0x400701 → main()
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+[ Legend: Modified register | Code | Heap | Stack | String ]
+───────────────────────────────────────────────────────────────────────────────────────────────────────── registers ────
+$rax   : 0xfffffffffffffe00
+$rbx   : 0x00007ffff7fa9980  →  0x00000000fbad2288
+$rcx   : 0x00007ffff7ecf142  →  0x5677fffff0003d48 ("H="?)
+$rdx   : 0x400             
+$rsp   : 0x00007fffffffdcc8  →  0x00007ffff7e51d1f  →  <_IO_file_underflow+383> test rax, rax
+$rbp   : 0x00007ffff7fab4a0  →  0x0000000000000000
+$rsi   : 0x0000000000602690  →  "%p|%p|%p|%p|%p|%p|%p|%p|%p|%p\n"
+$rdi   : 0x0               
+$rip   : 0x00007ffff7ecf142  →  0x5677fffff0003d48 ("H="?)
+$r8    : 0x0               
+$r9    : 0x0               
+$r10   : 0xfffffffffffff279
+$r11   : 0x246             
+$r12   : 0x00007ffff7faa6a0  →  0x00000000fbad2a84
+$r13   : 0x00007ffff7faa8a0  →  0x0000000000000000
+$r14   : 0xd68             
+$r15   : 0x00007ffff7fab608  →  0x00007ffff7e53ee0  →  <_IO_cleanup+0> endbr64 
+$eflags: [ZERO carry PARITY adjust sign trap INTERRUPT direction overflow resume virtualx86 identification]
+$cs: 0x0033 $ss: 0x002b $ds: 0x0000 $es: 0x0000 $fs: 0x0000 $gs: 0x0000 
+───────────────────────────────────────────────────────────────────────────────────────────────────────────── stack ────
+0x00007fffffffdcc8│+0x0000: 0x00007ffff7e51d1f  →  <_IO_file_underflow+383> test rax, rax	 ← $rsp
+0x00007fffffffdcd0│+0x0008: 0x0000000000000000
+0x00007fffffffdcd8│+0x0010: 0x00007ffff7fab4a0  →  0x0000000000000000
+0x00007fffffffdce0│+0x0018: 0x00007fffffffde50  →  0x0000000000000000
+0x00007fffffffdce8│+0x0020: 0x00007ffff7fa9980  →  0x00000000fbad2288
+0x00007fffffffdcf0│+0x0028: 0x00007ffff7fab4a0  →  0x0000000000000000
+0x00007fffffffdcf8│+0x0030: 0x00007ffff7fa9980  →  0x00000000fbad2288
+0x00007fffffffdd00│+0x0038: 0x00000000006026ae  →  0x0000000000000000
+─────────────────────────────────────────────────────────────────────────────────────────────────────── code:x86:64 ────
+   0x7ffff7ecf13c <read+12>        test   eax, eax
+   0x7ffff7ecf13e <read+14>        jne    0x7ffff7ecf150 <__GI___libc_read+32>
+   0x7ffff7ecf140 <read+16>        syscall 
+ → 0x7ffff7ecf142 <read+18>        cmp    rax, 0xfffffffffffff000
+   0x7ffff7ecf148 <read+24>        ja     0x7ffff7ecf1a0 <__GI___libc_read+112>
+   0x7ffff7ecf14a <read+26>        ret    
+   0x7ffff7ecf14b <read+27>        nop    DWORD PTR [rax+rax*1+0x0]
+   0x7ffff7ecf150 <read+32>        sub    rsp, 0x28
+   0x7ffff7ecf154 <read+36>        mov    QWORD PTR [rsp+0x18], rdx
+─────────────────────────────────────────────────────────────────────────────────────────────────────────── threads ────
+[#0] Id 1, Name: "gauntlet", stopped 0x7ffff7ecf142 in __GI___libc_read (), reason: SIGINT
+───────────────────────────────────────────────────────────────────────────────────────────────────────────── trace ────
+[#0] 0x7ffff7ecf142 → __GI___libc_read(fd=0x0, buf=0x602690, nbytes=0x400)
+[#1] 0x7ffff7e51d1f → _IO_new_file_underflow(fp=0x7ffff7fa9980 <_IO_2_1_stdin_>)
+[#2] 0x7ffff7e53106 → __GI__IO_default_uflow(fp=0x7ffff7fa9980 <_IO_2_1_stdin_>)
+[#3] 0x7ffff7e449ec → __GI__IO_getline_info(fp=0x7ffff7fa9980 <_IO_2_1_stdin_>, buf=0x6022a0 "%p|%p|%p|%p|%p|%p|%p|%p|%p|%p\n", n=0x3e7, delim=0xa, extract_delim=0x1, eof=0x0)
+[#4] 0x7ffff7e44aec → __GI__IO_getline(fp=0x7ffff7fa9980 <_IO_2_1_stdin_>, buf=0x6022a0 "%p|%p|%p|%p|%p|%p|%p|%p|%p|%p\n", n=0x3e7, delim=0xa, extract_delim=0x1)
+[#5] 0x7ffff7e4384a → _IO_fgets(buf=0x6022a0 "%p|%p|%p|%p|%p|%p|%p|%p|%p|%p\n", n=0x3e8, fp=0x7ffff7fa9980 <_IO_2_1_stdin_>)
+[#6] 0x400701 → main()
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+Starting program: /mnt/c/Users/Neel/Downloads/picoCTF_2021/binary_gauntlet_2/gauntlet 
+
+Program received signal SIGINT, Interrupt.
+0x00007ffff7ecf142 in __GI___libc_read (fd=0x0, buf=0x602690, nbytes=0x400) at ../sysdeps/unix/sysv/linux/read.c:26
+26	../sysdeps/unix/sysv/linux/read.c: No such file or directory.
+[ Legend: Modified register | Code | Heap | Stack | String ]
+───────────────────────────────────────────────────────────────────────────────────────────────────────── registers ────
+$rax   : 0xfffffffffffffe00
+$rbx   : 0x00007ffff7fa9980  →  0x00000000fbad2288
+$rcx   : 0x00007ffff7ecf142  →  0x5677fffff0003d48 ("H="?)
+$rdx   : 0x400             
+$rsp   : 0x00007fffffffdcc8  →  0x00007ffff7e51d1f  →  <_IO_file_underflow+383> test rax, rax
+$rbp   : 0x00007ffff7fab4a0  →  0x0000000000000000
+$rsi   : 0x0000000000602690  →  0x0000000000000000
+$rdi   : 0x0               
+$rip   : 0x00007ffff7ecf142  →  0x5677fffff0003d48 ("H="?)
+$r8    : 0x0               
+$r9    : 0x7c              
+$r10   : 0xfffffffffffff279
+$r11   : 0x246             
+$r12   : 0x00007ffff7faa6a0  →  0x00000000fbad2084
+$r13   : 0x00007ffff7faa8a0  →  0x0000000000000000
+$r14   : 0xd68             
+$r15   : 0x00007ffff7fab608  →  0x00007ffff7e53ee0  →  <_IO_cleanup+0> endbr64 
+$eflags: [ZERO carry PARITY adjust sign trap INTERRUPT direction overflow resume virtualx86 identification]
+$cs: 0x0033 $ss: 0x002b $ds: 0x0000 $es: 0x0000 $fs: 0x0000 $gs: 0x0000 
+───────────────────────────────────────────────────────────────────────────────────────────────────────────── stack ────
+0x00007fffffffdcc8│+0x0000: 0x00007ffff7e51d1f  →  <_IO_file_underflow+383> test rax, rax	 ← $rsp
+0x00007fffffffdcd0│+0x0008: 0x0000000000000027 ("'"?)
+0x00007fffffffdcd8│+0x0010: 0x00007ffff7e59913  →  <_int_malloc+3363> mov r8, rax
+0x00007fffffffdce0│+0x0018: 0x0000000000000000
+0x00007fffffffdce8│+0x0020: 0x00007ffff7fa9980  →  0x00000000fbad2288
+0x00007fffffffdcf0│+0x0028: 0x00007ffff7fab4a0  →  0x0000000000000000
+0x00007fffffffdcf8│+0x0030: 0x00007ffff7fa9980  →  0x00000000fbad2288
+0x00007fffffffdd00│+0x0038: 0x0000000000000000
+─────────────────────────────────────────────────────────────────────────────────────────────────────── code:x86:64 ────
+   0x7ffff7ecf13c <read+12>        test   eax, eax
+   0x7ffff7ecf13e <read+14>        jne    0x7ffff7ecf150 <__GI___libc_read+32>
+   0x7ffff7ecf140 <read+16>        syscall 
+ → 0x7ffff7ecf142 <read+18>        cmp    rax, 0xfffffffffffff000
+   0x7ffff7ecf148 <read+24>        ja     0x7ffff7ecf1a0 <__GI___libc_read+112>
+   0x7ffff7ecf14a <read+26>        ret    
+   0x7ffff7ecf14b <read+27>        nop    DWORD PTR [rax+rax*1+0x0]
+   0x7ffff7ecf150 <read+32>        sub    rsp, 0x28
+   0x7ffff7ecf154 <read+36>        mov    QWORD PTR [rsp+0x18], rdx
+─────────────────────────────────────────────────────────────────────────────────────────────────────────── threads ────
+[#0] Id 1, Name: "gauntlet", stopped 0x7ffff7ecf142 in __GI___libc_read (), reason: SIGINT
+───────────────────────────────────────────────────────────────────────────────────────────────────────────── trace ────
+[#0] 0x7ffff7ecf142 → __GI___libc_read(fd=0x0, buf=0x602690, nbytes=0x400)
+[#1] 0x7ffff7e51d1f → _IO_new_file_underflow(fp=0x7ffff7fa9980 <_IO_2_1_stdin_>)
+[#2] 0x7ffff7e53106 → __GI__IO_default_uflow(fp=0x7ffff7fa9980 <_IO_2_1_stdin_>)
+[#3] 0x7ffff7e449ec → __GI__IO_getline_info(fp=0x7ffff7fa9980 <_IO_2_1_stdin_>, buf=0x6022a0 "", n=0x3e7, delim=0xa, extract_delim=0x1, eof=0x0)
+[#4] 0x7ffff7e44aec → __GI__IO_getline(fp=0x7ffff7fa9980 <_IO_2_1_stdin_>, buf=0x6022a0 "", n=0x3e7, delim=0xa, extract_delim=0x1)
+[#5] 0x7ffff7e4384a → _IO_fgets(buf=0x6022a0 "", n=0x3e8, fp=0x7ffff7fa9980 <_IO_2_1_stdin_>)
+[#6] 0x4006bc → main()
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+[ Legend: Modified register | Code | Heap | Stack | String ]
+───────────────────────────────────────────────────────────────────────────────────────────────────────── registers ────
+$rax   : 0xfffffffffffffe00
+$rbx   : 0x00007ffff7fa9980  →  0x00000000fbad2288
+$rcx   : 0x00007ffff7ecf142  →  0x5677fffff0003d48 ("H="?)
+$rdx   : 0x400             
+$rsp   : 0x00007fffffffdcc8  →  0x00007ffff7e51d1f  →  <_IO_file_underflow+383> test rax, rax
+$rbp   : 0x00007ffff7fab4a0  →  0x0000000000000000
+$rsi   : 0x0000000000602690  →  0x0000000000000000
+$rdi   : 0x0               
+$rip   : 0x00007ffff7ecf142  →  0x5677fffff0003d48 ("H="?)
+$r8    : 0x0               
+$r9    : 0x7c              
+$r10   : 0xfffffffffffff279
+$r11   : 0x246             
+$r12   : 0x00007ffff7faa6a0  →  0x00000000fbad2084
+$r13   : 0x00007ffff7faa8a0  →  0x0000000000000000
+$r14   : 0xd68             
+$r15   : 0x00007ffff7fab608  →  0x00007ffff7e53ee0  →  <_IO_cleanup+0> endbr64 
+$eflags: [ZERO carry PARITY adjust sign trap INTERRUPT direction overflow resume virtualx86 identification]
+$cs: 0x0033 $ss: 0x002b $ds: 0x0000 $es: 0x0000 $fs: 0x0000 $gs: 0x0000 
+───────────────────────────────────────────────────────────────────────────────────────────────────────────── stack ────
+0x00007fffffffdcc8│+0x0000: 0x00007ffff7e51d1f  →  <_IO_file_underflow+383> test rax, rax	 ← $rsp
+0x00007fffffffdcd0│+0x0008: 0x0000000000000027 ("'"?)
+0x00007fffffffdcd8│+0x0010: 0x00007ffff7e59913  →  <_int_malloc+3363> mov r8, rax
+0x00007fffffffdce0│+0x0018: 0x0000000000000000
+0x00007fffffffdce8│+0x0020: 0x00007ffff7fa9980  →  0x00000000fbad2288
+0x00007fffffffdcf0│+0x0028: 0x00007ffff7fab4a0  →  0x0000000000000000
+0x00007fffffffdcf8│+0x0030: 0x00007ffff7fa9980  →  0x00000000fbad2288
+0x00007fffffffdd00│+0x0038: 0x0000000000000000
+─────────────────────────────────────────────────────────────────────────────────────────────────────── code:x86:64 ────
+   0x7ffff7ecf13c <read+12>        test   eax, eax
+   0x7ffff7ecf13e <read+14>        jne    0x7ffff7ecf150 <__GI___libc_read+32>
+   0x7ffff7ecf140 <read+16>        syscall 
+ → 0x7ffff7ecf142 <read+18>        cmp    rax, 0xfffffffffffff000
+   0x7ffff7ecf148 <read+24>        ja     0x7ffff7ecf1a0 <__GI___libc_read+112>
+   0x7ffff7ecf14a <read+26>        ret    
+   0x7ffff7ecf14b <read+27>        nop    DWORD PTR [rax+rax*1+0x0]
+   0x7ffff7ecf150 <read+32>        sub    rsp, 0x28
+   0x7ffff7ecf154 <read+36>        mov    QWORD PTR [rsp+0x18], rdx
+─────────────────────────────────────────────────────────────────────────────────────────────────────────── threads ────
+[#0] Id 1, Name: "gauntlet", stopped 0x7ffff7ecf142 in __GI___libc_read (), reason: SIGINT
+───────────────────────────────────────────────────────────────────────────────────────────────────────────── trace ────
+[#0] 0x7ffff7ecf142 → __GI___libc_read(fd=0x0, buf=0x602690, nbytes=0x400)
+[#1] 0x7ffff7e51d1f → _IO_new_file_underflow(fp=0x7ffff7fa9980 <_IO_2_1_stdin_>)
+[#2] 0x7ffff7e53106 → __GI__IO_default_uflow(fp=0x7ffff7fa9980 <_IO_2_1_stdin_>)
+[#3] 0x7ffff7e449ec → __GI__IO_getline_info(fp=0x7ffff7fa9980 <_IO_2_1_stdin_>, buf=0x6022a0 "", n=0x3e7, delim=0xa, extract_delim=0x1, eof=0x0)
+[#4] 0x7ffff7e44aec → __GI__IO_getline(fp=0x7ffff7fa9980 <_IO_2_1_stdin_>, buf=0x6022a0 "", n=0x3e7, delim=0xa, extract_delim=0x1)
+[#5] 0x7ffff7e4384a → _IO_fgets(buf=0x6022a0 "", n=0x3e8, fp=0x7ffff7fa9980 <_IO_2_1_stdin_>)
+[#6] 0x4006bc → main()
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+Starting program: /mnt/c/Users/Neel/Downloads/picoCTF_2021/binary_gauntlet_2/gauntlet 
+
+Breakpoint 1, 0x00000000004006d5 in main ()
+[ Legend: Modified register | Code | Heap | Stack | String ]
+───────────────────────────────────────────────────────────────────────────────────────────────────────── registers ────
+$rax   : 0x0               
+$rbx   : 0x0000000000400730  →  <__libc_csu_init+0> push r15
+$rcx   : 0x00000000006026a5  →  0x0000000000000000
+$rdx   : 0x0               
+$rsp   : 0x00007fffffffddd0  →  0x00007fffffffdf48  →  0x00007fffffffe189  →  "/mnt/c/Users/Neel/Downloads/picoCTF_2021/binary_ga[...]"
+$rbp   : 0x00007fffffffde50  →  0x0000000000000000
+$rsi   : 0x0000000000602691  →  "p|%p|%p|%p|%p|%p|%p\n"
+$rdi   : 0x00000000006022a0  →  "%p|%p|%p|%p|%p|%p|%p\n"
+$rip   : 0x00000000004006d5  →  <main+78> call 0x400560 <printf@plt>
+$r8    : 0x00000000006022a0  →  "%p|%p|%p|%p|%p|%p|%p\n"
+$r9    : 0x7c              
+$r10   : 0xfffffffffffff279
+$r11   : 0x246             
+$r12   : 0x00000000004005a0  →  <_start+0> xor ebp, ebp
+$r13   : 0x00007fffffffdf40  →  0x0000000000000001
+$r14   : 0x0               
+$r15   : 0x0               
+$eflags: [zero carry PARITY adjust sign trap INTERRUPT direction overflow resume virtualx86 identification]
+$cs: 0x0033 $ss: 0x002b $ds: 0x0000 $es: 0x0000 $fs: 0x0000 $gs: 0x0000 
+───────────────────────────────────────────────────────────────────────────────────────────────────────────── stack ────
+0x00007fffffffddd0│+0x0000: 0x00007fffffffdf48  →  0x00007fffffffe189  →  "/mnt/c/Users/Neel/Downloads/picoCTF_2021/binary_ga[...]"	 ← $rsp
+0x00007fffffffddd8│+0x0008: 0x0000000100000000
+0x00007fffffffdde0│+0x0010: 0x0000000000000000
+0x00007fffffffdde8│+0x0018: 0x0000000000000000
+0x00007fffffffddf0│+0x0020: 0x0000000000400040  →   (bad) 
+0x00007fffffffddf8│+0x0028: 0x0000000000f0b5ff
+0x00007fffffffde00│+0x0030: 0x00000000000000c2
+0x00007fffffffde08│+0x0038: 0x00007fffffffde37  →  0x000000004005a000
+─────────────────────────────────────────────────────────────────────────────────────────────────────── code:x86:64 ────
+     0x4006c9 <main+66>        mov    rax, QWORD PTR [rbp-0x8]
+     0x4006cd <main+70>        mov    rdi, rax
+     0x4006d0 <main+73>        mov    eax, 0x0
+ →   0x4006d5 <main+78>        call   0x400560 <printf@plt>
+   ↳    0x400560 <printf@plt+0>   jmp    QWORD PTR [rip+0x200aba]        # 0x601020 <printf@got.plt>
+        0x400566 <printf@plt+6>   push   0x1
+        0x40056b <printf@plt+11>  jmp    0x400540
+        0x400570 <fgets@plt+0>    jmp    QWORD PTR [rip+0x200ab2]        # 0x601028 <fgets@got.plt>
+        0x400576 <fgets@plt+6>    push   0x2
+        0x40057b <fgets@plt+11>   jmp    0x400540
+─────────────────────────────────────────────────────────────────────────────────────────────── arguments (guessed) ────
+printf@plt (
+   $rdi = 0x00000000006022a0 → "%p|%p|%p|%p|%p|%p|%p\n",
+   $rsi = 0x0000000000602691 → "p|%p|%p|%p|%p|%p|%p\n",
+   $rdx = 0x0000000000000000
+)
+─────────────────────────────────────────────────────────────────────────────────────────────────────────── threads ────
+[#0] Id 1, Name: "gauntlet", stopped 0x4006d5 in main (), reason: BREAKPOINT
+───────────────────────────────────────────────────────────────────────────────────────────────────────────── trace ────
+[#0] 0x4006d5 → main()
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+[ Legend: Modified register | Code | Heap | Stack | String ]
+───────────────────────────────────────────────────────────────────────────────────────────────────────── registers ────
+$rax   : 0x0               
+$rbx   : 0x0000000000400730  →  <__libc_csu_init+0> push r15
+$rcx   : 0x00000000006026a5  →  0x0000000000000000
+$rdx   : 0x0               
+$rsp   : 0x00007fffffffddd0  →  0x00007fffffffdf48  →  0x00007fffffffe189  →  "/mnt/c/Users/Neel/Downloads/picoCTF_2021/binary_ga[...]"
+$rbp   : 0x00007fffffffde50  →  0x0000000000000000
+$rsi   : 0x0000000000602691  →  "p|%p|%p|%p|%p|%p|%p\n"
+$rdi   : 0x00000000006022a0  →  "%p|%p|%p|%p|%p|%p|%p\n"
+$rip   : 0x00000000004006d5  →  <main+78> call 0x400560 <printf@plt>
+$r8    : 0x00000000006022a0  →  "%p|%p|%p|%p|%p|%p|%p\n"
+$r9    : 0x7c              
+$r10   : 0xfffffffffffff279
+$r11   : 0x246             
+$r12   : 0x00000000004005a0  →  <_start+0> xor ebp, ebp
+$r13   : 0x00007fffffffdf40  →  0x0000000000000001
+$r14   : 0x0               
+$r15   : 0x0               
+$eflags: [zero carry PARITY adjust sign trap INTERRUPT direction overflow resume virtualx86 identification]
+$cs: 0x0033 $ss: 0x002b $ds: 0x0000 $es: 0x0000 $fs: 0x0000 $gs: 0x0000 
+───────────────────────────────────────────────────────────────────────────────────────────────────────────── stack ────
+0x00007fffffffddd0│+0x0000: 0x00007fffffffdf48  →  0x00007fffffffe189  →  "/mnt/c/Users/Neel/Downloads/picoCTF_2021/binary_ga[...]"	 ← $rsp
+0x00007fffffffddd8│+0x0008: 0x0000000100000000
+0x00007fffffffdde0│+0x0010: 0x0000000000000000
+0x00007fffffffdde8│+0x0018: 0x0000000000000000
+0x00007fffffffddf0│+0x0020: 0x0000000000400040  →   (bad) 
+0x00007fffffffddf8│+0x0028: 0x0000000000f0b5ff
+0x00007fffffffde00│+0x0030: 0x00000000000000c2
+0x00007fffffffde08│+0x0038: 0x00007fffffffde37  →  0x000000004005a000
+─────────────────────────────────────────────────────────────────────────────────────────────────────── code:x86:64 ────
+     0x4006c9 <main+66>        mov    rax, QWORD PTR [rbp-0x8]
+     0x4006cd <main+70>        mov    rdi, rax
+     0x4006d0 <main+73>        mov    eax, 0x0
+ →   0x4006d5 <main+78>        call   0x400560 <printf@plt>
+   ↳    0x400560 <printf@plt+0>   jmp    QWORD PTR [rip+0x200aba]        # 0x601020 <printf@got.plt>
+        0x400566 <printf@plt+6>   push   0x1
+        0x40056b <printf@plt+11>  jmp    0x400540
+        0x400570 <fgets@plt+0>    jmp    QWORD PTR [rip+0x200ab2]        # 0x601028 <fgets@got.plt>
+        0x400576 <fgets@plt+6>    push   0x2
+        0x40057b <fgets@plt+11>   jmp    0x400540
+─────────────────────────────────────────────────────────────────────────────────────────────── arguments (guessed) ────
+printf@plt (
+   $rdi = 0x00000000006022a0 → "%p|%p|%p|%p|%p|%p|%p\n",
+   $rsi = 0x0000000000602691 → "p|%p|%p|%p|%p|%p|%p\n",
+   $rdx = 0x0000000000000000
+)
+─────────────────────────────────────────────────────────────────────────────────────────────────────────── threads ────
+[#0] Id 1, Name: "gauntlet", stopped 0x4006d5 in main (), reason: BREAKPOINT
+───────────────────────────────────────────────────────────────────────────────────────────────────────────── trace ────
+[#0] 0x4006d5 → main()
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+Dump of assembler code for function main:
+   0x0000000000400687 <+0>:	push   rbp
+   0x0000000000400688 <+1>:	mov    rbp,rsp
+   0x000000000040068b <+4>:	add    rsp,0xffffffffffffff80
+   0x000000000040068f <+8>:	mov    DWORD PTR [rbp-0x74],edi
+   0x0000000000400692 <+11>:	mov    QWORD PTR [rbp-0x80],rsi
+   0x0000000000400696 <+15>:	mov    edi,0x3e8
+   0x000000000040069b <+20>:	call   0x400580 <malloc@plt>
+   0x00000000004006a0 <+25>:	mov    QWORD PTR [rbp-0x8],rax
+   0x00000000004006a4 <+29>:	mov    rdx,QWORD PTR [rip+0x2009b5]        # 0x601060 <stdin@@GLIBC_2.2.5>
+   0x00000000004006ab <+36>:	mov    rax,QWORD PTR [rbp-0x8]
+   0x00000000004006af <+40>:	mov    esi,0x3e8
+   0x00000000004006b4 <+45>:	mov    rdi,rax
+   0x00000000004006b7 <+48>:	call   0x400570 <fgets@plt>
+   0x00000000004006bc <+53>:	mov    rax,QWORD PTR [rbp-0x8]
+   0x00000000004006c0 <+57>:	add    rax,0x3e7
+   0x00000000004006c6 <+63>:	mov    BYTE PTR [rax],0x0
+   0x00000000004006c9 <+66>:	mov    rax,QWORD PTR [rbp-0x8]
+   0x00000000004006cd <+70>:	mov    rdi,rax
+   0x00000000004006d0 <+73>:	mov    eax,0x0
+=> 0x00000000004006d5 <+78>:	call   0x400560 <printf@plt>
+   0x00000000004006da <+83>:	mov    rax,QWORD PTR [rip+0x20096f]        # 0x601050 <stdout@@GLIBC_2.2.5>
+   0x00000000004006e1 <+90>:	mov    rdi,rax
+   0x00000000004006e4 <+93>:	call   0x400590 <fflush@plt>
+   0x00000000004006e9 <+98>:	mov    rdx,QWORD PTR [rip+0x200970]        # 0x601060 <stdin@@GLIBC_2.2.5>
+   0x00000000004006f0 <+105>:	mov    rax,QWORD PTR [rbp-0x8]
+   0x00000000004006f4 <+109>:	mov    esi,0x3e8
+   0x00000000004006f9 <+114>:	mov    rdi,rax
+   0x00000000004006fc <+117>:	call   0x400570 <fgets@plt>
+   0x0000000000400701 <+122>:	mov    rax,QWORD PTR [rbp-0x8]
+   0x0000000000400705 <+126>:	add    rax,0x3e7
+   0x000000000040070b <+132>:	mov    BYTE PTR [rax],0x0
+   0x000000000040070e <+135>:	mov    rdx,QWORD PTR [rbp-0x8]
+   0x0000000000400712 <+139>:	lea    rax,[rbp-0x70]
+   0x0000000000400716 <+143>:	mov    rsi,rdx
+   0x0000000000400719 <+146>:	mov    rdi,rax
+   0x000000000040071c <+149>:	call   0x400550 <strcpy@plt>
+   0x0000000000400721 <+154>:	mov    eax,0x0
+   0x0000000000400726 <+159>:	leave  
+   0x0000000000400727 <+160>:	ret    
+End of assembler dump.
+Breakpoint 2 at 0x40071c
+Starting program: /mnt/c/Users/Neel/Downloads/picoCTF_2021/binary_gauntlet_2/gauntlet 
+
+Breakpoint 1, 0x00000000004006d5 in main ()
+[ Legend: Modified register | Code | Heap | Stack | String ]
+───────────────────────────────────────────────────────────────────────────────────────────────────────── registers ────
+$rax   : 0x0               
+$rbx   : 0x0000000000400730  →  <__libc_csu_init+0> push r15
+$rcx   : 0x00000000006026a5  →  0x0000000000000000
+$rdx   : 0x0               
+$rsp   : 0x00007fffffffddd0  →  0x00007fffffffdf48  →  0x00007fffffffe189  →  "/mnt/c/Users/Neel/Downloads/picoCTF_2021/binary_ga[...]"
+$rbp   : 0x00007fffffffde50  →  0x0000000000000000
+$rsi   : 0x0000000000602691  →  "p|%p|%p|%p|%p|%p|%p\n"
+$rdi   : 0x00000000006022a0  →  "%p|%p|%p|%p|%p|%p|%p\n"
+$rip   : 0x00000000004006d5  →  <main+78> call 0x400560 <printf@plt>
+$r8    : 0x00000000006022a0  →  "%p|%p|%p|%p|%p|%p|%p\n"
+$r9    : 0x7c              
+$r10   : 0xfffffffffffff279
+$r11   : 0x246             
+$r12   : 0x00000000004005a0  →  <_start+0> xor ebp, ebp
+$r13   : 0x00007fffffffdf40  →  0x0000000000000001
+$r14   : 0x0               
+$r15   : 0x0               
+$eflags: [zero carry PARITY adjust sign trap INTERRUPT direction overflow resume virtualx86 identification]
+$cs: 0x0033 $ss: 0x002b $ds: 0x0000 $es: 0x0000 $fs: 0x0000 $gs: 0x0000 
+───────────────────────────────────────────────────────────────────────────────────────────────────────────── stack ────
+0x00007fffffffddd0│+0x0000: 0x00007fffffffdf48  →  0x00007fffffffe189  →  "/mnt/c/Users/Neel/Downloads/picoCTF_2021/binary_ga[...]"	 ← $rsp
+0x00007fffffffddd8│+0x0008: 0x0000000100000000
+0x00007fffffffdde0│+0x0010: 0x0000000000000000
+0x00007fffffffdde8│+0x0018: 0x0000000000000000
+0x00007fffffffddf0│+0x0020: 0x0000000000400040  →   (bad) 
+0x00007fffffffddf8│+0x0028: 0x0000000000f0b5ff
+0x00007fffffffde00│+0x0030: 0x00000000000000c2
+0x00007fffffffde08│+0x0038: 0x00007fffffffde37  →  0x000000004005a000
+─────────────────────────────────────────────────────────────────────────────────────────────────────── code:x86:64 ────
+     0x4006c9 <main+66>        mov    rax, QWORD PTR [rbp-0x8]
+     0x4006cd <main+70>        mov    rdi, rax
+     0x4006d0 <main+73>        mov    eax, 0x0
+ →   0x4006d5 <main+78>        call   0x400560 <printf@plt>
+   ↳    0x400560 <printf@plt+0>   jmp    QWORD PTR [rip+0x200aba]        # 0x601020 <printf@got.plt>
+        0x400566 <printf@plt+6>   push   0x1
+        0x40056b <printf@plt+11>  jmp    0x400540
+        0x400570 <fgets@plt+0>    jmp    QWORD PTR [rip+0x200ab2]        # 0x601028 <fgets@got.plt>
+        0x400576 <fgets@plt+6>    push   0x2
+        0x40057b <fgets@plt+11>   jmp    0x400540
+─────────────────────────────────────────────────────────────────────────────────────────────── arguments (guessed) ────
+printf@plt (
+   $rdi = 0x00000000006022a0 → "%p|%p|%p|%p|%p|%p|%p\n",
+   $rsi = 0x0000000000602691 → "p|%p|%p|%p|%p|%p|%p\n",
+   $rdx = 0x0000000000000000
+)
+─────────────────────────────────────────────────────────────────────────────────────────────────────────── threads ────
+[#0] Id 1, Name: "gauntlet", stopped 0x4006d5 in main (), reason: BREAKPOINT
+───────────────────────────────────────────────────────────────────────────────────────────────────────────── trace ────
+[#0] 0x4006d5 → main()
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+[ Legend: Modified register | Code | Heap | Stack | String ]
+───────────────────────────────────────────────────────────────────────────────────────────────────────── registers ────
+$rax   : 0x0               
+$rbx   : 0x0000000000400730  →  <__libc_csu_init+0> push r15
+$rcx   : 0x00000000006026a5  →  0x0000000000000000
+$rdx   : 0x0               
+$rsp   : 0x00007fffffffddd0  →  0x00007fffffffdf48  →  0x00007fffffffe189  →  "/mnt/c/Users/Neel/Downloads/picoCTF_2021/binary_ga[...]"
+$rbp   : 0x00007fffffffde50  →  0x0000000000000000
+$rsi   : 0x0000000000602691  →  "p|%p|%p|%p|%p|%p|%p\n"
+$rdi   : 0x00000000006022a0  →  "%p|%p|%p|%p|%p|%p|%p\n"
+$rip   : 0x00000000004006d5  →  <main+78> call 0x400560 <printf@plt>
+$r8    : 0x00000000006022a0  →  "%p|%p|%p|%p|%p|%p|%p\n"
+$r9    : 0x7c              
+$r10   : 0xfffffffffffff279
+$r11   : 0x246             
+$r12   : 0x00000000004005a0  →  <_start+0> xor ebp, ebp
+$r13   : 0x00007fffffffdf40  →  0x0000000000000001
+$r14   : 0x0               
+$r15   : 0x0               
+$eflags: [zero carry PARITY adjust sign trap INTERRUPT direction overflow resume virtualx86 identification]
+$cs: 0x0033 $ss: 0x002b $ds: 0x0000 $es: 0x0000 $fs: 0x0000 $gs: 0x0000 
+───────────────────────────────────────────────────────────────────────────────────────────────────────────── stack ────
+0x00007fffffffddd0│+0x0000: 0x00007fffffffdf48  →  0x00007fffffffe189  →  "/mnt/c/Users/Neel/Downloads/picoCTF_2021/binary_ga[...]"	 ← $rsp
+0x00007fffffffddd8│+0x0008: 0x0000000100000000
+0x00007fffffffdde0│+0x0010: 0x0000000000000000
+0x00007fffffffdde8│+0x0018: 0x0000000000000000
+0x00007fffffffddf0│+0x0020: 0x0000000000400040  →   (bad) 
+0x00007fffffffddf8│+0x0028: 0x0000000000f0b5ff
+0x00007fffffffde00│+0x0030: 0x00000000000000c2
+0x00007fffffffde08│+0x0038: 0x00007fffffffde37  →  0x000000004005a000
+─────────────────────────────────────────────────────────────────────────────────────────────────────── code:x86:64 ────
+     0x4006c9 <main+66>        mov    rax, QWORD PTR [rbp-0x8]
+     0x4006cd <main+70>        mov    rdi, rax
+     0x4006d0 <main+73>        mov    eax, 0x0
+ →   0x4006d5 <main+78>        call   0x400560 <printf@plt>
+   ↳    0x400560 <printf@plt+0>   jmp    QWORD PTR [rip+0x200aba]        # 0x601020 <printf@got.plt>
+        0x400566 <printf@plt+6>   push   0x1
+        0x40056b <printf@plt+11>  jmp    0x400540
+        0x400570 <fgets@plt+0>    jmp    QWORD PTR [rip+0x200ab2]        # 0x601028 <fgets@got.plt>
+        0x400576 <fgets@plt+6>    push   0x2
+        0x40057b <fgets@plt+11>   jmp    0x400540
+─────────────────────────────────────────────────────────────────────────────────────────────── arguments (guessed) ────
+printf@plt (
+   $rdi = 0x00000000006022a0 → "%p|%p|%p|%p|%p|%p|%p\n",
+   $rsi = 0x0000000000602691 → "p|%p|%p|%p|%p|%p|%p\n",
+   $rdx = 0x0000000000000000
+)
+─────────────────────────────────────────────────────────────────────────────────────────────────────────── threads ────
+[#0] Id 1, Name: "gauntlet", stopped 0x4006d5 in main (), reason: BREAKPOINT
+───────────────────────────────────────────────────────────────────────────────────────────────────────────── trace ────
+[#0] 0x4006d5 → main()
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+Continuing.
+
+Breakpoint 2, 0x000000000040071c in main ()
+[ Legend: Modified register | Code | Heap | Stack | String ]
+───────────────────────────────────────────────────────────────────────────────────────────────────────── registers ────
+$rax   : 0x00007fffffffdde0  →  0x0000000000000000
+$rbx   : 0x0000000000400730  →  <__libc_csu_init+0> push r15
+$rcx   : 0x00000000006026a5  →  0x0000000000000000
+$rdx   : 0x00000000006022a0  →  "%p|%p|%p|%p|%p|%p|%p\n"
+$rsp   : 0x00007fffffffddd0  →  0x00007fffffffdf48  →  0x00007fffffffe189  →  "/mnt/c/Users/Neel/Downloads/picoCTF_2021/binary_ga[...]"
+$rbp   : 0x00007fffffffde50  →  0x0000000000000000
+$rsi   : 0x00000000006022a0  →  "%p|%p|%p|%p|%p|%p|%p\n"
+$rdi   : 0x00007fffffffdde0  →  0x0000000000000000
+$rip   : 0x000000000040071c  →  <main+149> call 0x400550 <strcpy@plt>
+$r8    : 0x00000000006022a0  →  "%p|%p|%p|%p|%p|%p|%p\n"
+$r9    : 0x0               
+$r10   : 0xfffffffffffff279
+$r11   : 0x246             
+$r12   : 0x00000000004005a0  →  <_start+0> xor ebp, ebp
+$r13   : 0x00007fffffffdf40  →  0x0000000000000001
+$r14   : 0x0               
+$r15   : 0x0               
+$eflags: [zero carry PARITY adjust sign trap INTERRUPT direction overflow resume virtualx86 identification]
+$cs: 0x0033 $ss: 0x002b $ds: 0x0000 $es: 0x0000 $fs: 0x0000 $gs: 0x0000 
+───────────────────────────────────────────────────────────────────────────────────────────────────────────── stack ────
+0x00007fffffffddd0│+0x0000: 0x00007fffffffdf48  →  0x00007fffffffe189  →  "/mnt/c/Users/Neel/Downloads/picoCTF_2021/binary_ga[...]"	 ← $rsp
+0x00007fffffffddd8│+0x0008: 0x0000000100000000
+0x00007fffffffdde0│+0x0010: 0x0000000000000000	 ← $rax, $rdi
+0x00007fffffffdde8│+0x0018: 0x0000000000000000
+0x00007fffffffddf0│+0x0020: 0x0000000000400040  →   (bad) 
+0x00007fffffffddf8│+0x0028: 0x0000000000f0b5ff
+0x00007fffffffde00│+0x0030: 0x00000000000000c2
+0x00007fffffffde08│+0x0038: 0x00007fffffffde37  →  0x000000004005a000
+─────────────────────────────────────────────────────────────────────────────────────────────────────── code:x86:64 ────
+     0x400712 <main+139>       lea    rax, [rbp-0x70]
+     0x400716 <main+143>       mov    rsi, rdx
+     0x400719 <main+146>       mov    rdi, rax
+ →   0x40071c <main+149>       call   0x400550 <strcpy@plt>
+   ↳    0x400550 <strcpy@plt+0>   jmp    QWORD PTR [rip+0x200ac2]        # 0x601018 <strcpy@got.plt>
+        0x400556 <strcpy@plt+6>   push   0x0
+        0x40055b <strcpy@plt+11>  jmp    0x400540
+        0x400560 <printf@plt+0>   jmp    QWORD PTR [rip+0x200aba]        # 0x601020 <printf@got.plt>
+        0x400566 <printf@plt+6>   push   0x1
+        0x40056b <printf@plt+11>  jmp    0x400540
+─────────────────────────────────────────────────────────────────────────────────────────────── arguments (guessed) ────
+strcpy@plt (
+   $rdi = 0x00007fffffffdde0 → 0x0000000000000000,
+   $rsi = 0x00000000006022a0 → "%p|%p|%p|%p|%p|%p|%p\n",
+   $rdx = 0x00000000006022a0 → "%p|%p|%p|%p|%p|%p|%p\n"
+)
+─────────────────────────────────────────────────────────────────────────────────────────────────────────── threads ────
+[#0] Id 1, Name: "gauntlet", stopped 0x40071c in main (), reason: BREAKPOINT
+───────────────────────────────────────────────────────────────────────────────────────────────────────────── trace ────
+[#0] 0x40071c → main()
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+[ Legend: Modified register | Code | Heap | Stack | String ]
+───────────────────────────────────────────────────────────────────────────────────────────────────────── registers ────
+$rax   : 0x00007fffffffdde0  →  0x0000000000000000
+$rbx   : 0x0000000000400730  →  <__libc_csu_init+0> push r15
+$rcx   : 0x00000000006026a5  →  0x0000000000000000
+$rdx   : 0x00000000006022a0  →  "%p|%p|%p|%p|%p|%p|%p\n"
+$rsp   : 0x00007fffffffddd0  →  0x00007fffffffdf48  →  0x00007fffffffe189  →  "/mnt/c/Users/Neel/Downloads/picoCTF_2021/binary_ga[...]"
+$rbp   : 0x00007fffffffde50  →  0x0000000000000000
+$rsi   : 0x00000000006022a0  →  "%p|%p|%p|%p|%p|%p|%p\n"
+$rdi   : 0x00007fffffffdde0  →  0x0000000000000000
+$rip   : 0x000000000040071c  →  <main+149> call 0x400550 <strcpy@plt>
+$r8    : 0x00000000006022a0  →  "%p|%p|%p|%p|%p|%p|%p\n"
+$r9    : 0x0               
+$r10   : 0xfffffffffffff279
+$r11   : 0x246             
+$r12   : 0x00000000004005a0  →  <_start+0> xor ebp, ebp
+$r13   : 0x00007fffffffdf40  →  0x0000000000000001
+$r14   : 0x0               
+$r15   : 0x0               
+$eflags: [zero carry PARITY adjust sign trap INTERRUPT direction overflow resume virtualx86 identification]
+$cs: 0x0033 $ss: 0x002b $ds: 0x0000 $es: 0x0000 $fs: 0x0000 $gs: 0x0000 
+───────────────────────────────────────────────────────────────────────────────────────────────────────────── stack ────
+0x00007fffffffddd0│+0x0000: 0x00007fffffffdf48  →  0x00007fffffffe189  →  "/mnt/c/Users/Neel/Downloads/picoCTF_2021/binary_ga[...]"	 ← $rsp
+0x00007fffffffddd8│+0x0008: 0x0000000100000000
+0x00007fffffffdde0│+0x0010: 0x0000000000000000	 ← $rax, $rdi
+0x00007fffffffdde8│+0x0018: 0x0000000000000000
+0x00007fffffffddf0│+0x0020: 0x0000000000400040  →   (bad) 
+0x00007fffffffddf8│+0x0028: 0x0000000000f0b5ff
+0x00007fffffffde00│+0x0030: 0x00000000000000c2
+0x00007fffffffde08│+0x0038: 0x00007fffffffde37  →  0x000000004005a000
+─────────────────────────────────────────────────────────────────────────────────────────────────────── code:x86:64 ────
+     0x400712 <main+139>       lea    rax, [rbp-0x70]
+     0x400716 <main+143>       mov    rsi, rdx
+     0x400719 <main+146>       mov    rdi, rax
+ →   0x40071c <main+149>       call   0x400550 <strcpy@plt>
+   ↳    0x400550 <strcpy@plt+0>   jmp    QWORD PTR [rip+0x200ac2]        # 0x601018 <strcpy@got.plt>
+        0x400556 <strcpy@plt+6>   push   0x0
+        0x40055b <strcpy@plt+11>  jmp    0x400540
+        0x400560 <printf@plt+0>   jmp    QWORD PTR [rip+0x200aba]        # 0x601020 <printf@got.plt>
+        0x400566 <printf@plt+6>   push   0x1
+        0x40056b <printf@plt+11>  jmp    0x400540
+─────────────────────────────────────────────────────────────────────────────────────────────── arguments (guessed) ────
+strcpy@plt (
+   $rdi = 0x00007fffffffdde0 → 0x0000000000000000,
+   $rsi = 0x00000000006022a0 → "%p|%p|%p|%p|%p|%p|%p\n",
+   $rdx = 0x00000000006022a0 → "%p|%p|%p|%p|%p|%p|%p\n"
+)
+─────────────────────────────────────────────────────────────────────────────────────────────────────────── threads ────
+[#0] Id 1, Name: "gauntlet", stopped 0x40071c in main (), reason: BREAKPOINT
+───────────────────────────────────────────────────────────────────────────────────────────────────────────── trace ────
+[#0] 0x40071c → main()
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+$1 = (void *) 0x7fffffffdde0
+$2 = 0x7fffffffdde0
+Starting program: /mnt/c/Users/Neel/Downloads/picoCTF_2021/binary_gauntlet_2/gauntlet 
+
+Breakpoint 1, 0x00000000004006d5 in main ()
+[ Legend: Modified register | Code | Heap | Stack | String ]
+───────────────────────────────────────────────────────────────────────────────────────────────────────── registers ────
+$rax   : 0x0               
+$rbx   : 0x0000000000400730  →  <__libc_csu_init+0> push r15
+$rcx   : 0x00000000006026a5  →  0x0000000000000000
+$rdx   : 0x0               
+$rsp   : 0x00007fffffffddd0  →  0x00007fffffffdf48  →  0x00007fffffffe189  →  "/mnt/c/Users/Neel/Downloads/picoCTF_2021/binary_ga[...]"
+$rbp   : 0x00007fffffffde50  →  0x0000000000000000
+$rsi   : 0x0000000000602691  →  "p|%p|%p|%p|%p|%p|%p\n"
+$rdi   : 0x00000000006022a0  →  "%p|%p|%p|%p|%p|%p|%p\n"
+$rip   : 0x00000000004006d5  →  <main+78> call 0x400560 <printf@plt>
+$r8    : 0x00000000006022a0  →  "%p|%p|%p|%p|%p|%p|%p\n"
+$r9    : 0x7c              
+$r10   : 0xfffffffffffff279
+$r11   : 0x246             
+$r12   : 0x00000000004005a0  →  <_start+0> xor ebp, ebp
+$r13   : 0x00007fffffffdf40  →  0x0000000000000001
+$r14   : 0x0               
+$r15   : 0x0               
+$eflags: [zero carry PARITY adjust sign trap INTERRUPT direction overflow resume virtualx86 identification]
+$cs: 0x0033 $ss: 0x002b $ds: 0x0000 $es: 0x0000 $fs: 0x0000 $gs: 0x0000 
+───────────────────────────────────────────────────────────────────────────────────────────────────────────── stack ────
+0x00007fffffffddd0│+0x0000: 0x00007fffffffdf48  →  0x00007fffffffe189  →  "/mnt/c/Users/Neel/Downloads/picoCTF_2021/binary_ga[...]"	 ← $rsp
+0x00007fffffffddd8│+0x0008: 0x0000000100000000
+0x00007fffffffdde0│+0x0010: 0x0000000000000000
+0x00007fffffffdde8│+0x0018: 0x0000000000000000
+0x00007fffffffddf0│+0x0020: 0x0000000000400040  →   (bad) 
+0x00007fffffffddf8│+0x0028: 0x0000000000f0b5ff
+0x00007fffffffde00│+0x0030: 0x00000000000000c2
+0x00007fffffffde08│+0x0038: 0x00007fffffffde37  →  0x000000004005a000
+─────────────────────────────────────────────────────────────────────────────────────────────────────── code:x86:64 ────
+     0x4006c9 <main+66>        mov    rax, QWORD PTR [rbp-0x8]
+     0x4006cd <main+70>        mov    rdi, rax
+     0x4006d0 <main+73>        mov    eax, 0x0
+ →   0x4006d5 <main+78>        call   0x400560 <printf@plt>
+   ↳    0x400560 <printf@plt+0>   jmp    QWORD PTR [rip+0x200aba]        # 0x601020 <printf@got.plt>
+        0x400566 <printf@plt+6>   push   0x1
+        0x40056b <printf@plt+11>  jmp    0x400540
+        0x400570 <fgets@plt+0>    jmp    QWORD PTR [rip+0x200ab2]        # 0x601028 <fgets@got.plt>
+        0x400576 <fgets@plt+6>    push   0x2
+        0x40057b <fgets@plt+11>   jmp    0x400540
+─────────────────────────────────────────────────────────────────────────────────────────────── arguments (guessed) ────
+printf@plt (
+   $rdi = 0x00000000006022a0 → "%p|%p|%p|%p|%p|%p|%p\n",
+   $rsi = 0x0000000000602691 → "p|%p|%p|%p|%p|%p|%p\n",
+   $rdx = 0x0000000000000000
+)
+─────────────────────────────────────────────────────────────────────────────────────────────────────────── threads ────
+[#0] Id 1, Name: "gauntlet", stopped 0x4006d5 in main (), reason: BREAKPOINT
+───────────────────────────────────────────────────────────────────────────────────────────────────────────── trace ────
+[#0] 0x4006d5 → main()
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+[ Legend: Modified register | Code | Heap | Stack | String ]
+───────────────────────────────────────────────────────────────────────────────────────────────────────── registers ────
+$rax   : 0x0               
+$rbx   : 0x0000000000400730  →  <__libc_csu_init+0> push r15
+$rcx   : 0x00000000006026a5  →  0x0000000000000000
+$rdx   : 0x0               
+$rsp   : 0x00007fffffffddd0  →  0x00007fffffffdf48  →  0x00007fffffffe189  →  "/mnt/c/Users/Neel/Downloads/picoCTF_2021/binary_ga[...]"
+$rbp   : 0x00007fffffffde50  →  0x0000000000000000
+$rsi   : 0x0000000000602691  →  "p|%p|%p|%p|%p|%p|%p\n"
+$rdi   : 0x00000000006022a0  →  "%p|%p|%p|%p|%p|%p|%p\n"
+$rip   : 0x00000000004006d5  →  <main+78> call 0x400560 <printf@plt>
+$r8    : 0x00000000006022a0  →  "%p|%p|%p|%p|%p|%p|%p\n"
+$r9    : 0x7c              
+$r10   : 0xfffffffffffff279
+$r11   : 0x246             
+$r12   : 0x00000000004005a0  →  <_start+0> xor ebp, ebp
+$r13   : 0x00007fffffffdf40  →  0x0000000000000001
+$r14   : 0x0               
+$r15   : 0x0               
+$eflags: [zero carry PARITY adjust sign trap INTERRUPT direction overflow resume virtualx86 identification]
+$cs: 0x0033 $ss: 0x002b $ds: 0x0000 $es: 0x0000 $fs: 0x0000 $gs: 0x0000 
+───────────────────────────────────────────────────────────────────────────────────────────────────────────── stack ────
+0x00007fffffffddd0│+0x0000: 0x00007fffffffdf48  →  0x00007fffffffe189  →  "/mnt/c/Users/Neel/Downloads/picoCTF_2021/binary_ga[...]"	 ← $rsp
+0x00007fffffffddd8│+0x0008: 0x0000000100000000
+0x00007fffffffdde0│+0x0010: 0x0000000000000000
+0x00007fffffffdde8│+0x0018: 0x0000000000000000
+0x00007fffffffddf0│+0x0020: 0x0000000000400040  →   (bad) 
+0x00007fffffffddf8│+0x0028: 0x0000000000f0b5ff
+0x00007fffffffde00│+0x0030: 0x00000000000000c2
+0x00007fffffffde08│+0x0038: 0x00007fffffffde37  →  0x000000004005a000
+─────────────────────────────────────────────────────────────────────────────────────────────────────── code:x86:64 ────
+     0x4006c9 <main+66>        mov    rax, QWORD PTR [rbp-0x8]
+     0x4006cd <main+70>        mov    rdi, rax
+     0x4006d0 <main+73>        mov    eax, 0x0
+ →   0x4006d5 <main+78>        call   0x400560 <printf@plt>
+   ↳    0x400560 <printf@plt+0>   jmp    QWORD PTR [rip+0x200aba]        # 0x601020 <printf@got.plt>
+        0x400566 <printf@plt+6>   push   0x1
+        0x40056b <printf@plt+11>  jmp    0x400540
+        0x400570 <fgets@plt+0>    jmp    QWORD PTR [rip+0x200ab2]        # 0x601028 <fgets@got.plt>
+        0x400576 <fgets@plt+6>    push   0x2
+        0x40057b <fgets@plt+11>   jmp    0x400540
+─────────────────────────────────────────────────────────────────────────────────────────────── arguments (guessed) ────
+printf@plt (
+   $rdi = 0x00000000006022a0 → "%p|%p|%p|%p|%p|%p|%p\n",
+   $rsi = 0x0000000000602691 → "p|%p|%p|%p|%p|%p|%p\n",
+   $rdx = 0x0000000000000000
+)
+─────────────────────────────────────────────────────────────────────────────────────────────────────────── threads ────
+[#0] Id 1, Name: "gauntlet", stopped 0x4006d5 in main (), reason: BREAKPOINT
+───────────────────────────────────────────────────────────────────────────────────────────────────────────── trace ────
+[#0] 0x4006d5 → main()
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+Starting program: /mnt/c/Users/Neel/Downloads/picoCTF_2021/binary_gauntlet_2/gauntlet 
+
+Breakpoint 1, 0x00000000004006d5 in main ()
+[ Legend: Modified register | Code | Heap | Stack | String ]
+───────────────────────────────────────────────────────────────────────────────────────────────────────── registers ────
+$rax   : 0x0               
+$rbx   : 0x0000000000400730  →  <__libc_csu_init+0> push r15
+$rcx   : 0x00000000006026a8  →  0x0000000000000000
+$rdx   : 0x0               
+$rsp   : 0x00007fffffffddd0  →  0x00007fffffffdf48  →  0x00007fffffffe189  →  "/mnt/c/Users/Neel/Downloads/picoCTF_2021/binary_ga[...]"
+$rbp   : 0x00007fffffffde50  →  0x0000000000000000
+$rsi   : 0x0000000000602691  →  "p|%p|%p|%p|%p|%p|%p|%p\n"
+$rdi   : 0x00000000006022a0  →  "%p|%p|%p|%p|%p|%p|%p|%p\n"
+$rip   : 0x00000000004006d5  →  <main+78> call 0x400560 <printf@plt>
+$r8    : 0x00000000006022a0  →  "%p|%p|%p|%p|%p|%p|%p|%p\n"
+$r9    : 0x7c              
+$r10   : 0xfffffffffffff279
+$r11   : 0x246             
+$r12   : 0x00000000004005a0  →  <_start+0> xor ebp, ebp
+$r13   : 0x00007fffffffdf40  →  0x0000000000000001
+$r14   : 0x0               
+$r15   : 0x0               
+$eflags: [zero carry PARITY adjust sign trap INTERRUPT direction overflow resume virtualx86 identification]
+$cs: 0x0033 $ss: 0x002b $ds: 0x0000 $es: 0x0000 $fs: 0x0000 $gs: 0x0000 
+───────────────────────────────────────────────────────────────────────────────────────────────────────────── stack ────
+0x00007fffffffddd0│+0x0000: 0x00007fffffffdf48  →  0x00007fffffffe189  →  "/mnt/c/Users/Neel/Downloads/picoCTF_2021/binary_ga[...]"	 ← $rsp
+0x00007fffffffddd8│+0x0008: 0x0000000100000000
+0x00007fffffffdde0│+0x0010: 0x0000000000000000
+0x00007fffffffdde8│+0x0018: 0x0000000000000000
+0x00007fffffffddf0│+0x0020: 0x0000000000400040  →   (bad) 
+0x00007fffffffddf8│+0x0028: 0x0000000000f0b5ff
+0x00007fffffffde00│+0x0030: 0x00000000000000c2
+0x00007fffffffde08│+0x0038: 0x00007fffffffde37  →  0x000000004005a000
+─────────────────────────────────────────────────────────────────────────────────────────────────────── code:x86:64 ────
+     0x4006c9 <main+66>        mov    rax, QWORD PTR [rbp-0x8]
+     0x4006cd <main+70>        mov    rdi, rax
+     0x4006d0 <main+73>        mov    eax, 0x0
+ →   0x4006d5 <main+78>        call   0x400560 <printf@plt>
+   ↳    0x400560 <printf@plt+0>   jmp    QWORD PTR [rip+0x200aba]        # 0x601020 <printf@got.plt>
+        0x400566 <printf@plt+6>   push   0x1
+        0x40056b <printf@plt+11>  jmp    0x400540
+        0x400570 <fgets@plt+0>    jmp    QWORD PTR [rip+0x200ab2]        # 0x601028 <fgets@got.plt>
+        0x400576 <fgets@plt+6>    push   0x2
+        0x40057b <fgets@plt+11>   jmp    0x400540
+─────────────────────────────────────────────────────────────────────────────────────────────── arguments (guessed) ────
+printf@plt (
+   $rdi = 0x00000000006022a0 → "%p|%p|%p|%p|%p|%p|%p|%p\n",
+   $rsi = 0x0000000000602691 → "p|%p|%p|%p|%p|%p|%p|%p\n",
+   $rdx = 0x0000000000000000
+)
+─────────────────────────────────────────────────────────────────────────────────────────────────────────── threads ────
+[#0] Id 1, Name: "gauntlet", stopped 0x4006d5 in main (), reason: BREAKPOINT
+───────────────────────────────────────────────────────────────────────────────────────────────────────────── trace ────
+[#0] 0x4006d5 → main()
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+[ Legend: Modified register | Code | Heap | Stack | String ]
+───────────────────────────────────────────────────────────────────────────────────────────────────────── registers ────
+$rax   : 0x0               
+$rbx   : 0x0000000000400730  →  <__libc_csu_init+0> push r15
+$rcx   : 0x00000000006026a8  →  0x0000000000000000
+$rdx   : 0x0               
+$rsp   : 0x00007fffffffddd0  →  0x00007fffffffdf48  →  0x00007fffffffe189  →  "/mnt/c/Users/Neel/Downloads/picoCTF_2021/binary_ga[...]"
+$rbp   : 0x00007fffffffde50  →  0x0000000000000000
+$rsi   : 0x0000000000602691  →  "p|%p|%p|%p|%p|%p|%p|%p\n"
+$rdi   : 0x00000000006022a0  →  "%p|%p|%p|%p|%p|%p|%p|%p\n"
+$rip   : 0x00000000004006d5  →  <main+78> call 0x400560 <printf@plt>
+$r8    : 0x00000000006022a0  →  "%p|%p|%p|%p|%p|%p|%p|%p\n"
+$r9    : 0x7c              
+$r10   : 0xfffffffffffff279
+$r11   : 0x246             
+$r12   : 0x00000000004005a0  →  <_start+0> xor ebp, ebp
+$r13   : 0x00007fffffffdf40  →  0x0000000000000001
+$r14   : 0x0               
+$r15   : 0x0               
+$eflags: [zero carry PARITY adjust sign trap INTERRUPT direction overflow resume virtualx86 identification]
+$cs: 0x0033 $ss: 0x002b $ds: 0x0000 $es: 0x0000 $fs: 0x0000 $gs: 0x0000 
+───────────────────────────────────────────────────────────────────────────────────────────────────────────── stack ────
+0x00007fffffffddd0│+0x0000: 0x00007fffffffdf48  →  0x00007fffffffe189  →  "/mnt/c/Users/Neel/Downloads/picoCTF_2021/binary_ga[...]"	 ← $rsp
+0x00007fffffffddd8│+0x0008: 0x0000000100000000
+0x00007fffffffdde0│+0x0010: 0x0000000000000000
+0x00007fffffffdde8│+0x0018: 0x0000000000000000
+0x00007fffffffddf0│+0x0020: 0x0000000000400040  →   (bad) 
+0x00007fffffffddf8│+0x0028: 0x0000000000f0b5ff
+0x00007fffffffde00│+0x0030: 0x00000000000000c2
+0x00007fffffffde08│+0x0038: 0x00007fffffffde37  →  0x000000004005a000
+─────────────────────────────────────────────────────────────────────────────────────────────────────── code:x86:64 ────
+     0x4006c9 <main+66>        mov    rax, QWORD PTR [rbp-0x8]
+     0x4006cd <main+70>        mov    rdi, rax
+     0x4006d0 <main+73>        mov    eax, 0x0
+ →   0x4006d5 <main+78>        call   0x400560 <printf@plt>
+   ↳    0x400560 <printf@plt+0>   jmp    QWORD PTR [rip+0x200aba]        # 0x601020 <printf@got.plt>
+        0x400566 <printf@plt+6>   push   0x1
+        0x40056b <printf@plt+11>  jmp    0x400540
+        0x400570 <fgets@plt+0>    jmp    QWORD PTR [rip+0x200ab2]        # 0x601028 <fgets@got.plt>
+        0x400576 <fgets@plt+6>    push   0x2
+        0x40057b <fgets@plt+11>   jmp    0x400540
+─────────────────────────────────────────────────────────────────────────────────────────────── arguments (guessed) ────
+printf@plt (
+   $rdi = 0x00000000006022a0 → "%p|%p|%p|%p|%p|%p|%p|%p\n",
+   $rsi = 0x0000000000602691 → "p|%p|%p|%p|%p|%p|%p|%p\n",
+   $rdx = 0x0000000000000000
+)
+─────────────────────────────────────────────────────────────────────────────────────────────────────────── threads ────
+[#0] Id 1, Name: "gauntlet", stopped 0x4006d5 in main (), reason: BREAKPOINT
+───────────────────────────────────────────────────────────────────────────────────────────────────────────── trace ────
+[#0] 0x4006d5 → main()
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+Continuing.
+
+Breakpoint 2, 0x000000000040071c in main ()
+[ Legend: Modified register | Code | Heap | Stack | String ]
+───────────────────────────────────────────────────────────────────────────────────────────────────────── registers ────
+$rax   : 0x00007fffffffdde0  →  0x0000000000000000
+$rbx   : 0x0000000000400730  →  <__libc_csu_init+0> push r15
+$rcx   : 0x00007ffff7ecf142  →  0x5677fffff0003d48 ("H="?)
+$rdx   : 0x00000000006022a0  →  0x70257c70257c000a
+$rsp   : 0x00007fffffffddd0  →  0x00007fffffffdf48  →  0x00007fffffffe189  →  "/mnt/c/Users/Neel/Downloads/picoCTF_2021/binary_ga[...]"
+$rbp   : 0x00007fffffffde50  →  0x0000000000000000
+$rsi   : 0x00000000006022a0  →  0x70257c70257c000a
+$rdi   : 0x00007fffffffdde0  →  0x0000000000000000
+$rip   : 0x000000000040071c  →  <main+149> call 0x400550 <strcpy@plt>
+$r8    : 0x00000000006022a0  →  0x70257c70257c000a
+$r9    : 0x0               
+$r10   : 0xfffffffffffff279
+$r11   : 0x246             
+$r12   : 0x00000000004005a0  →  <_start+0> xor ebp, ebp
+$r13   : 0x00007fffffffdf40  →  0x0000000000000001
+$r14   : 0x0               
+$r15   : 0x0               
+$eflags: [zero carry PARITY adjust sign trap INTERRUPT direction overflow resume virtualx86 identification]
+$cs: 0x0033 $ss: 0x002b $ds: 0x0000 $es: 0x0000 $fs: 0x0000 $gs: 0x0000 
+───────────────────────────────────────────────────────────────────────────────────────────────────────────── stack ────
+0x00007fffffffddd0│+0x0000: 0x00007fffffffdf48  →  0x00007fffffffe189  →  "/mnt/c/Users/Neel/Downloads/picoCTF_2021/binary_ga[...]"	 ← $rsp
+0x00007fffffffddd8│+0x0008: 0x0000000100000000
+0x00007fffffffdde0│+0x0010: 0x0000000000000000	 ← $rax, $rdi
+0x00007fffffffdde8│+0x0018: 0x0000000000000000
+0x00007fffffffddf0│+0x0020: 0x0000000000400040  →   (bad) 
+0x00007fffffffddf8│+0x0028: 0x0000000000f0b5ff
+0x00007fffffffde00│+0x0030: 0x00000000000000c2
+0x00007fffffffde08│+0x0038: 0x00007fffffffde37  →  0x000000004005a000
+─────────────────────────────────────────────────────────────────────────────────────────────────────── code:x86:64 ────
+     0x400712 <main+139>       lea    rax, [rbp-0x70]
+     0x400716 <main+143>       mov    rsi, rdx
+     0x400719 <main+146>       mov    rdi, rax
+ →   0x40071c <main+149>       call   0x400550 <strcpy@plt>
+   ↳    0x400550 <strcpy@plt+0>   jmp    QWORD PTR [rip+0x200ac2]        # 0x601018 <strcpy@got.plt>
+        0x400556 <strcpy@plt+6>   push   0x0
+        0x40055b <strcpy@plt+11>  jmp    0x400540
+        0x400560 <printf@plt+0>   jmp    QWORD PTR [rip+0x200aba]        # 0x601020 <printf@got.plt>
+        0x400566 <printf@plt+6>   push   0x1
+        0x40056b <printf@plt+11>  jmp    0x400540
+─────────────────────────────────────────────────────────────────────────────────────────────── arguments (guessed) ────
+strcpy@plt (
+   $rdi = 0x00007fffffffdde0 → 0x0000000000000000,
+   $rsi = 0x00000000006022a0 → 0x70257c70257c000a,
+   $rdx = 0x00000000006022a0 → 0x70257c70257c000a
+)
+─────────────────────────────────────────────────────────────────────────────────────────────────────────── threads ────
+[#0] Id 1, Name: "gauntlet", stopped 0x40071c in main (), reason: BREAKPOINT
+───────────────────────────────────────────────────────────────────────────────────────────────────────────── trace ────
+[#0] 0x40071c → main()
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+[ Legend: Modified register | Code | Heap | Stack | String ]
+───────────────────────────────────────────────────────────────────────────────────────────────────────── registers ────
+$rax   : 0x00007fffffffdde0  →  0x0000000000000000
+$rbx   : 0x0000000000400730  →  <__libc_csu_init+0> push r15
+$rcx   : 0x00007ffff7ecf142  →  0x5677fffff0003d48 ("H="?)
+$rdx   : 0x00000000006022a0  →  0x70257c70257c000a
+$rsp   : 0x00007fffffffddd0  →  0x00007fffffffdf48  →  0x00007fffffffe189  →  "/mnt/c/Users/Neel/Downloads/picoCTF_2021/binary_ga[...]"
+$rbp   : 0x00007fffffffde50  →  0x0000000000000000
+$rsi   : 0x00000000006022a0  →  0x70257c70257c000a
+$rdi   : 0x00007fffffffdde0  →  0x0000000000000000
+$rip   : 0x000000000040071c  →  <main+149> call 0x400550 <strcpy@plt>
+$r8    : 0x00000000006022a0  →  0x70257c70257c000a
+$r9    : 0x0               
+$r10   : 0xfffffffffffff279
+$r11   : 0x246             
+$r12   : 0x00000000004005a0  →  <_start+0> xor ebp, ebp
+$r13   : 0x00007fffffffdf40  →  0x0000000000000001
+$r14   : 0x0               
+$r15   : 0x0               
+$eflags: [zero carry PARITY adjust sign trap INTERRUPT direction overflow resume virtualx86 identification]
+$cs: 0x0033 $ss: 0x002b $ds: 0x0000 $es: 0x0000 $fs: 0x0000 $gs: 0x0000 
+───────────────────────────────────────────────────────────────────────────────────────────────────────────── stack ────
+0x00007fffffffddd0│+0x0000: 0x00007fffffffdf48  →  0x00007fffffffe189  →  "/mnt/c/Users/Neel/Downloads/picoCTF_2021/binary_ga[...]"	 ← $rsp
+0x00007fffffffddd8│+0x0008: 0x0000000100000000
+0x00007fffffffdde0│+0x0010: 0x0000000000000000	 ← $rax, $rdi
+0x00007fffffffdde8│+0x0018: 0x0000000000000000
+0x00007fffffffddf0│+0x0020: 0x0000000000400040  →   (bad) 
+0x00007fffffffddf8│+0x0028: 0x0000000000f0b5ff
+0x00007fffffffde00│+0x0030: 0x00000000000000c2
+0x00007fffffffde08│+0x0038: 0x00007fffffffde37  →  0x000000004005a000
+─────────────────────────────────────────────────────────────────────────────────────────────────────── code:x86:64 ────
+     0x400712 <main+139>       lea    rax, [rbp-0x70]
+     0x400716 <main+143>       mov    rsi, rdx
+     0x400719 <main+146>       mov    rdi, rax
+ →   0x40071c <main+149>       call   0x400550 <strcpy@plt>
+   ↳    0x400550 <strcpy@plt+0>   jmp    QWORD PTR [rip+0x200ac2]        # 0x601018 <strcpy@got.plt>
+        0x400556 <strcpy@plt+6>   push   0x0
+        0x40055b <strcpy@plt+11>  jmp    0x400540
+        0x400560 <printf@plt+0>   jmp    QWORD PTR [rip+0x200aba]        # 0x601020 <printf@got.plt>
+        0x400566 <printf@plt+6>   push   0x1
+        0x40056b <printf@plt+11>  jmp    0x400540
+─────────────────────────────────────────────────────────────────────────────────────────────── arguments (guessed) ────
+strcpy@plt (
+   $rdi = 0x00007fffffffdde0 → 0x0000000000000000,
+   $rsi = 0x00000000006022a0 → 0x70257c70257c000a,
+   $rdx = 0x00000000006022a0 → 0x70257c70257c000a
+)
+─────────────────────────────────────────────────────────────────────────────────────────────────────────── threads ────
+[#0] Id 1, Name: "gauntlet", stopped 0x40071c in main (), reason: BREAKPOINT
+───────────────────────────────────────────────────────────────────────────────────────────────────────────── trace ────
+[#0] 0x40071c → main()
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
