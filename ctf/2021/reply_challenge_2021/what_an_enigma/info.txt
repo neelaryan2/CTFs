@@ -1,0 +1,16 @@
+Enigma Machine (M4 Shark) 
+
+message
+utogaaxgeonuvkegegddajktikdtvepnkolokj
+
+help1
+GURCBFVGVBAFNAQEVATFLBHARRQNERS21Y18G16T11
+THE POSITIONS AND RINGS YOU NEED ARE F21 L18 T16 G11
+
+help2
+NHCWMKPOZSQBFUTR
+nh cw mk po zs qb fu tr
+
+flgexampleexampleexample  =>  {FLG:exampleexampleexample}
+
+{FLG:thematrixhasyoufollowthewhiterabbit}

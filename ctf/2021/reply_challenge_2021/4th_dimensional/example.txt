@@ -1,0 +1,41 @@
+    FRU
+    RUB
+    LRU
+RBF UDR BDB LUD
+FFF RRU LBL DLL
+FBD RBF UDB LFL
+    BUR
+    LDF
+    DUD
+
+    324
+    94f
+    8ef
+a0b 38c 47d ae8
+555 48d f5a e8e
+16b 57f cc6 7cb
+    603
+    590
+    5a7
+
+    UUU
+    UUU
+    UUU
+LLL FFF RRR BBB
+LLL FFF RRR BBB
+LLL FFF RRR BBB
+    DDD
+    DDD
+    DDD
+
+    40f
+    d4e
+    3ac
+af8 bcf 32c 47d
+58e 555 489 056
+7ab 103 ae5 6f6
+    5c8
+    e98
+    77b
+
+Password is 40fd4e3acaf8bcf32c47d58e5554890567ab103ae56f65c8e9877b

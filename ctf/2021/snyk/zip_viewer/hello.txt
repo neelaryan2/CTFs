@@ -1,0 +1,15 @@
+<html>
+
+<head>
+  <title>XSS</title>
+	<script>
+	</script>
+</head>
+
+<body>
+	<?php
+	echo "Hello World!";
+	?>
+</body>
+
+</html>

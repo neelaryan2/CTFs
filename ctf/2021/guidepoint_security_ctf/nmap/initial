@@ -1,0 +1,17 @@
+# Nmap 7.80 scan initiated Fri Oct 15 19:52:40 2021 as: nmap -sC -sV -oN nmap/initial 34.71.144.86
+Nmap scan report for 86.144.71.34.bc.googleusercontent.com (34.71.144.86)
+Host is up (0.33s latency).
+Not shown: 997 filtered ports
+PORT     STATE  SERVICE       VERSION
+22/tcp   open   ssh           OpenSSH 7.4p1 Debian 10+deb9u7 (protocol 2.0)
+| ssh-hostkey: 
+|   2048 73:00:8c:1a:d4:74:ea:8e:8d:7e:0b:c0:7a:c8:2f:c4 (RSA)
+|   256 92:1c:97:27:34:6e:de:a7:43:79:fc:57:68:f5:de:85 (ECDSA)
+|_  256 74:12:d6:1d:c7:48:2a:e9:dc:35:66:5f:f0:33:d6:26 (ED25519)
+80/tcp   open   http          Apache httpd 2.4.25 ((Debian))
+|_http-title: Start
+3389/tcp closed ms-wbt-server
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Fri Oct 15 19:53:47 2021 -- 1 IP address (1 host up) scanned in 67.20 seconds

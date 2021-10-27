@@ -1,0 +1,38 @@
+Foremost version 1.5.7 by Jesse Kornblum, Kris Kendall, and Nick Mikus
+Audit File
+
+Foremost started at Wed Oct 13 13:02:06 2021
+Invocation: foremost ZipRecon.zip 
+Output directory: /mnt/c/Users/Neel/Downloads/guidepoint_security_ctf/ziprecon/output
+Configuration file: /etc/foremost.conf
+------------------------------------------------------------------
+File: ZipRecon.zip
+Start: Wed Oct 13 13:02:06 2021
+Length: 98 KB (100878 bytes)
+ 
+Num	 Name (bs=512)	       Size	 File Offset	 Comment 
+
+0:	00000000.zip 	       3 KB 	          0 	 
+1:	00000012.zip 	       3 KB 	       6493 	 
+2:	00000025.zip 	       3 KB 	      13211 	 
+3:	00000038.zip 	       3 KB 	      19929 	 
+4:	00000052.zip 	       3 KB 	      26647 	 
+5:	00000065.zip 	       3 KB 	      33365 	 
+6:	00000078.zip 	       3 KB 	      40087 	 
+7:	00000091.zip 	       3 KB 	      46809 	 
+8:	00000104.zip 	       3 KB 	      53531 	 
+9:	00000117.zip 	       3 KB 	      60253 	 
+10:	00000130.zip 	       3 KB 	      67021 	 
+11:	00000144.zip 	       3 KB 	      73743 	 
+12:	00000157.zip 	       3 KB 	      80465 	 
+13:	00000170.zip 	       3 KB 	      87187 	 
+14:	00000183.zip 	       3 KB 	      93909 	 
+15:	00000196.zip 	      247 B 	     100631 	 
+Finish: Wed Oct 13 13:02:06 2021
+
+16 FILES EXTRACTED
+	
+zip:= 16
+------------------------------------------------------------------
+
+Foremost finished at Wed Oct 13 13:02:06 2021

