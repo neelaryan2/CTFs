@@ -1,0 +1,118 @@
+# Nmap 7.80 scan initiated Sat Jan  8 19:36:55 2022 as: nmap -p- -Pn -sC -sV -oN nmap.log 34.93.14.197
+Nmap scan report for 197.14.93.34.bc.googleusercontent.com (34.93.14.197)
+Host is up (0.038s latency).
+Not shown: 65532 filtered ports
+PORT      STATE  SERVICE       VERSION
+22/tcp    open   ssh           OpenSSH 8.5 (protocol 2.0)
+3389/tcp  closed ms-wbt-server
+31337/tcp open   Elite?
+| fingerprint-strings: 
+|   GetRequest: 
+|     Hi! Welcome to pyjail!
+|     main():
+|     print("Hi! Welcome to pyjail!")
+|     print(open(__file__).read())
+|     print("RUN")
+|     text = input('>>> ')
+|     keyword in ['eval', 'exec', 'import', 'open', 'os', 'read', 'system', 'write','process','socket','help']:
+|     keyword in text.lower():
+|     print("No!!!")
+|     return;
+|     else:
+|     exec(text)
+|     __name__ == "__main__":
+|     main()
+|     Traceback (most recent call last):
+|     File "/app/chall.py", line 13, in <module>
+|     main()
+|     File "/app/chall.py", line 11, in main
+|     exec(text)
+|     File "<string>", line 1, in <module>
+|     NameError: name 'GET' is not defined
+|   NULL: 
+|     Hi! Welcome to pyjail!
+|     main():
+|     print("Hi! Welcome to pyjail!")
+|     print(open(__file__).read())
+|     print("RUN")
+|     text = input('>>> ')
+|     keyword in ['eval', 'exec', 'import', 'open', 'os', 'read', 'system', 'write','process','socket','help']:
+|     keyword in text.lower():
+|     print("No!!!")
+|     return;
+|     else:
+|     exec(text)
+|     __name__ == "__main__":
+|     main()
+|   SIPOptions: 
+|     Hi! Welcome to pyjail!
+|     main():
+|     print("Hi! Welcome to pyjail!")
+|     print(open(__file__).read())
+|     print("RUN")
+|     text = input('>>> ')
+|     keyword in ['eval', 'exec', 'import', 'open', 'os', 'read', 'system', 'write','process','socket','help']:
+|     keyword in text.lower():
+|     print("No!!!")
+|     return;
+|     else:
+|     exec(text)
+|     __name__ == "__main__":
+|     main()
+|     Traceback (most recent call last):
+|     File "/app/chall.py", line 13, in <module>
+|     main()
+|     File "/app/chall.py", line 11, in main
+|     exec(text)
+|     File "<string>", line 1
+|     OPTIONS sip:nm SIP/2.0
+|_    SyntaxError: invalid syntax
+1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
+SF-Port31337-TCP:V=7.80%I=7%D=1/8%Time=61D99F9B%P=x86_64-pc-linux-gnu%r(NU
+SF:LL,1A2,"Hi!\x20Welcome\x20to\x20pyjail!\ndef\x20main\(\):\n\x20\x20\x20
+SF:\x20print\(\"Hi!\x20Welcome\x20to\x20pyjail!\"\)\n\x20\x20\x20\x20print
+SF:\(open\(__file__\)\.read\(\)\)\n\x20\x20\x20\x20print\(\"RUN\"\)\n\x20\
+SF:x20\x20\x20text\x20=\x20input\('>>>\x20'\)\n\x20\x20\x20\x20for\x20keyw
+SF:ord\x20in\x20\['eval',\x20'exec',\x20'import',\x20'open',\x20'os',\x20'
+SF:read',\x20'system',\x20'write','process','socket','help'\]:\n\x20\x20\x
+SF:20\x20\x20\x20\x20\x20if\x20keyword\x20in\x20text\.lower\(\):\n\x20\x20
+SF:\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20print\(\"No!!!\"\)\n\x20\x20\x2
+SF:0\x20\x20\x20\x20\x20\x20\x20\x20\x20return;\n\x20\x20\x20\x20else:\n\x
+SF:20\x20\x20\x20\x20\x20\x20\x20exec\(text\)\nif\x20__name__\x20==\x20\"_
+SF:_main__\":\n\x20\x20\x20\x20main\(\)\nRUN\n>>>\x20")%r(GetRequest,281,"
+SF:Hi!\x20Welcome\x20to\x20pyjail!\ndef\x20main\(\):\n\x20\x20\x20\x20prin
+SF:t\(\"Hi!\x20Welcome\x20to\x20pyjail!\"\)\n\x20\x20\x20\x20print\(open\(
+SF:__file__\)\.read\(\)\)\n\x20\x20\x20\x20print\(\"RUN\"\)\n\x20\x20\x20\
+SF:x20text\x20=\x20input\('>>>\x20'\)\n\x20\x20\x20\x20for\x20keyword\x20i
+SF:n\x20\['eval',\x20'exec',\x20'import',\x20'open',\x20'os',\x20'read',\x
+SF:20'system',\x20'write','process','socket','help'\]:\n\x20\x20\x20\x20\x
+SF:20\x20\x20\x20if\x20keyword\x20in\x20text\.lower\(\):\n\x20\x20\x20\x20
+SF:\x20\x20\x20\x20\x20\x20\x20\x20print\(\"No!!!\"\)\n\x20\x20\x20\x20\x2
+SF:0\x20\x20\x20\x20\x20\x20\x20return;\n\x20\x20\x20\x20else:\n\x20\x20\x
+SF:20\x20\x20\x20\x20\x20exec\(text\)\nif\x20__name__\x20==\x20\"__main__\
+SF:":\n\x20\x20\x20\x20main\(\)\nRUN\n>>>\x20Traceback\x20\(most\x20recent
+SF:\x20call\x20last\):\n\x20\x20File\x20\"/app/chall\.py\",\x20line\x2013,
+SF:\x20in\x20<module>\n\x20\x20\x20\x20main\(\)\n\x20\x20File\x20\"/app/ch
+SF:all\.py\",\x20line\x2011,\x20in\x20main\n\x20\x20\x20\x20exec\(text\)\n
+SF:\x20\x20File\x20\"<string>\",\x20line\x201,\x20in\x20<module>\nNameErro
+SF:r:\x20name\x20'GET'\x20is\x20not\x20defined\n")%r(SIPOptions,294,"Hi!\x
+SF:20Welcome\x20to\x20pyjail!\ndef\x20main\(\):\n\x20\x20\x20\x20print\(\"
+SF:Hi!\x20Welcome\x20to\x20pyjail!\"\)\n\x20\x20\x20\x20print\(open\(__fil
+SF:e__\)\.read\(\)\)\n\x20\x20\x20\x20print\(\"RUN\"\)\n\x20\x20\x20\x20te
+SF:xt\x20=\x20input\('>>>\x20'\)\n\x20\x20\x20\x20for\x20keyword\x20in\x20
+SF:\['eval',\x20'exec',\x20'import',\x20'open',\x20'os',\x20'read',\x20'sy
+SF:stem',\x20'write','process','socket','help'\]:\n\x20\x20\x20\x20\x20\x2
+SF:0\x20\x20if\x20keyword\x20in\x20text\.lower\(\):\n\x20\x20\x20\x20\x20\
+SF:x20\x20\x20\x20\x20\x20\x20print\(\"No!!!\"\)\n\x20\x20\x20\x20\x20\x20
+SF:\x20\x20\x20\x20\x20\x20return;\n\x20\x20\x20\x20else:\n\x20\x20\x20\x2
+SF:0\x20\x20\x20\x20exec\(text\)\nif\x20__name__\x20==\x20\"__main__\":\n\
+SF:x20\x20\x20\x20main\(\)\nRUN\n>>>\x20Traceback\x20\(most\x20recent\x20c
+SF:all\x20last\):\n\x20\x20File\x20\"/app/chall\.py\",\x20line\x2013,\x20i
+SF:n\x20<module>\n\x20\x20\x20\x20main\(\)\n\x20\x20File\x20\"/app/chall\.
+SF:py\",\x20line\x2011,\x20in\x20main\n\x20\x20\x20\x20exec\(text\)\n\x20\
+SF:x20File\x20\"<string>\",\x20line\x201\n\x20\x20\x20\x20OPTIONS\x20sip:n
+SF:m\x20SIP/2\.0\n\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\^\nSynt
+SF:axError:\x20invalid\x20syntax\n");
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sat Jan  8 20:00:08 2022 -- 1 IP address (1 host up) scanned in 1392.77 seconds

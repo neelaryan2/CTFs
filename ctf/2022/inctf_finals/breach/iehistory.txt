@@ -1,0 +1,373 @@
+Volatility Foundation Volatility Framework 2.6.1
+**************************************************
+Process: 928 explorer.exe
+Cache type "URL " at 0x4247280
+Record length: 0x400
+Location: https://www.google.com/chrome/static/images/favicons/favicon.ico
+Last modified: 2020-05-25 08:30:00 UTC+0000
+Last accessed: 2022-01-05 20:11:16 UTC+0000
+File Offset: 0x400, Data Offset: 0xac, Data Length: 0xbc
+File: favicon[1].ico
+Data: HTTP/1.1 200 OK
+Content-Type: image/x-icon
+Content-Security-Policy-Report-Only: require-trusted-types-for 'script'; report-uri https://csp.withgoogle.com/csp/uxe-owners-acl/chrome
+Cross-Origin-Resource-Policy: cross-origin
+Cross-Origin-Opener-Policy-Report-Only: same-origin; report-to="uxe-owners-acl/chrome"
+Report-To: {"group":"uxe-owners-acl/chrome","max_age":2592000,"endpoints":[{"url":"https://csp.withgoogle.com/csp/report-to/uxe-owners-acl/chrome"}]}
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 0
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"
+Transfer-Encoding: chunked
+
+~U:phil
+
+**************************************************
+Process: 928 explorer.exe
+Cache type "URL " at 0x4247880
+Record length: 0x200
+Location: https://pastebin.com/favicon.ico
+Last modified: 2021-09-13 09:25:16 UTC+0000
+Last accessed: 2022-01-05 20:18:36 UTC+0000
+File Offset: 0x200, Data Offset: 0x8c, Data Length: 0x9c
+File: favicon[1].ico
+Data: HTTP/1.1 200 OK
+Content-Type: image/x-icon
+Transfer-Encoding: chunked
+etag: W/"613f18fc-13e"
+CF-Cache-Status: HIT
+Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+CF-RAY: 6c8ac32e6a4b8b03-BOM
+
+~U:phil
+
+**************************************************
+Process: 928 explorer.exe
+Cache type "URL " at 0x4255000
+Record length: 0x100
+Location: Cookie:phil@ieonline.microsoft.com/
+Last modified: 2022-01-05 18:24:56 UTC+0000
+Last accessed: 2022-01-05 18:24:56 UTC+0000
+File Offset: 0x100, Data Offset: 0x8c, Data Length: 0x0
+File: phil@ieonline.microsoft[1].txt
+**************************************************
+Process: 928 explorer.exe
+Cache type "URL " at 0x4255100
+Record length: 0x100
+Location: Cookie:phil@microsoft.com/
+Last modified: 2022-01-05 18:24:56 UTC+0000
+Last accessed: 2022-01-05 18:24:56 UTC+0000
+File Offset: 0x100, Data Offset: 0x84, Data Length: 0x0
+File: phil@microsoft[2].txt
+**************************************************
+Process: 928 explorer.exe
+Cache type "URL " at 0x4255200
+Record length: 0x100
+Location: Cookie:phil@microsoft.com/
+Last modified: 2022-01-05 18:24:56 UTC+0000
+Last accessed: 2022-01-05 18:24:56 UTC+0000
+File Offset: 0x100, Data Offset: 0x84, Data Length: 0x0
+File: phil@microsoft[1].txt
+**************************************************
+Process: 928 explorer.exe
+Cache type "URL " at 0x4265000
+Record length: 0x100
+Location: Visited: Phil@https://www.msn.com/?ocid=iehp
+Last modified: 2022-01-05 18:24:11 UTC+0000
+Last accessed: 2022-01-05 18:24:11 UTC+0000
+File Offset: 0x100, Data Offset: 0x0, Data Length: 0x98
+**************************************************
+Process: 928 explorer.exe
+Cache type "URL " at 0x4265100
+Record length: 0x100
+Location: Visited: Phil@https://static-global-s-msn-com.akamaized.net/hp-eas/sc/2b/a5ea21.ico
+Last modified: 2022-01-05 20:11:00 UTC+0000
+Last accessed: 2022-01-05 20:11:00 UTC+0000
+File Offset: 0x100, Data Offset: 0x0, Data Length: 0xbc
+**************************************************
+Process: 928 explorer.exe
+Cache type "URL " at 0x4265200
+Record length: 0x100
+Location: Visited: Phil@http://go.microsoft.com/fwlink/?LinkId=69157
+Last modified: 2022-01-05 18:24:44 UTC+0000
+Last accessed: 2022-01-05 18:24:44 UTC+0000
+File Offset: 0x100, Data Offset: 0x0, Data Length: 0xa4
+**************************************************
+Process: 928 explorer.exe
+Cache type "URL " at 0x4265300
+Record length: 0x100
+Location: Visited: Phil@http://www.bing.com/search?format=rss&q=download+chrome&src=IE-SearchBox&FORM=IE8SRC
+Last modified: 2022-01-05 20:11:05 UTC+0000
+Last accessed: 2022-01-05 20:11:05 UTC+0000
+File Offset: 0x100, Data Offset: 0x0, Data Length: 0xcc
+**************************************************
+Process: 928 explorer.exe
+Cache type "URL " at 0x4265480
+Record length: 0x100
+Location: Visited: Phil@https://support.microsoft.com/internet-explorer
+Last modified: 2022-01-05 18:24:55 UTC+0000
+Last accessed: 2022-01-05 18:24:55 UTC+0000
+File Offset: 0x100, Data Offset: 0x0, Data Length: 0xa8
+**************************************************
+Process: 928 explorer.exe
+Cache type "URL " at 0x4265580
+Record length: 0x180
+Location: Visited: Phil@https://www.msn.com/en-in/?ocid=iehp
+Last modified: 2022-01-05 20:10:59 UTC+0000
+Last accessed: 2022-01-05 20:10:59 UTC+0000
+File Offset: 0x180, Data Offset: 0x0, Data Length: 0x9c
+**************************************************
+Process: 928 explorer.exe
+Cache type "URL " at 0x4266000
+Record length: 0x180
+Location: Visited: Phil@http://www.bing.com/search?q=download+chrome&src=IE-SearchBox&FORM=IE8SRC
+Last modified: 2022-01-05 20:11:14 UTC+0000
+Last accessed: 2022-01-05 20:11:14 UTC+0000
+File Offset: 0x180, Data Offset: 0x0, Data Length: 0xc0
+**************************************************
+Process: 928 explorer.exe
+Cache type "URL " at 0x4266180
+Record length: 0x200
+Location: Visited: Phil@https://dl.google.com/tag/s/appguid%3D%7B8A69D345-D564-463C-AFF1-A69D9E530F96%7D%26iid%3D%7BB54D2401-F54F-5B4C-0923-D0BC56F99A6E%7D%26lang%3Den%26browser%3D2%26usagestats%3D0%26appname%3DGoogle%2520Chrome%26needsadmin%3Dprefers%26ap%3Dx64-stable-statsdef_1%26brand%3DCHBF%26installdataindex%3Ddefaultbrowser/update2/installers/ChromeSetup.exe
+Last modified: 2022-01-05 20:11:52 UTC+0000
+Last accessed: 2022-01-05 20:11:52 UTC+0000
+File Offset: 0x200, Data Offset: 0x0, Data Length: 0x1d0
+**************************************************
+Process: 928 explorer.exe
+Cache type "URL " at 0x4266380
+Record length: 0x100
+Location: Visited: Phil@file:///C:/Users/Phil/Downloads/passwords.txt
+Last modified: 2022-01-05 20:16:59 UTC+0000
+Last accessed: 2022-01-05 20:16:59 UTC+0000
+File Offset: 0x100, Data Offset: 0x0, Data Length: 0xa4
+**************************************************
+Process: 928 explorer.exe
+Cache type "URL " at 0x4266500
+Record length: 0x380
+Location: Visited: Phil@https://www.google.com/chrome/?brand=CHBF&ds_kid=43700066094322197&utm_source=bing&utm_medium=cpc&utm_campaign=1011197%20%7C%20Chrome%20Win10%20%7C%20DR%20%7C%20ESS01%20%7C%20APAC%20%7C%20IN%20%7C%20en%20%7C%20Desk%20%7C%20SEM%20%7C%20BKWS%20-%20PHR%20%7C%20Txt&utm_term=get%20chrome&utm_content=Desk%20%7C%20BING%20SEM%20%7C%20BKWS%20%7C%20PHR%20~%20Get%20Chrome&gclid=7f829b9145e31c75d8b6fa44786404a6&gclsrc=3p.ds
+Last modified: 2022-01-05 20:11:24 UTC+0000
+Last accessed: 2022-01-05 20:11:24 UTC+0000
+File Offset: 0x380, Data Offset: 0x0, Data Length: 0x218
+**************************************************
+Process: 928 explorer.exe
+Cache type "URL " at 0x4267000
+Record length: 0x200
+Location: Visited: Phil@https://www.google.com/chrome/thank-you.html?brand=CHBF&statcb=0&installdataindex=defaultbrowser&defaultbrowser=1
+Last modified: 2022-01-05 20:11:39 UTC+0000
+Last accessed: 2022-01-05 20:11:39 UTC+0000
+File Offset: 0x200, Data Offset: 0x0, Data Length: 0xe8
+**************************************************
+Process: 928 explorer.exe
+Cache type "URL " at 0x4267200
+Record length: 0x200
+Location: Visited: Phil@https://www.google.com/chrome/thank-you.html?installdataindex=defaultbrowser&statcb=0&defaultbrowser=1&brand=CHBF
+Last modified: 2022-01-05 20:11:40 UTC+0000
+Last accessed: 2022-01-05 20:11:40 UTC+0000
+File Offset: 0x200, Data Offset: 0x0, Data Length: 0xe8
+**************************************************
+Process: 928 explorer.exe
+Cache type "URL " at 0x4267400
+Record length: 0x180
+Location: Visited: Phil@https://www.msn.com/en-in/?ocid=iehp
+Last modified: 2022-01-05 20:18:06 UTC+0000
+Last accessed: 2022-01-05 20:18:06 UTC+0000
+File Offset: 0x180, Data Offset: 0x0, Data Length: 0x9c
+**************************************************
+Process: 928 explorer.exe
+Cache type "URL " at 0x4267580
+Record length: 0x180
+Location: Visited: Phil@https://pastebin.com/YV7zQTqm
+Last modified: 2022-01-05 20:18:52 UTC+0000
+Last accessed: 2022-01-05 20:18:52 UTC+0000
+File Offset: 0x180, Data Offset: 0x0, Data Length: 0x94
+**************************************************
+Process: 928 explorer.exe
+Cache type "URL " at 0x4267700
+Record length: 0x100
+Location: Visited: Phil@file:///C:/Users/Phil/Documents/confidential.pdf.pdf
+Last modified: 2022-01-05 21:03:17 UTC+0000
+Last accessed: 2022-01-05 21:03:17 UTC+0000
+File Offset: 0x100, Data Offset: 0x0, Data Length: 0xac
+**************************************************
+Process: 928 explorer.exe
+Cache type "URL " at 0x4267800
+Record length: 0x100
+Location: Visited: Phil@file:///C:/Users/Phil/Documents/confidential.pdf
+Last modified: 2022-01-05 22:48:41 UTC+0000
+Last accessed: 2022-01-05 22:48:41 UTC+0000
+File Offset: 0x100, Data Offset: 0x0, Data Length: 0xa8
+**************************************************
+Process: 928 explorer.exe
+Cache type "URL " at 0x4267900
+Record length: 0x100
+Location: Visited: Phil@file:///C:/Users/Phil/Documents/confidential.pdf
+Last modified: 2022-01-06 00:15:20 UTC+0000
+Last accessed: 2022-01-06 00:15:20 UTC+0000
+File Offset: 0x100, Data Offset: 0x0, Data Length: 0xa8
+**************************************************
+Process: 928 explorer.exe
+Cache type "URL " at 0x4267a00
+Record length: 0x100
+Location: Visited: Phil@file:///C:/Users/Phil/Downloads/memory.zip
+Last modified: 2022-01-05 22:56:31 UTC+0000
+Last accessed: 2022-01-05 22:56:31 UTC+0000
+File Offset: 0x100, Data Offset: 0x0, Data Length: 0xa4
+**************************************************
+Process: 928 explorer.exe
+Cache type "URL " at 0x4267b00
+Record length: 0x100
+Location: Visited: Phil@file:///C:/Users/Phil/Desktop/passwords.txt
+Last modified: 2022-01-06 00:14:54 UTC+0000
+Last accessed: 2022-01-06 00:14:54 UTC+0000
+File Offset: 0x100, Data Offset: 0x0, Data Length: 0xa4
+**************************************************
+Process: 928 explorer.exe
+Cache type "URL " at 0x4267c00
+Record length: 0x100
+Location: Visited: Phil@file:///C:/Users/Phil/Desktop/file.zip
+Last modified: 2022-01-06 00:15:02 UTC+0000
+Last accessed: 2022-01-06 00:15:02 UTC+0000
+File Offset: 0x100, Data Offset: 0x0, Data Length: 0xa0
+**************************************************
+Process: 928 explorer.exe
+Cache type "URL " at 0x4267d00
+Record length: 0x100
+Location: Visited: Phil@file:///C:/Users/Phil/Documents/encrypted.zip
+Last modified: 2022-01-05 21:06:12 UTC+0000
+Last accessed: 2022-01-05 21:06:12 UTC+0000
+File Offset: 0x100, Data Offset: 0x0, Data Length: 0xa4
+**************************************************
+Process: 928 explorer.exe
+Cache type "URL " at 0x4267e00
+Record length: 0x100
+Location: Visited: Phil@file:///C:/Users/Phil/Desktop/encrypted.zip
+Last modified: 2022-01-06 00:15:07 UTC+0000
+Last accessed: 2022-01-06 00:15:07 UTC+0000
+File Offset: 0x100, Data Offset: 0x0, Data Length: 0xa4
+**************************************************
+Process: 928 explorer.exe
+Cache type "URL " at 0x4385000
+Record length: 0x100
+Location: :2022010520220106: Phil@http://www.bing.com/search?q=download+chrome&src=IE-SearchBox&FORM=IE8SRC
+Last modified: 2022-01-05 12:11:05 UTC+0000
+Last accessed: 2022-01-05 20:11:05 UTC+0000
+File Offset: 0x100, Data Offset: 0x0, Data Length: 0x0
+**************************************************
+Process: 928 explorer.exe
+Cache type "URL " at 0x4385100
+Record length: 0x100
+Location: :2022010520220106: Phil@:Host: www.bing.com
+Last modified: 2022-01-05 12:11:05 UTC+0000
+Last accessed: 2022-01-05 20:11:05 UTC+0000
+File Offset: 0x100, Data Offset: 0x0, Data Length: 0x0
+**************************************************
+Process: 928 explorer.exe
+Cache type "URL " at 0x4385200
+Record length: 0x200
+Location: :2022010520220106: Phil@https://dl.google.com/tag/s/appguid%3D%7B8A69D345-D564-463C-AFF1-A69D9E530F96%7D%26iid%3D%7BB54D2401-F54F-5B4C-0923-D0BC56F99A6E%7D%26lang%3Den%26browser%3D2%26usagestats%3D0%26appname%3DGoogle%2520Chrome%26needsadmin%3Dprefers%26ap%3Dx64-stable-statsdef_1%26brand%3DCHBF%26installdataindex%3Ddefaultbrowser/update2/installers/ChromeSetup.exe
+Last modified: 2022-01-05 12:11:52 UTC+0000
+Last accessed: 2022-01-05 20:11:52 UTC+0000
+File Offset: 0x200, Data Offset: 0x0, Data Length: 0x0
+**************************************************
+Process: 928 explorer.exe
+Cache type "URL " at 0x4385400
+Record length: 0x100
+Location: :2022010520220106: Phil@:Host: dl.google.com
+Last modified: 2022-01-05 12:11:52 UTC+0000
+Last accessed: 2022-01-05 20:11:52 UTC+0000
+File Offset: 0x100, Data Offset: 0x0, Data Length: 0x0
+**************************************************
+Process: 928 explorer.exe
+Cache type "URL " at 0x4385500
+Record length: 0x100
+Location: :2022010520220106: Phil@file:///C:/Users/Phil/Downloads/passwords.txt
+Last modified: 2022-01-05 12:16:59 UTC+0000
+Last accessed: 2022-01-05 20:16:59 UTC+0000
+File Offset: 0x100, Data Offset: 0x0, Data Length: 0x0
+**************************************************
+Process: 928 explorer.exe
+Cache type "URL " at 0x4385600
+Record length: 0x100
+Location: :2022010520220106: Phil@:Host: Computer
+Last modified: 2022-01-05 12:16:59 UTC+0000
+Last accessed: 2022-01-05 20:16:59 UTC+0000
+File Offset: 0x100, Data Offset: 0x0, Data Length: 0x0
+**************************************************
+Process: 928 explorer.exe
+Cache type "URL " at 0x4385700
+Record length: 0x100
+Location: :2022010520220106: Phil@file:///C:/Users/Phil/Documents/confidential.pdf.pdf
+Last modified: 2022-01-05 13:03:17 UTC+0000
+Last accessed: 2022-01-05 21:03:17 UTC+0000
+File Offset: 0x100, Data Offset: 0x0, Data Length: 0x0
+**************************************************
+Process: 928 explorer.exe
+Cache type "URL " at 0x4385800
+Record length: 0x100
+Location: :2022010520220106: Phil@:Host: pastebin.com
+Last modified: 2022-01-05 12:18:36 UTC+0000
+Last accessed: 2022-01-05 20:18:36 UTC+0000
+File Offset: 0x100, Data Offset: 0x0, Data Length: 0x0
+**************************************************
+Process: 928 explorer.exe
+Cache type "URL " at 0x4385900
+Record length: 0x100
+Location: :2022010520220106: Phil@https://pastebin.com/YV7zQTqm
+Last modified: 2022-01-05 12:18:52 UTC+0000
+Last accessed: 2022-01-05 20:18:52 UTC+0000
+File Offset: 0x100, Data Offset: 0x0, Data Length: 0x0
+**************************************************
+Process: 928 explorer.exe
+Cache type "URL " at 0x4385a00
+Record length: 0x100
+Location: :2022010520220106: Phil@file:///C:/Users/Phil/Documents/confidential.pdf
+Last modified: 2022-01-05 14:48:41 UTC+0000
+Last accessed: 2022-01-05 22:48:41 UTC+0000
+File Offset: 0x100, Data Offset: 0x0, Data Length: 0x0
+**************************************************
+Process: 928 explorer.exe
+Cache type "URL " at 0x4385b00
+Record length: 0x100
+Location: :2022010520220106: Phil@file:///C:/Users/Phil/Documents/confidential.pdf
+Last modified: 2022-01-05 16:15:20 UTC+0000
+Last accessed: 2022-01-06 00:15:20 UTC+0000
+File Offset: 0x100, Data Offset: 0x0, Data Length: 0x0
+**************************************************
+Process: 928 explorer.exe
+Cache type "URL " at 0x4385c00
+Record length: 0x100
+Location: :2022010520220106: Phil@file:///C:/Users/Phil/Downloads/memory.zip
+Last modified: 2022-01-05 14:56:31 UTC+0000
+Last accessed: 2022-01-05 22:56:31 UTC+0000
+File Offset: 0x100, Data Offset: 0x0, Data Length: 0x0
+**************************************************
+Process: 928 explorer.exe
+Cache type "URL " at 0x4385d00
+Record length: 0x100
+Location: :2022010520220106: Phil@file:///C:/Users/Phil/Desktop/passwords.txt
+Last modified: 2022-01-05 16:14:54 UTC+0000
+Last accessed: 2022-01-06 00:14:54 UTC+0000
+File Offset: 0x100, Data Offset: 0x0, Data Length: 0x0
+**************************************************
+Process: 928 explorer.exe
+Cache type "URL " at 0x4385e00
+Record length: 0x100
+Location: :2022010520220106: Phil@file:///C:/Users/Phil/Desktop/file.zip
+Last modified: 2022-01-05 16:15:02 UTC+0000
+Last accessed: 2022-01-06 00:15:02 UTC+0000
+File Offset: 0x100, Data Offset: 0x0, Data Length: 0x0
+**************************************************
+Process: 928 explorer.exe
+Cache type "URL " at 0x4385f00
+Record length: 0x100
+Location: :2022010520220106: Phil@file:///C:/Users/Phil/Documents/encrypted.zip
+Last modified: 2022-01-05 13:06:12 UTC+0000
+Last accessed: 2022-01-05 21:06:12 UTC+0000
+File Offset: 0x100, Data Offset: 0x0, Data Length: 0x0
+**************************************************
+Process: 928 explorer.exe
+Cache type "URL " at 0x4386000
+Record length: 0x100
+Location: :2022010520220106: Phil@file:///C:/Users/Phil/Desktop/encrypted.zip
+Last modified: 2022-01-05 16:15:07 UTC+0000
+Last accessed: 2022-01-06 00:15:07 UTC+0000
+File Offset: 0x100, Data Offset: 0x0, Data Length: 0x0
